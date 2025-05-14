@@ -521,7 +521,7 @@ ATT.ToggleStats = {
     },
     {
         PrintName = "Collapsed",
-        CustomizePos = Vector(16, 23, 5.0),
+        CustomizePos = Vector(16, 40, 5),
         CustomizeRotateAnchor = Vector(16, -4.5, -5.23),
         ActivateElements = {"eft_mp5_stock_a3_folded"}
     },
@@ -548,7 +548,7 @@ ATT.HasBufferTube = true
 
 ATT.Category = {"eft_mp5_stock"}
 
-ATT.CustomizePos = Vector(17, 23, 5.0)
+ATT.CustomizePos = Vector(17, 40, 5)
 ATT.CustomizeRotateAnchor = Vector(17, -4.5, -5.23)
 
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_cap")
@@ -572,8 +572,8 @@ ATT.HasBufferTube = true
 
 ATT.Category = {"eft_mp5k_stock"}
 
-ATT.CustomizePos = Vector(17, 23, 5.0)
-ATT.CustomizeRotateAnchor = Vector(17, -4.5, -5.23)
+ATT.CustomizePos = Vector(15, 30, 4.5)
+ATT.CustomizeRotateAnchor = Vector(15, -4.5, -5.23)
 
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_capk")
 

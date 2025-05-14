@@ -93,7 +93,7 @@ ATT.ToggleStats = {
     },
     {
         PrintName = "Folded",
-        CustomizePos = Vector(18, 25, 6),
+        CustomizePos = Vector(16, 40, 5),
         CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_mp9_stock_folded"}
     },

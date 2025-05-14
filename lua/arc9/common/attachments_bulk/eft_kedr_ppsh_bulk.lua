@@ -76,8 +76,8 @@ ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 1.25
 ATT.VisualRecoilMult = 1.25
 
-ATT.CustomizePos = Vector(17.5, 22, 5)
-ATT.CustomizeRotateAnchor = Vector(17.5, -4.28, -5.23)
+ATT.CustomizePos = Vector(17, 40, 5)
+ATT.CustomizeRotateAnchor = Vector(17, -4.28, -5.23)
 
 ATT.Category = {"eft_kedr_stock"}
 ATT.ExcludeElements = {"eft_mount_kedr_ris"}

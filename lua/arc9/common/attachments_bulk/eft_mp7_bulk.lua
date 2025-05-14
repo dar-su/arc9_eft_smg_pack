@@ -95,7 +95,7 @@ ATT.ToggleStats = {
     },
     {
         PrintName = "Folded",
-        CustomizePos = Vector(18, 24, 6),
+        CustomizePos = Vector(18, 40, 6),
         CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_mp7_stock_a1folded"}
     },
@@ -132,7 +132,7 @@ ATT.ToggleStats = {
     },
     {
         PrintName = "Folded",
-        CustomizePos = Vector(18, 24, 6),
+        CustomizePos = Vector(18, 40, 6),
         CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_mp7_stock_a2folded"}
     },

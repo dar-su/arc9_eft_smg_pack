@@ -50,7 +50,7 @@ SWEP.SprintPos = Vector(4, -5, 0)
 SWEP.CustomizePos = Vector(11, 40, 4)
 SWEP.CustomizeSnapshotFOV = 50
 SWEP.CustomizeRotateAnchor = Vector(11, -4.27, -5.23) 
-SWEP.CustomizeSnapshotPos = Vector(0, 40, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 
 SWEP.PeekMaxFOV = 60
 -- SWEP.PeekPos = Vector(-1.5, 3, -4.5)

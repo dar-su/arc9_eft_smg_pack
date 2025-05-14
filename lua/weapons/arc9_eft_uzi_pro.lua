@@ -47,9 +47,10 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(-0.7, -4.5, 0)
-SWEP.CustomizePos = Vector(16.5, 22, 5)
-SWEP.CustomizeSnapshotFOV = 95
-SWEP.CustomizeRotateAnchor = Vector(16.5, -4.29, -5.23)
+SWEP.CustomizePos = Vector(16.5, 35, 4.5)
+SWEP.CustomizeSnapshotFOV = 50
+SWEP.CustomizeRotateAnchor = Vector(16.5, -4.27, -5.23) 
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 
 -- this thing can one hand sprint
 local handupang, handuppos, handupholdtype = Angle(-2, 40, -7), Vector(0, -4, -10), "normal"

@@ -18,7 +18,7 @@ SWEP.RPM = 900
 SWEP.EFTErgo = 55
 SWEP.RecoilAutoControl = 7.0 -- autocompenstaion, could be cool if set to high but it also affects main recoil
 
-SWEP.CustomizePos = Vector(16, 23, 5.0)
+SWEP.CustomizePos = Vector(15, 30, 5)
 
 SWEP.DefaultElements = {"eft_k"} -- owo
 
