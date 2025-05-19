@@ -10,7 +10,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_mp7a2")
 SWEP.DefaultBodygroups = "01000000000000"
 
-SWEP.Description = "eft_weapon_mp7a2_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mp7a2_desc")
 
 SWEP.DefaultElements = {"eft_mp7_a2"} -- owo
 

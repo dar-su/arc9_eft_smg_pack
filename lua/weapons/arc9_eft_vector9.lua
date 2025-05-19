@@ -10,7 +10,7 @@ SWEP.Category = "ARC9 - Escape From Tarkov"
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_vector9")
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_vector_9.mdl"
 
-SWEP.Description = "eft_weapon_vector9_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_vector9_desc")
 
 -- default pst ghz
 

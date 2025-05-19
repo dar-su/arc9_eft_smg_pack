@@ -25,7 +25,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Attachments = {
     {
-        PrintName = "Silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_mp7_silen",
         Pos = Vector(-2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -87,14 +87,14 @@ ATT.Category = {"eft_mp7_stock"}
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.83,
         VisualRecoilMult = 0.83,
         ActivateElements = {"eft_mp7_stock_a1unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         CustomizePos = Vector(18, 40, 6),
         CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_mp7_stock_a1folded"}
@@ -124,14 +124,14 @@ ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-17%" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.83,
         VisualRecoilMult = 0.83,
         ActivateElements = {"eft_mp7_stock_a2unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         CustomizePos = Vector(18, 40, 6),
         CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_mp7_stock_a2folded"}
@@ -247,7 +247,7 @@ ATT.RequireElements = {"eft_mp7_a2"}
 ATT.Category = {"eft_custom_slot_mp7"}
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_slot_mp7"},

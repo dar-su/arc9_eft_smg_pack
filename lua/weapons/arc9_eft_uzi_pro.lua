@@ -6,9 +6,9 @@ SWEP.Spawnable = true
 ------------------------- |||           Trivia            ||| -------------------------
 
 SWEP.PrintName = ARC9:GetPhrase("eft_weapon_uzipro")
-SWEP.Description = "eft_weapon_uzipro_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_uzipro_desc")
 
-SWEP.Class = "eft_class_weapon_smg"
+SWEP.Class = ARC9:GetPhrase("eft_class_weapon_smg")
 SWEP.SubCategory = ARC9:GetPhrase("eft_subcat_smg")
 
 SWEP.Trivia = {
@@ -773,7 +773,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("eft_cat_barrel"),
         Category = "eft_uzipro_barrel",
         Bone = "mod_barrel",
         Pos = Vector(0, 0, 0),
@@ -787,7 +787,7 @@ SWEP.Attachments = {
         }
     },
     {
-        PrintName = "Receiver",
+        PrintName = ARC9:GetPhrase("eft_cat_receiver"),
         Category = "eft_uzipro_mount",
         Bone = "mod_reciever",
         Installed = "eft_uzipro_dust",
@@ -796,7 +796,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Ammunition",
+        PrintName = ARC9:GetPhrase("eft_cat_ammo"),
         Category = "eft_ammo_9x19",
         Bone = "mod_magazine",
         Integral = "eft_ammo_9x19_pst_gzh",
@@ -805,7 +805,7 @@ SWEP.Attachments = {
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("eft_cat_magazine"),
         Category = {"eft_uzi_mag_pro"},
         Bone = "mod_magazine",
         Installed = "eft_uzi_mag_20pro",
@@ -814,7 +814,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = "eft_uzipro_stock",
         Bone = "mod_stock",
         Installed = "eft_uzipro_stock_backplate",
@@ -823,7 +823,7 @@ SWEP.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Foregrip",
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
         Category = {"eft_foregrip_small", "eft_uzipro_hg"},
         -- Category = {"eft_foregrip_small", "eft_uzipro_hg2"},
         RejectAttachments = {
@@ -844,7 +844,7 @@ SWEP.Attachments = {
     },  
     
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Category = {"eft_custom_slot", "eft_custom_slot_uzipro"},
         Bone = "mod_stock",
         Pos = Vector(0, -2, -3),

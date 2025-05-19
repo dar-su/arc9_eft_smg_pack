@@ -17,8 +17,8 @@ SWEP.Firemodes = {
 }
 
 
-SWEP.Description = "eft_weapon_mp9n_desc"
+SWEP.Description = ARC9:GetPhrase("eft_weapon_mp9n_desc")
 
 SWEP.DefaultElements = {"eft_mp9n"} -- owo
 
-SWEP.Attachments = {_, { Installed = "eft_mp9_rec_n" }, _, _, _, _, { PrintName = "Foregrip", Category = "eft_mp9_bottom_n", Installed = "eft_mp9_fg" } } -- hack
+SWEP.Attachments = {_, { Installed = "eft_mp9_rec_n" }, _, _, _, _, { PrintName = ARC9:GetPhrase("eft_cat_foregrip"), Category = "eft_mp9_bottom_n", Installed = "eft_mp9_fg" } } -- hack

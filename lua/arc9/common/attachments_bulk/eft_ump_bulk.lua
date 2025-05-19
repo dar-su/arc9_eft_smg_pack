@@ -27,7 +27,7 @@ ATT.Category = {"eft_ump_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_ump_oem"},
         Pos = Vector(0, 7.5, 0),
         Ang = Angle(0, -90, 0),
@@ -62,7 +62,7 @@ ATT.Category = {"eft_ump_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_ump_muzzle"},
         Pos = Vector(0, 7.5, 0),
         Ang = Angle(0, -90, 0),
@@ -92,7 +92,7 @@ ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
 
 ATT.Attachments = {
     {
-        PrintName = "Suppressor",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_omega_silencer",
         Pos = Vector(-0.36, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -197,12 +197,12 @@ ATT.HasStock = true
 ATT.ActivateElements = {"eft_stock_ump_std_unfolded"}
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.66,
         VisualRecoilMult = 0.66,
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         ActivateElements = {"eft_stock_ump_std_folded"}
     },
 }
@@ -256,7 +256,7 @@ ATT.Category = {"eft_ump_bottom"}
 
 ATT.Attachments = {
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, -0.35, 0),
         Ang = Angle(0, 0, 0),
@@ -283,7 +283,7 @@ ATT.Category = {"eft_ump_side"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         Pos = Vector(2, -0.3, 0),
         Ang = Angle(0, 0, -90),

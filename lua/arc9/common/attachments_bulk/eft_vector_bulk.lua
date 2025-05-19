@@ -28,7 +28,7 @@ ATT.ExcludeElements = {"eft_mount_vector_modular"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_vector45_muzzle"},
         Pos = Vector(0, 3.63, 0),
         Ang = Angle(0, -90, 0),
@@ -63,7 +63,7 @@ ATT.Category = {"eft_vector45_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_vector45_muzzle"},
         Pos = Vector(0, 4.55, 0),
         Ang = Angle(0, -90, 0),
@@ -100,7 +100,7 @@ ATT.ExcludeElements = {"eft_mount_vector_modular"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_9mm_muzzle","eft_vector9_muzzle"},
         Pos = Vector(0, 3.40, 0),
         Ang = Angle(0, -90, 0),
@@ -135,7 +135,7 @@ ATT.Category = {"eft_vector9_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_9mm_muzzle","eft_vector9_muzzle"},
         Pos = Vector(0, 4.3, 0),
         Ang = Angle(0, -90, 0),
@@ -222,13 +222,13 @@ ATT.Category = {"eft_vector_stock"}
 ATT.ActivateElements = {"eft_stock_vector_std_unfolded"}
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.78,
         VisualRecoilMult = 0.78,
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         ActivateElements = {"eft_stock_vector_std_folded"}
     },
 }
@@ -258,7 +258,7 @@ ATT.HasStock = true
 
 ATT.Attachments = {
     {
-        PrintName = "Buffer Tube",
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
         Category = {"eft_ar15_buffertube", "eft_vector_stockcaap"},
         Pos = Vector(1.92, -0.76, 0.48),
         Ang = Angle(0, 0, 0),
@@ -307,7 +307,7 @@ ATT.Category = {"eft_vector_bottom"}
 
 ATT.Attachments = {
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
         Category = {"eft_foregrip_small"},
         Pos = Vector(0, -0.35, 0),
         Ang = Angle(0, 0, 0),
@@ -333,14 +333,14 @@ ATT.Category = {"eft_vector_bottom"}
 
 ATT.Attachments = {
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
         Category = {"eft_foregrip_small"},
         Pos = Vector(-0.5, -0.35, 0.3),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
     {
-        PrintName = "R. Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
         Category = "eft_tactical",
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-2.5, 0.95, -1.06),
@@ -348,7 +348,7 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
     {
-        PrintName = "L. Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
         Category = "eft_tactical",
         RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-2.5, -1.62, -1.06),
@@ -377,7 +377,7 @@ ATT.ExcludeElements = {"eft_mount_vector_modular"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         Pos = Vector(2, -0.3, 0),
         Ang = Angle(0, 0, -90),
@@ -501,7 +501,7 @@ ATT.Category = {"eft_custom_slot_vector",}
 
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_slot_vector"},
@@ -533,7 +533,7 @@ ATT.Category = {"eft_custom_slot_vector",}
 
 ATT.Attachments = {
     {
-        PrintName = "Custom slot",
+        PrintName = ARC9:GetPhrase("eft_cat_custom"),
         Pos = Vector(0, 0, 1),
         Ang = Angle(0, 0, 0),
         Category = {"eft_custom_slot", "eft_custom_slot_vector"},

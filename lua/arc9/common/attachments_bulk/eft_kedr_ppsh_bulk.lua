@@ -20,7 +20,7 @@ ATT.VisualRecoilMult = 0.93
 
 ATT.Attachments = {
     {
-        PrintName = "Silencer",
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
         Category = "eft_kedr_silen",
         Pos = Vector(-2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -126,7 +126,7 @@ ATT.Category = {"eft_mount_kedr"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = "eft_optic_small",
         Pos = Vector(-0.1, 0, 0.8),
         Ang = Angle(0, 0, 180),
@@ -134,7 +134,7 @@ ATT.Attachments = {
         ExtraSightDistance = 8,
     },
     {
-        PrintName = "B. Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
         Category = {"eft_tactical_pistol"},
         Pos = Vector(-0.2, 0, -0.7),
         Ang = Angle(0, 0, 0),

@@ -27,14 +27,14 @@ ATT.Category = {"eft_uzi_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzi_3lug"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         -- Category = {}, -- what a weird set of slots bruh
         Category = {"eft_muzzle_uzi", "eft_9mm_muzzle","eft_mp5_muzzle_second", "eft_taccom", "eft_vector9_muzzle"},
         Pos = Vector(-4.6, 0, 0),
@@ -72,7 +72,7 @@ ATT.Category = {"eft_uzi_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzi", "eft_sup_uzi"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -110,7 +110,7 @@ ATT.Category = {"eft_uzi_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzi"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -148,14 +148,14 @@ ATT.ExcludeElements = {"eft_uzipro_hgrail"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzipro"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         -- Category = {}, -- what a weird set of slots bruh
         Category = {"eft_muzzle_uzipro", "eft_9mm_muzzle", "eft_taccom", "eft_vector9_muzzle"},
         Pos = Vector(-4.02, 0, 0),
@@ -192,7 +192,7 @@ ATT.Category = {"eft_uzipro_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzipro"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -229,7 +229,7 @@ ATT.Category = {"eft_uzipro_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzipro"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -268,7 +268,7 @@ ATT.Category = {"eft_uzipro_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzipro"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -307,7 +307,7 @@ ATT.Category = {"eft_uzipro_barrel"}
 
 ATT.Attachments = {
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
         Category = {"eft_nut_uzipro"},
         Pos = Vector(-3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -527,14 +527,14 @@ ATT.CustomPros = { Ergonomics = "+5", ["Recoil while extended"] = "-21%" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Extended",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.79,
         VisualRecoilMult = 0.79,
         ActivateElements = {"eft_uzi_stock_t5_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Collapsed",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_uzi_stock_t5_folded"}
@@ -567,14 +567,14 @@ ATT.CustomPros = { Ergonomics = "+7", ["Recoil while extended"] = "-20%" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.8,
         VisualRecoilMult = 0.8,
         ActivateElements = {"eft_uzi_stock_t6_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_uzi_stock_t6_folded"}
@@ -632,7 +632,7 @@ ATT.Category = {"eft_uzi_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_mcx_stock"},
         Pos = Vector(0.69, 0, -0.15),
         Ang = Angle(0, 0, 0),
@@ -662,7 +662,7 @@ ATT.Category = {"eft_uzipro_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_mcx_stock"},
         Pos = Vector(1.0, 0, 0.05),
         Ang = Angle(0, 0, 0),
@@ -689,7 +689,7 @@ ATT.Category = {"eft_uzipro_stock"}
 
 ATT.Attachments = {
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
         Category = {"eft_mcx_stock"},
         Pos = Vector(0.69, 0, 0.175),
         Ang = Angle(0, 0, 0),
@@ -718,14 +718,14 @@ ATT.CustomPros = { Ergonomics = "+6", ["Recoil while extended"] = "-13%" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.87,
         VisualRecoilMult = 0.87,
         ActivateElements = {"eft_uzipro_stock_brace_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_uzipro_stock_brace_folded"}
@@ -758,14 +758,14 @@ ATT.CustomPros = { Ergonomics = "+8", ["Recoil while extended"] = "-15%" }
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.85,
         VisualRecoilMult = 0.85,
         ActivateElements = {"eft_uzipro_stock_sbr_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_uzipro_stock_sbr_folded"}
@@ -797,13 +797,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_uzi_pro_a3_tactical_modula
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.88,
         VisualRecoilMult = 0.88,
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         EFTFoldStock = true
     },
 }
@@ -890,14 +890,14 @@ ATT.ExcludeElements = {"eft_uzi_hg2_werkz"}
 
 ATT.Attachments = {
     {
-        PrintName = "L Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
         Category = "eft_uzi_mount_side",
         Pos = Vector(-1.75, -0.92, -0.47),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Rail",
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
         Category = "eft_uzi_mount_side",
         Pos = Vector(-1.75, 0.92, -0.47),
         Ang = Angle(180, 180, 0),
@@ -964,14 +964,14 @@ ATT.Category = {"eft_uzipro_hg"}
 
 ATT.Attachments = {
     {
-        PrintName = "M-LOK L",
+        PrintName = ARC9:GetPhrase("eft_cat_mlok_l"),
         Category = {"eft_mount_mlok_micro"},
         Pos = Vector(-0.7, -0.66, -0.6),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "M-LOK R",
+        PrintName = ARC9:GetPhrase("eft_cat_mlok_r"),
         Category = {"eft_mount_mlok_micro"},
         Pos = Vector(-0.7, 0.66, -0.6),
         Ang = Angle(180, 180, 0),
@@ -1004,7 +1004,7 @@ ATT.ExcludeElements = {"eft_uzi_hg_k", "eft_uzi_hg_fg"}
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical_pistol",
         Pos = Vector(0, 0.25, -0.7),
         Ang = Angle(0, -90, 0),
@@ -1035,7 +1035,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/mount_uzi.mdl"
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = {"eft_tactical", "eft_tactical_top", "eft_tactical_top_big"},
         Pos = Vector(0, -0.4, 0),
         Ang = Angle(0, 0, -90),
@@ -1061,7 +1061,7 @@ ATT.Category = {"eft_uzi_mount"}
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large_nosniper", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(-1.5, 0, -0.68),
         Ang = Angle(0, 0, 0),
@@ -1092,7 +1092,7 @@ ATT.HasReciever = true
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large_nosniper", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(3, 0, -0.63),
         Ang = Angle(0, 0, 0),
@@ -1122,14 +1122,14 @@ ATT.ExcludeElements = {"eft_uzipro_barrel_114pike"}
 
 ATT.Attachments = {
     {
-        PrintName = "L Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.8, -0.95, -0.35),
         Ang = Angle(0, 0, -90),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "R Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
         Category = {"eft_tactical", "eft_tactical_top"},
         Pos = Vector(-1.8, 0.95, -0.35),
         Ang = Angle(0, 0, 90),
@@ -1411,7 +1411,7 @@ ATT.Category = {"eft_uzipro_hg"}
 
 ATT.Attachments = {
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = "eft_uzipro_hg2",
         Pos = Vector(0, 0, -1),
         Ang = Angle(0, 0, 0),

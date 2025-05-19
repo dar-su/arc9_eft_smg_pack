@@ -75,14 +75,14 @@ ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
-        PrintName = "R Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
         Category = "eft_sr2m_rail",
         Pos = Vector(0.75, 0.0, 0.4),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
         Category = "eft_sr2m_rail",
         Pos = Vector(-0.75, 0.0, 0.4),
         Ang = Angle(0, -90, 0),
@@ -134,14 +134,14 @@ ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
-        PrintName = "R Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_r"),
         Category = "eft_sr2m_rail",
         Pos = Vector(0.75, 0.0, 0.4),
         Ang = Angle(180, 90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
     {
-        PrintName = "L Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_l"),
         Category = "eft_sr2m_rail",
         Pos = Vector(-0.75, 0.0, 0.4),
         Ang = Angle(0, -90, 0),
@@ -192,7 +192,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         -- RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-0.4, -0.36, 0),
@@ -221,7 +221,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.Attachments = {
     {
-        PrintName = "Tactical",
+        PrintName = ARC9:GetPhrase("eft_cat_tactical"),
         Category = "eft_tactical",
         -- RejectAttachments = { ["eft_tactical_raptar"] = true },
         Pos = Vector(-0.3, -0.32, 0),
@@ -250,7 +250,7 @@ ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
-        PrintName = "Mount",
+        PrintName = ARC9:GetPhrase("eft_cat_mount"),
         Category = {"eft_sr2m_mount"},
         Pos = Vector(2.1+0.52, 0, -0.3+0.1),
         Ang = Angle(0, 0, 0),
@@ -278,7 +278,7 @@ ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("eft_cat_scope"),
         Category = {"eft_optic_large_nosniper", "eft_optic_medium", "eft_optic_small"},
         Pos = Vector(-0.4, 0, -0.4),
         Ang = Angle(0, 0, 0),
@@ -327,7 +327,7 @@ ATT.HoloSightColorable = false
 
 ATT.Attachments = {
     {
-        PrintName = "Shade",
+        PrintName = ARC9:GetPhrase("eft_cat_aux"),
         Category = {"eft_sr2m_optic_aux"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -376,14 +376,14 @@ ATT.Category = {"eft_sr2m_stock"}
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.73,
         VisualRecoilMult = 0.73,
         ActivateElements = {"eft_sr2m_stock_std_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_sr2m_stock_std_folded"}
@@ -411,14 +411,14 @@ ATT.Category = {"eft_sr2m_stock"}
 
 ATT.ToggleStats = {
     {
-        PrintName = "Unfolded",
+        PrintName = "eft_toggle_unfolded",
         RecoilMult = 0.73,
         VisualRecoilMult = 0.73,
         ActivateElements = {"eft_sr2m_stock_mp_unfolded"},
         HasStock = true
     },
     {
-        PrintName = "Folded",
+        PrintName = "eft_toggle_folded",
         -- CustomizePos = Vector(18, 25, 6),
         -- CustomizeRotateAnchor = Vector(18, -4.28, -5.23),
         ActivateElements = {"eft_sr2m_stock_mp_folded"}
