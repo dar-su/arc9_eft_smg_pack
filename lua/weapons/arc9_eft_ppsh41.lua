@@ -341,7 +341,6 @@ local rst_magcheck1 = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 1000, -- reset when done soundstables!!!!!!!!
     },
     ["idle_empty"] = {
         Source = "idle_empty",

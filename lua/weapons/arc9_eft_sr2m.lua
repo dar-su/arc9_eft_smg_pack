@@ -359,7 +359,9 @@ SWEP.Animations = {
         Source = "idle",
         RareSource = {"tooidle0", "tooidle1", "tooidle2"},
         RareSourceChance = 0.0001,
-        -- Time = 1000, -- reset when done soundstables!!!!!!!!
+    },
+    ["idle_sights"] = {
+        Source = "idle",
     },
 
     ["ready"] = {

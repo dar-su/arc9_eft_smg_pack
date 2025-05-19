@@ -464,7 +464,6 @@ local rik_emptydrum = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 1000, -- reset when done soundstables!!!!!!!!
     },
 
     ["ready"] = {
