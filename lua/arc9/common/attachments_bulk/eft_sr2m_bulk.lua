@@ -506,7 +506,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm 7U4"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_7u4.printname")
 
 ATT.DamageMax = 47 * mult9
 ATT.DamageMin = 37 * mult9
@@ -583,7 +583,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm 7N42 \"Zubilo\""
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_7n42.printname")
 
 ATT.DamageMax = 45 * mult9
 ATT.DamageMin = 36 * mult9
@@ -660,7 +660,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm BT gzh"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_bt.printname")
 
 ATT.DamageMax = 49 * mult9
 ATT.DamageMin = 37 * mult9
@@ -737,7 +737,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm PS gzh"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_ps.printname")
 
 ATT.DamageMax = 54 * mult9
 ATT.DamageMin = 28.75 * mult9
@@ -814,7 +814,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm P gzh"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_p.printname")
 
 ATT.DamageMax = 65 * mult9
 ATT.DamageMin = 42.45 * mult9
@@ -891,7 +891,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "9x21mm PE gzh"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_9x21_pe.printname")
 
 ATT.DamageMax = 80 * mult9
 ATT.DamageMin = 50.26 * mult9

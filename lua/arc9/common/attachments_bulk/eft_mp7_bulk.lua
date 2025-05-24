@@ -276,7 +276,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "4.6x30mm Action SX"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_4630_actionsx.printname")
 
 ATT.DamageMax = 65 * mult9
 ATT.DamageMin = 40.77 * mult9
@@ -354,7 +354,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "4.6x30mm Subsonic SX"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_4630_subsonicsx.printname")
 
 ATT.DamageMax = 45 * mult9
 ATT.DamageMin = 38.64 * mult9
@@ -430,7 +430,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "4.6x30mm JSP SX"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_4630_jsp.printname")
 
 ATT.DamageMax = 46 * mult9
 ATT.DamageMin = 38.64 * mult9
@@ -506,7 +506,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "4.6x30mm FMJ SX"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_4630_fmjsx.printname")
 
 ATT.DamageMax = 43 * mult9
 ATT.DamageMin = 28.54 * mult9
@@ -584,7 +584,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasAmmoooooooo = true 
 
-ATT.EFTRoundName = "4.6x30mm FMJ SX"
+ATT.EFTRoundName = ARC9:GetPhrase("eft_ammo_4630_apsx.printname")
 
 ATT.DamageMax = 35 * mult9
 ATT.DamageMin = 21.22 * mult9

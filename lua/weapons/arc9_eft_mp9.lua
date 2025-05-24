@@ -223,6 +223,7 @@ SWEP.BulletBones = {
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true 
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -277,6 +278,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then swep:SetClip1(1) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -349,6 +354,34 @@ local rst_def23 = {
     { s =  path .. "fiveseven_mag_rattle.ogg", t = 2.05 },
     { s =  path .. "fiveseven_mag_in.ogg", t = 2.18 },
     { s = randspin, t = 2.57},
+}
+
+local rst_def01t = {
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.16 - 4/26},
+    { s =  path .. "mp7_mag_button.ogg", t = 0.36 - 4/26 },
+    { s =  path .. "fiveseven_mag_out.ogg", t = 0.4 - 4/26 },
+    { s = pouchout, t = 0.8 - 4/26 },
+    { s = randspin, t = 0.9 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 1.25 - 4/26 },
+    { s =  path .. "fiveseven_mag_in.ogg", t = 1.42 - 4/26 },
+    { s = randspin, t = 1.76 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.1}
+}
+
+local rst_def23t = {
+    { s = "arc9_eft_shared/weap_handoff.ogg", t = 0.16 - 4/26},
+    { s =  path .. "mp7_mag_button.ogg", t = 0.36 - 4/26 },
+    { s =  path .. "fiveseven_mag_out.ogg", t = 0.4 - 4/26 },
+    { s = randspin, t = 1.09 - 4/26 },
+    { s = pouchout, t = 1.1 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 1.43 - 4/26 },
+    { s =  path .. "fiveseven_mag_in.ogg", t = 1.56 - 4/26 },
+    { s = randspin, t = 1.97 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.5},
+    {hide = 0, t = 1.1}
 }
 
 local rst_empty01 = {
@@ -529,6 +562,37 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def23,
+        IKTimeLine = rik_def
+    },
+
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_def01t,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        EventTable = rst_def01t,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical2"] = {
+        Source = "reload2t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = rst_def23t,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical3"] = {
+        Source = "reload3t",
+        MinProgress = 0.85,
+        FireASAP = true,
+        DropMagAt = 0.5,
+        EventTable = rst_def23t,
         IKTimeLine = rik_def
     },
 

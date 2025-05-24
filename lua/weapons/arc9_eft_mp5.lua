@@ -75,6 +75,9 @@ SWEP.Firemodes = {
 
 SWEP.Slot = 2
 
+SWEP.ChamberSize = 0 -- no mag
+SWEP.ClipSize = 0 -- actual chamber (no mag)
+
 ------------------------- |||           Recoil            ||| -------------------------
 
 SWEP.Recoil = 0.5 -- general multiplier of main recoil
