@@ -287,6 +287,8 @@ SWEP.BulletBones = {
     [4] = "patron_in_mag2",
 }
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
     if !IsFirstTimePredicted() then return end
@@ -315,7 +317,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(!!swep:GetValue("EFTImprovedMagCheck")) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -330,7 +332,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -346,6 +348,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
 
     if anim == "reload" or anim == "reload_empty" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. ending
+        end
         return anim .. ending
     end
 
@@ -454,6 +460,19 @@ local rst_empty = {
     {hide = 0, t = 1}
 }
 
+local rst_tac = {
+    { s = randspin, t = 0.1 - 4/26 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.35 - 4/26 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 - 4/26 },
+    { s = randspin, t = 0.7 - 4/26 },
+    { s = pouchout, t = 0.89 - 4/26 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 - 4/26 },
+    { s = randspin, t = 2.12 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6- 4/26},
+    {hide = 0, t = 1- 4/26}
+}
+
 
 
 local rst_drum_empty = {
@@ -470,6 +489,19 @@ local rst_drum_empty = {
     {hide = 0, t = 0},
     {hide = 1, t = 0.6},
     {hide = 0, t = 1}
+}
+
+local rst_drum_tac = {
+    { s = randspin, t = 0.1 - 4/26 },
+    { s = path .. "ak74_magrelease_button.ogg", t = 0.35 - 4/26 },
+    { s = path .. "mpx_weap_magout_plastic.ogg", t = 0.41 - 4/26 },
+    { s = randspin, t = 0.7 - 4/26 },
+    { s = pouchout, t = 0.89 - 4/26 },
+    { s = path .. "mpx_weap_magin_plastic.ogg", t = 1.69 - 0.35 + 5/26 - 4/26 },
+    { s = randspin, t = 2.12 + 5/26 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.6- 4/26},
+    {hide = 0, t = 1- 4/26}
 }
 
 local rst_magcheck = {
@@ -625,6 +657,16 @@ SWEP.Animations = {
             { s = randspin, t = 2.66 }
         },
     },
+    ["reload_tactical9mmmag"] = {
+        Source = "reload0t",
+        RefillProgress = 0.775,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        IKTimeLine = rik_def,
+        EventTable = rst_tac,
+        DropMagAt = 0.6- 4/26,
+    },
     ["reload_empty9mmmag"] = {
         Source = {"reload0_empty0", "reload0_empty1"},
         RefillProgress = 0.825,
@@ -714,6 +756,16 @@ SWEP.Animations = {
             { s = randspin, t = 2.66 + 10/26 }
         },
         DropMagAt = 0.6,
+    },
+    ["reload_tacticaldrum"] = {
+        Source = "reload1t",
+        RefillProgress = 0.775,
+        PeekProgress = 0.95,
+        MinProgress = 0.975,
+        FireASAP = true,
+        IKTimeLine = rik_def,
+        EventTable = rst_drum_tac,
+        DropMagAt = 0.6- 4/26,
     },
     ["reload_emptydrum"] = {
         Source = {"reload1_empty0", "reload1_empty1"},

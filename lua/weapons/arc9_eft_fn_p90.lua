@@ -235,6 +235,8 @@ SWEP.BulletBones = {
     [1] = "patron_in_weapon",
 }
 
+SWEP.EFT_HasTacReloads = true 
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
@@ -268,7 +270,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             swep.EFTInspectnum = 1
         end
 
-        if rand == 2 and ARC9EFTBASE and SERVER then
+        if rand == 2 and SERVER then
             net.Start("arc9eftmagcheck")
             net.WriteBool(true) -- accurate or not based on mag type
             net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -279,14 +281,19 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending
     end
     
-    if nomag then -- reload
-        return anim .. "_single"
-    end    
-    
+    if (anim == "reload" or anim == "reload_empty") and nomag then
+        return "reload_single"
+    end
+
+    if anim == "reload" and swep.EFT_StartedTacReload and !empty then
+        if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+        return "reload_tactical"
+    end
+
     if anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 0, 4.99))
 
-        if ARC9EFTBASE and SERVER then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -349,7 +356,7 @@ SWEP.Animations = {
         Source = "fire_dry",
     },
 
-    ["reload_empty_single"] = {
+    ["reload_single"] = {
         Source = "reload_single",
         RefillProgress = 0.825,
         PeekProgress = 0.95,
@@ -381,6 +388,27 @@ SWEP.Animations = {
             { s = path .. "p90_mag_in_01_slide.ogg", t = 56/28 },
             { s = path .. "p90_mag_in_02_down.ogg", t = 63/28 },
             { s = randspin, t = 75/28 },
+        }
+    },
+    ["reload_tactical"] = {
+        Source = "reloadt",
+        RefillProgress = 0.825,
+        PeekProgress = 0.975,
+        MinProgress = 0.975,
+        FireASAP = true,
+        MagSwapTime = 42/28,
+        DropMagAt = 1.05- 4/28,
+        EventTable = {
+            { s = randspin, t = 6/28 - 4/28 },
+            { s = path .. "p90_mag_out.ogg", t = 14/28 - 4/28 },
+            { s = "arc9_eft_shared/fiveseven_mag_rattle3.ogg", t = 23/28 - 4/28 },
+            { s = "arc9_eft_shared/weap_magin_sbrosnik.ogg", t = 34/28 - 4/28 },
+            { s = path .. "p90_mag_in_01_slide.ogg", t = 48/28 - 4/28 },
+            { s = path .. "p90_mag_in_02_down.ogg", t = 54/28 - 4/28 },
+            { s = randspin, t = 65/28 - 4/28 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.05- 4/28},
+            {hide = 0, t = 1.3- 4/28}
         }
     },
     ["reload_empty"] = {

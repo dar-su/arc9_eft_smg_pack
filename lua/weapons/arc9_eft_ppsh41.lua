@@ -219,6 +219,7 @@ SWEP.BulletBones = {
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -252,7 +253,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -265,6 +266,13 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         
         return anim .. ending .. (empty and "_empty" or "")
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(0) end end) end
+            return "reload_tactical" .. ending
+        end
+        
+        if swep:GetEFTArmedDryfire() and swep:Clip1() == 0 then return "reload_tactical" .. ending end
+
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -278,7 +286,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     --     -- local rand = swep.EFTInspectnum
     --     -- if rand == 5 then swep.EFTInspectnum = 1 rand = 1 end
 
-    --     if SERVER and ARC9EFTBASE then
+    --     if SERVER then
     --         net.Start("arc9eftjam")
     --         net.WriteUInt(rand, 3)
     --         net.Send(swep:GetOwner())
@@ -437,6 +445,48 @@ SWEP.Animations = {
             { s =  path .. "ppsh_mag_box_in.ogg", t = 1.86 },
             { s = randspin, t = 2.15 },
             { s = randspin, t = 2.45 },
+        },
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.92,
+        FireASAP = true,
+        DropMagAt = 1.15,
+        EventTable = {
+            { s = randspin, t = 0 },
+            { s =  path .. "ppsh_magrelease_button.ogg", t = 0.5  - 4/28},
+            { s = randspin, t = 0.57 - 4/28 },
+            { s =  path .. "ppsh_mag_out.ogg", t = 0.78  - 4/28},
+            { s =  path .. "ppsh_mag_pullout1.ogg", t = 0.97 - 4/28 },
+            { s = randspin, t = 1.09 - 4/28 },
+            { s = pouchout, t = 1.34 - 4/28 },
+            { s =  path .. "ppsh_mag_in.ogg", t = 1.92  - 4/28},
+            { s = randspin, t = 2.22 - 4/28 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.15},
+            {hide = 0, t = 1.5}
+        },
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.92,
+        FireASAP = true,
+        DropMagAt = 1.1,
+        EventTable = {
+            { s = randspin, t = 0 },
+            { s =  path .. "ppsh_magrelease_button.ogg", t = 0.5 - 4/28 },
+            { s = randspin, t = 0.57 - 4/28 },
+            { s =  path .. "ppsh_mag_box_out.ogg", t = 0.78  - 4/28},
+            { s =  path .. "ppsh_mag_pullout3.ogg", t = 0.97 - 4/28 },
+            { s = randspin, t = 1.09 - 4/28 },
+            { s = pouchout, t = 1.34 - 4/28 },
+            { s =  path .. "ppsh_mag_box_in.ogg", t = 1.73 - 4/28 },
+            { s = randspin, t = 2.0 - 4/28 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.1},
+            {hide = 0, t = 1.5}
         },
     },
 

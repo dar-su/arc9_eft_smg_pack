@@ -240,6 +240,8 @@ SWEP.BulletBones = {
 
 SWEP.SuppressEmptySuffix = true
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
@@ -276,7 +278,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -290,6 +292,13 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending .. (empty and "_empty" or "")
         -- return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(0) end end) end
+            return "reload_tactical" .. ending
+        end
+        
+        if swep:GetEFTArmedDryfire() and swep:Clip1() == 0 then return "reload_tactical" .. ending end
+
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -297,7 +306,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- rand = 4
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -473,6 +482,82 @@ local rst_empty5 = {
     {hide = 0, t = 1.41}
 }
 
+local rst_tac0 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.05 - 4/26 },
+    { s =  path .. "mp7_mag_button.ogg", t = 0.45 - 4/26 },
+    { s =  path .. "uzip_mag_out.ogg", t = 0.61 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 0.87 - 4/26 },
+    { s = randspin, t = 1.09  - 4/26},
+    { s = randspin, t = 1.3  - 4/26},
+    { s = pouchout, t = 1.25 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.69 - 0.1  - 4/26},
+    { s =  path .. "uzip_mag_in.ogg", t = 2.0 - 0.1 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.25 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 1.0- 4/26},
+    {hide = 0, t = 1.3- 4/26}
+}
+local rst_tac1 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.05 - 4/26 },
+    { s =  path .. "mp7_mag_button.ogg", t = 0.45 - 4/26 },
+    { s =  path .. "uzip_mag_out.ogg", t = 0.61 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 0.87 - 4/26 },
+    { s = randspin, t = 1.09 - 4/26 },
+    { s = randspin, t = 1.3 - 4/26 },
+    { s = pouchout, t = 1.25 + 0.07 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.69 - 0.1 + 0.07 - 4/26 },
+    { s =  path .. "uzip_mag_in.ogg", t = 2.0 - 0.1 + 0.07 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.25 + 0.07 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 1.0- 4/26},
+    {hide = 0, t = 1.32- 4/26}
+}
+local rst_tac3 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.05 - 4/26 },
+    { s =  path .. "mp7_mag_button.ogg", t = 0.45 - 4/26 },
+    { s =  path .. "uzip_mag_out.ogg", t = 0.61  - 4/26},
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 0.87  - 4/26},
+    { s = randspin, t = 1.09 - 4/26 },
+    { s = randspin, t = 1.3 - 4/26 },
+    { s = pouchout, t = 1.25 + 0.13 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.69 - 0.1 + 0.15 - 4/26 },
+    { s =  path .. "uzip_mag_in.ogg", t = 2.0 - 0.1 + 0.15 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.25 + 0.15 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 1.0- 4/26},
+    {hide = 0, t = 1.38- 4/26}
+}
+local rst_tac4 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.05 - 4/26 },
+    { s =  path .. "mp7_mag_button.ogg", t = 0.45  - 4/26},
+    { s =  path .. "uzip_mag_out.ogg", t = 0.61 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 0.87 - 4/26 },
+    { s = randspin, t = 1.09  - 4/26},
+    { s = randspin, t = 1.3  - 4/26},
+    { s = pouchout, t = 1.25 + 0.16 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.69 - 0.1 + 0.19  - 4/26},
+    { s =  path .. "uzip_mag_in.ogg", t = 2.0 - 0.1 + 0.19 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.25 + 0.19 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 1.0- 4/26},
+    {hide = 0, t = 1.41- 4/26}
+}
+local rst_tac5 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.05  - 4/26},
+    { s =  path .. "mp7_mag_button.ogg", t = 0.45  - 4/26},
+    { s =  path .. "uzip_mag_out.ogg", t = 0.61 - 4/26 },
+    { s =  path .. "fiveseven_mag_rattle.ogg", t = 0.87 - 4/26 },
+    { s = randspin, t = 1.09  - 4/26},
+    { s = randspin, t = 1.3 - 4/26 },
+    { s = pouchout, t = 1.25 + 0.16+0.1 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.69 - 0.1 + 0.19+0.2 - 4/26 },
+    { s =  path .. "uzip_mag_in.ogg", t = 2.0 - 0.1 + 0.19+0.2 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.25 + 0.19+0.2 - 4/26 },
+    {hide = 0, t = 0},
+    {hide = 1, t = 1.0- 4/26},
+    {hide = 0, t = 1.41- 4/26}
+}
+
 local rst_magcheck = {
     { s =  path .. "sr2m_hand_out.ogg", t = 0.05 },
     { s =  path .. "mp7_mag_button.ogg", t = 0.4 },
@@ -630,6 +715,56 @@ SWEP.Animations = {
         MagSwapTime = 1.8,
         FireASAP = true,
         EventTable = rst_def5,
+        IKTimeLine = rik_def
+    },
+
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        EventTable = rst_tac0,
+        DropMagAt = 1.0- 4/26,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        EventTable = rst_tac0,
+        DropMagAt = 1.0- 4/26,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical2"] = {
+        Source = "reload2t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        EventTable = rst_tac3,
+        DropMagAt = 1.0- 4/26,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical3"] = {
+        Source = "reload3t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        EventTable = rst_tac3,
+        DropMagAt = 1.0- 4/26,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical4"] = {
+        Source = "reload4t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        EventTable = rst_tac4,
+        DropMagAt = 1.0- 4/26,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical5"] = {
+        Source = "reload5t",
+        MinProgress = 0.9,
+        MagSwapTime = 1.8,
+        FireASAP = true,
+        EventTable = rst_tac5,
+        DropMagAt = 1.0- 4/26,
         IKTimeLine = rik_def
     },
 

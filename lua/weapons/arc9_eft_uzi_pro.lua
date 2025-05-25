@@ -258,6 +258,8 @@ SWEP.BulletBones = {
 
 SWEP.SuppressEmptySuffix = true
 
+SWEP.EFT_HasTacReloads = true
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
 
@@ -292,7 +294,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -306,6 +308,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return anim .. ending
     elseif anim == "reload" then
         if ending == 2 then ending = 1 end -- meow
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -313,7 +319,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
         -- rand = 4
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -402,6 +408,21 @@ local rst_empty02 = {
     {hide = 0, t = 0},
     {hide = 1, t = 0.62},
     {hide = 0, t = 1.1}
+}
+
+local rst_tac01 = {
+    { s =  path .. "sr2m_hand_out.ogg", t = 0.02  - 4/26},
+    { s =  path .. "mp7_mag_button.ogg", t = 0.33 - 4/26 },
+    { s =  path .. "uzip_mag_out.ogg", t = 0.42  - 4/26},
+    { s = randspin, t = 1.14 - 4/26 },
+    { s = pouchout, t = 1.1 - 4/26 },
+    { s =  path .. "uzip_mag_fail.ogg", t = 1.47 - 0.1 - 4/26 },
+    { s =  path .. "uzip_mag_in.ogg", t = 1.54 - 0.1 - 4/26 },
+    { s =  path .. "sr2m_flip_01.ogg", t = 2.0 - 4/26 },
+    { s = randspin, t = 2.1  - 4/26},
+    {hide = 0, t = 0},
+    {hide = 1, t = 0.62- 4/26},
+    {hide = 0, t = 1.1- 4/26}
 }
 
 local rst_magcheck = {
@@ -518,6 +539,22 @@ SWEP.Animations = {
         MinProgress = 0.9,
         FireASAP = true,
         EventTable = rst_def,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        DropMagAt = 0.62- 4/26,
+        EventTable = rst_tac01,
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.9,
+        FireASAP = true,
+        DropMagAt = 0.62- 4/26,
+        EventTable = rst_tac01,
         IKTimeLine = rik_def
     },
 

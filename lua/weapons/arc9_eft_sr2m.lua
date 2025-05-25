@@ -224,6 +224,7 @@ SWEP.BulletBones = {
 }
 
 SWEP.SuppressEmptySuffix = true
+SWEP.EFT_HasTacReloads = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     local elements = swep:GetElements()
@@ -256,7 +257,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         if rand == 2 and !nomag then -- mag
             ending = "_mag_" .. ending
             
-            if ARC9EFTBASE and SERVER then
+            if SERVER then
                 net.Start("arc9eftmagcheck")
                 net.WriteBool(false) -- accurate or not based on mag type
                 net.WriteUInt(math.min(swep:Clip1(), swep:GetCapacity()), 9)
@@ -271,6 +272,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         
         return anim .. ending
     elseif anim == "reload" then
+        if swep.EFT_StartedTacReload and !empty then
+            if SERVER then timer.Simple(0.3, function() if IsValid(swep) then swep:SetClip1(1) end end) end
+            return "reload_tactical" .. ending
+        end
         return anim .. (empty and "_empty" or "") .. ending
     end
 
@@ -284,7 +289,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         -- local rand = swep.EFTInspectnum
         -- if rand == 5 then swep.EFTInspectnum = 1 rand = 1 end
 
-        if SERVER and ARC9EFTBASE then
+        if SERVER then
             net.Start("arc9eftjam")
             net.WriteUInt(rand, 3)
             net.Send(swep:GetOwner())
@@ -470,6 +475,52 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 0.9},
             {hide = 0, t = 1.5+0.1}
+        },
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical0"] = {
+        Source = "reload0t",
+        MinProgress = 0.92,
+        FireASAP = true,
+        DropMagAt = 0.74- 4/25,
+        EventTable = {
+            { s =  path .. "sr2m_hand_out.ogg", t = 0.06 - 4/25 },
+            { s =  path .. "sr2m_flip_02.ogg", t = 0.07  - 4/25},
+            { s =  path .. "sr2m_flip_01.ogg", t = 0.3 - 4/25 },
+            { s =  path .. "kedr_magrelease_button.wav", t = 0.32  - 4/25},
+            { s =  path .. "sr2m_mag_out.ogg", t = 0.36  - 4/25},
+            { s =  path .. "sr2m_flip_02.ogg", t = 0.67  - 4/25},
+            { s = pouchout, t = 0.64  - 4/25},
+            { s = randspin, t = 1.12  - 4/25},
+            { s =  path .. "sr2m_mag_in_rattle.ogg", t = 1.34-0.1 - 4/25 },
+            { s =  path .. "sr2m_mag_in.ogg", t = 1.62-0.15 - 4/25 },
+            { s =  path .. "sr2m_flip_01.ogg", t = 2.22 - 4/25 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.74- 4/25},
+            {hide = 0, t = 0.93- 4/25}
+        },
+        IKTimeLine = rik_def
+    },
+    ["reload_tactical1"] = {
+        Source = "reload1t",
+        MinProgress = 0.92,
+        FireASAP = true,
+        DropMagAt = 0.74- 4/25,
+        EventTable = {
+            { s =  path .. "sr2m_hand_out.ogg", t = 0.06  - 4/25},
+            { s =  path .. "sr2m_flip_02.ogg", t = 0.07  - 4/25},
+            { s =  path .. "sr2m_flip_01.ogg", t = 0.3  - 4/25},
+            { s =  path .. "kedr_magrelease_button.wav", t = 0.32 - 4/25 },
+            { s =  path .. "sr2m_mag_out.ogg", t = 0.36 - 4/25 },
+            { s =  path .. "sr2m_flip_02.ogg", t = 0.67  - 4/25},
+            { s = pouchout, t = 0.64 - 4/25 },
+            { s = randspin, t = 1.12+0.04  - 4/25},
+            { s =  path .. "sr2m_mag_in_rattle.ogg", t = 1.34+0.04-0.1 - 4/25 },
+            { s =  path .. "sr2m_mag_in.ogg", t = 1.72+0.04-0.15 - 4/25 },
+            { s =  path .. "sr2m_flip_01.ogg", t = 2.22+0.04 - 4/25 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.74- 4/25},
+            {hide = 0, t = 0.9- 4/25}
         },
         IKTimeLine = rik_def
     },
