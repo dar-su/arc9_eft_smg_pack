@@ -567,7 +567,6 @@ SWEP.Animations = {
 
     ["reload_tactical0"] = {
         Source = "reload0t",
-        EventTableOffsetMP = -0.15,
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def01t,
@@ -575,7 +574,6 @@ SWEP.Animations = {
     },
     ["reload_tactical1"] = {
         Source = "reload1t",
-        EventTableOffsetMP = -0.15,
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = rst_def01t,
@@ -583,7 +581,6 @@ SWEP.Animations = {
     },
     ["reload_tactical2"] = {
         Source = "reload2t",
-        EventTableOffsetMP = -0.15,
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.5,
@@ -592,7 +589,6 @@ SWEP.Animations = {
     },
     ["reload_tactical3"] = {
         Source = "reload3t",
-        EventTableOffsetMP = -0.15,
         MinProgress = 0.85,
         FireASAP = true,
         DropMagAt = 0.5,
@@ -747,9 +743,6 @@ SWEP.Animations = {
 
     ["inspect"] = { -- TO STUPID ARK NINE SEE WE HAVE INSPECT
         Source = "idle",
-    },
-    ["inspect_empty"] = { -- TO STUPID ARK NINE SEE WE HAVE INSPECT
-        Source = "idle_empty",
     },
 
     ["inspect1"] = {
