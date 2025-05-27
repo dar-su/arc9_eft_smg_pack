@@ -480,13 +480,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
         }
     },
     ["dryfire"] = {
         Source = "fire_dry",
         EventTable = {
-            { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
+            { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 },
         }
     },
 

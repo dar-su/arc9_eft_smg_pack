@@ -600,7 +600,7 @@ SWEP.Animations = {
     },
 
 
-    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = "arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
+    ["dryfire"] = { Source = "fire_dry", EventTable = { { s = ")arc9_eft_shared/weap_trigger_hammer.wav", t = 0 }, } },
 
     ["reload"] = {
         Source = "reload_single",
