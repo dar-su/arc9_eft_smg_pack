@@ -212,25 +212,25 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/uzi/"
-local pathpro = "weapons/darsu_eft/uzipro/"
+local path = ")weapons/darsu_eft/uzi/"
+local pathpro = ")weapons/darsu_eft/uzipro/"
 
-SWEP.ShootSound = { pathpro .. "fire_new/uzip_outdoor_close_loop1.ogg", pathpro .. "fire_new/uzip_outdoor_close_loop2.ogg", pathpro .. "fire_new/uzip_outdoor_close_loop3.ogg", pathpro .. "fire_new/uzip_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = pathpro .. "fire_new/uzip_outdoor_close_tail.ogg"
+SWEP.ShootSound = { pathpro .. "fire_new/uzip_outdoor_close_loop1.wav", pathpro .. "fire_new/uzip_outdoor_close_loop2.wav", pathpro .. "fire_new/uzip_outdoor_close_loop3.wav", pathpro .. "fire_new/uzip_outdoor_close_loop4.wav" }
+SWEP.LayerSound = pathpro .. "fire_new/uzip_outdoor_close_tail.wav"
 
-SWEP.ShootSoundSilenced = { pathpro .. "fire_new/uzip_outdoor_silenced_close_loop1.ogg", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop2.ogg", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop3.ogg", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilenced = pathpro .. "fire_new/uzip_outdoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilenced = { pathpro .. "fire_new/uzip_outdoor_silenced_close_loop1.wav", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop2.wav", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop3.wav", pathpro .. "fire_new/uzip_outdoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilenced = pathpro .. "fire_new/uzip_outdoor_silenced_close_tail.wav"
 
-SWEP.ShootSoundIndoor = { pathpro .. "fire_new/uzip_indoor_close_loop1.ogg", pathpro .. "fire_new/uzip_indoor_close_loop2.ogg", pathpro .. "fire_new/uzip_indoor_close_loop3.ogg", pathpro .. "fire_new/uzip_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = pathpro .. "fire_new/uzip_indoor_close_tail.ogg"
+SWEP.ShootSoundIndoor = { pathpro .. "fire_new/uzip_indoor_close_loop1.wav", pathpro .. "fire_new/uzip_indoor_close_loop2.wav", pathpro .. "fire_new/uzip_indoor_close_loop3.wav", pathpro .. "fire_new/uzip_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = pathpro .. "fire_new/uzip_indoor_close_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { pathpro .. "fire_new/uzip_indoor_silenced_close_loop1.ogg", pathpro .. "fire_new/uzip_indoor_silenced_close_loop2.ogg", pathpro .. "fire_new/uzip_indoor_silenced_close_loop3.ogg", pathpro .. "fire_new/uzip_indoor_silenced_close_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = pathpro .. "fire_new/uzip_indoor_silenced_close_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { pathpro .. "fire_new/uzip_indoor_silenced_close_loop1.wav", pathpro .. "fire_new/uzip_indoor_silenced_close_loop2.wav", pathpro .. "fire_new/uzip_indoor_silenced_close_loop3.wav", pathpro .. "fire_new/uzip_indoor_silenced_close_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = pathpro .. "fire_new/uzip_indoor_silenced_close_tail.wav"
 
-SWEP.DistantShootSound = { pathpro .. "fire_new/uzip_outdoor_distant_loop1.ogg", pathpro .. "fire_new/uzip_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilenced = { pathpro .. "fire_new/uzip_outdoor_silenced_distant_loop1.ogg", pathpro .. "fire_new/uzip_outdoor_silenced_distant_loop2.ogg" }
-SWEP.DistantShootSoundIndoor = { pathpro .. "fire_new/uzip_indoor_distant_loop1.ogg", pathpro .. "fire_new/uzip_indoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { pathpro .. "fire_new/uzip_indoor_silenced_distant_loop1.ogg", pathpro .. "fire_new/uzip_indoor_silenced_distant_loop2.ogg" }
+SWEP.DistantShootSound = { pathpro .. "fire_new/uzip_outdoor_distant_loop1.wav", pathpro .. "fire_new/uzip_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilenced = { pathpro .. "fire_new/uzip_outdoor_silenced_distant_loop1.wav", pathpro .. "fire_new/uzip_outdoor_silenced_distant_loop2.wav" }
+SWEP.DistantShootSoundIndoor = { pathpro .. "fire_new/uzip_indoor_distant_loop1.wav", pathpro .. "fire_new/uzip_indoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { pathpro .. "fire_new/uzip_indoor_silenced_distant_loop1.wav", pathpro .. "fire_new/uzip_indoor_silenced_distant_loop2.wav" }
 
 SWEP.EnterSightsSound = ARC9EFT.ADSSMG
 SWEP.ExitSightsSound = ARC9EFT.ADSSMG
@@ -509,13 +509,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = path .. "mp7_hammer.ogg", t = 0 },
+            { s = path .. "mp7_hammer.wav", t = 0 },
         }
     },
     ["dryfire"] = {
         Source = "fire_dry",
         EventTable = {
-            { s = path .. "mp7_hammer.ogg", t = 0 },
+            { s = path .. "mp7_hammer.wav", t = 0 },
         }
     },
 

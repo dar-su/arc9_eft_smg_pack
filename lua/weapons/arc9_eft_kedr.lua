@@ -197,7 +197,7 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/kedr/"
+local path = ")weapons/darsu_eft/kedr/"
 
 SWEP.ShootSound = { path .. "kedr_loop_close1.ogg", path .. "kedr_loop_close2.ogg", path .. "kedr_loop_close3.ogg", path .. "kedr_loop_close4.ogg" }
 SWEP.LayerSound = path .. "kedr_loop_closet.ogg"
@@ -205,16 +205,16 @@ SWEP.LayerSound = path .. "kedr_loop_closet.ogg"
 SWEP.ShootSoundSilenced = { path .. "kedr_loop_silenced_close1.ogg", path .. "kedr_loop_silenced_close2.ogg", path .. "kedr_loop_silenced_close3.ogg", path .. "kedr_loop_silenced_close4.ogg" }
 SWEP.LayerSoundSilenced = path .. "kedr_loop_silenced_closet.ogg"
 
-SWEP.ShootSoundIndoor = { path .. "kedr_loop_indoor_close1.ogg", path .. "kedr_loop_indoor_close2.ogg", path .. "kedr_loop_indoor_close3.ogg", path .. "kedr_loop_indoor_close4.ogg" }
-SWEP.LayerSoundIndoor = path .. "kedr_loop_indoor_closet.ogg"
+SWEP.ShootSoundIndoor = { path .. "kedr_loop_indoor_close1.wav", path .. "kedr_loop_indoor_close2.wav", path .. "kedr_loop_indoor_close3.wav", path .. "kedr_loop_indoor_close4.wav" }
+SWEP.LayerSoundIndoor = path .. "kedr_loop_indoor_closet.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "kedr_loop_silenced_indoor_close1.ogg", path .. "kedr_loop_silenced_indoor_close2.ogg", path .. "kedr_loop_silenced_indoor_close3.ogg", path .. "kedr_loop_silenced_indoor_close4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "kedr_loop_silenced_indoor_closet.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "kedr_loop_silenced_indoor_close1.wav", path .. "kedr_loop_silenced_indoor_close2.wav", path .. "kedr_loop_silenced_indoor_close3.wav", path .. "kedr_loop_silenced_indoor_close4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "kedr_loop_silenced_indoor_closet.wav"
 
 SWEP.DistantShootSound = { path .. "kedr_loop_distant1.ogg", path .. "kedr_loop_distant2.ogg" }
 SWEP.DistantShootSoundSilenced = { path .. "kedr_loop_silenced_distant1.ogg", path .. "kedr_loop_silenced_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "kedr_loop_indoor_distant1.ogg", path .. "kedr_loop_indoor_distant2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "kedr_loop_silenced_indoor_distant1.ogg", path .. "kedr_loop_silenced_indoor_distant2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "kedr_loop_indoor_distant1.wav", path .. "kedr_loop_indoor_distant2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "kedr_loop_silenced_indoor_distant1.wav", path .. "kedr_loop_silenced_indoor_distant2.wav" }
 
 ------------------------- |||           Dropped magazines            ||| -------------------------
 
@@ -309,7 +309,7 @@ SWEP.ReloadHideBoneTables = {
     },
 }
 
-local path = "weapons/darsu_eft/kedr/"
+local path = ")weapons/darsu_eft/kedr/"
 local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
 local slidelock = {"arc9_eft_shared/pistol_jam_slidelock_try1.ogg", "arc9_eft_shared/pistol_jam_slidelock_try2.ogg", "arc9_eft_shared/pistol_jam_slidelock_try3.ogg"}
 local slidelockgrab = {"arc9_eft_shared/pistol_jam_slidelock_grab1.ogg", "arc9_eft_shared/pistol_jam_slidelock_grab2.ogg", "arc9_eft_shared/pistol_jam_slidelock_grab3.ogg"}
@@ -335,7 +335,7 @@ local rst_empty01 = {
     { s = pouchout, t = 1.2 },
     { s =  path .. "kedr_magin.ogg", t = 1.74-0.05 },
     { s = randspin, t = 2.34},
-    { s =  path .. "kedr_trigger_empty.ogg", t = 2.61 },
+    { s =  path .. "kedr_trigger_empty.wav", t = 2.61 },
     { s =  path .. "kedr_slider_up.ogg", t = 2.73 },
     { s = randspin, t = 2.92},
     {hide = 0, t = 0},
@@ -396,25 +396,25 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = path .. "kedr_trigger_hammer.ogg", t = 0 },
+            { s = path .. "kedr_trigger_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = path .. "kedr_trigger_hammer.ogg", t = 0 },
+            { s = path .. "kedr_trigger_hammer.wav", t = 0 },
         }
     },
     ["dryfire"] = {
         Source = "fire_dry",
         EventTable = {
-            { s = path .. "kedr_trigger_empty.ogg", t = 0 },
+            { s = path .. "kedr_trigger_empty.wav", t = 0 },
         }
     },
     ["dryfire_empty"] = {
         Source = "fire_dry_empty",
         EventTable = {
-            { s = path .. "kedr_trigger_empty.ogg", t = 0 },
+            { s = path .. "kedr_trigger_empty.wav", t = 0 },
         }
     },
 

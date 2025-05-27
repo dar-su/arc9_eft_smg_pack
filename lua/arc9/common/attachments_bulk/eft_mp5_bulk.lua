@@ -726,10 +726,10 @@ ATT.Attachments = {
     },
 }
 
-local path = "weapons/darsu_eft/mp5/"
-ATT.ShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_close_silenced_loop1.ogg", path .. "fire_new/mp5sd_outdoor_close_silenced_loop2.ogg", path .. "fire_new/mp5sd_outdoor_close_silenced_loop3.ogg", path .. "fire_new/mp5sd_outdoor_close_silenced_loop4.ogg" }
-ATT.LayerSoundSilenced = path .. "fire_new/mp5sd_outdoor_close_silenced_loop_tail.ogg"
-ATT.DistantShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_distant_silenced_loop1.ogg", path .. "fire_new//mp5sd_outdoor_distant_silenced_loop2.ogg" }
+local path = ")weapons/darsu_eft/mp5/"
+ATT.ShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_close_silenced_loop1.wav", path .. "fire_new/mp5sd_outdoor_close_silenced_loop2.wav", path .. "fire_new/mp5sd_outdoor_close_silenced_loop3.wav", path .. "fire_new/mp5sd_outdoor_close_silenced_loop4.wav" }
+ATT.LayerSoundSilenced = path .. "fire_new/mp5sd_outdoor_close_silenced_loop_tail.wav"
+ATT.DistantShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_distant_silenced_loop1.wav", path .. "fire_new//mp5sd_outdoor_distant_silenced_loop2.wav" }
 
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_sd")
 

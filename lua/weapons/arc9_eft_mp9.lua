@@ -180,24 +180,24 @@ SWEP.ShellSounds = ARC9EFT.Shells9mm
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/mp9/"
+local path = ")weapons/darsu_eft/mp9/"
 
-SWEP.ShootSound = { path .. "fire_new/mp9_outdoor_close_loop1.ogg", path .. "fire_new/mp9_outdoor_close_loop2.ogg", path .. "fire_new/mp9_outdoor_close_loop3.ogg", path .. "fire_new/mp9_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "fire_new/mp9_outdoor_close_loop_tail.ogg"
+SWEP.ShootSound = { path .. "fire_new/mp9_outdoor_close_loop1.wav", path .. "fire_new/mp9_outdoor_close_loop2.wav", path .. "fire_new/mp9_outdoor_close_loop3.wav", path .. "fire_new/mp9_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "fire_new/mp9_outdoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilenced = { path .. "fire_new/mp9_outdoor_close_loop_silenced1.ogg", path .. "fire_new/mp9_outdoor_close_loop_silenced2.ogg", path .. "fire_new/mp9_outdoor_close_loop_silenced3.ogg", path .. "fire_new/mp9_outdoor_close_loop_silenced4.ogg" }
-SWEP.LayerSoundSilenced = path .. "fire_new/mp9_outdoor_close_loop_silenced_tail.ogg"
+SWEP.ShootSoundSilenced = { path .. "fire_new/mp9_outdoor_close_loop_silenced1.wav", path .. "fire_new/mp9_outdoor_close_loop_silenced2.wav", path .. "fire_new/mp9_outdoor_close_loop_silenced3.wav", path .. "fire_new/mp9_outdoor_close_loop_silenced4.wav" }
+SWEP.LayerSoundSilenced = path .. "fire_new/mp9_outdoor_close_loop_silenced_tail.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire_new/mp9_indoor_close_loop1.ogg", path .. "fire_new/mp9_indoor_close_loop2.ogg", path .. "fire_new/mp9_indoor_close_loop3.ogg", path .. "fire_new/mp9_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire_new/mp9_indoor_close_loop_tail.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire_new/mp9_indoor_close_loop1.wav", path .. "fire_new/mp9_indoor_close_loop2.wav", path .. "fire_new/mp9_indoor_close_loop3.wav", path .. "fire_new/mp9_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire_new/mp9_indoor_close_loop_tail.wav"
 
-SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mp9_indoor_close_silenced_loop1.ogg", path .. "fire_new/mp9_indoor_close_silenced_loop2.ogg", path .. "fire_new/mp9_indoor_close_silenced_loop3.ogg", path .. "fire_new/mp9_indoor_close_silenced_loop4.ogg" }
-SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mp9_indoor_close_silenced_loop_tail.ogg"
+SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/mp9_indoor_close_silenced_loop1.wav", path .. "fire_new/mp9_indoor_close_silenced_loop2.wav", path .. "fire_new/mp9_indoor_close_silenced_loop3.wav", path .. "fire_new/mp9_indoor_close_silenced_loop4.wav" }
+SWEP.LayerSoundSilencedIndoor = path .. "fire_new/mp9_indoor_close_silenced_loop_tail.wav"
 
-SWEP.DistantShootSound = { path .. "fire_new/mp9_outdoor_distant_loop1.ogg", path .. "fire_new/mp9_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilenced = { path .. "fire_new/mp9_outdoor_distant_loop_silenced1.ogg", path .. "fire_new/mp9_outdoor_distant_loop_silenced2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire_new/mp9_indoor_distant_loop1.ogg", path .. "fire_new/mp9_indoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mp9_indoor_distant_silenced_loop1.ogg", path .. "fire_new/mp9_indoor_distant_silenced_loop2.ogg" }
+SWEP.DistantShootSound = { path .. "fire_new/mp9_outdoor_distant_loop1.wav", path .. "fire_new/mp9_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilenced = { path .. "fire_new/mp9_outdoor_distant_loop_silenced1.wav", path .. "fire_new/mp9_outdoor_distant_loop_silenced2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire_new/mp9_indoor_distant_loop1.wav", path .. "fire_new/mp9_indoor_distant_loop2.wav" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/mp9_indoor_distant_silenced_loop1.wav", path .. "fire_new/mp9_indoor_distant_silenced_loop2.wav" }
 
 SWEP.EnterSightsSound = ARC9EFT.ADSSMG
 SWEP.ExitSightsSound = ARC9EFT.ADSSMG
@@ -512,13 +512,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = path .. "mp7_hammer.ogg", t = 0 },
+            { s = path .. "mp7_hammer.wav", t = 0 },
         }
     },
     ["fire_empty"] = {
         Source = "fire_last",
         EventTable = {
-            { s = path .. "mp7_hammer.ogg", t = 0 },
+            { s = path .. "mp7_hammer.wav", t = 0 },
         }
     },
     ["dryfire"] = {

@@ -202,19 +202,19 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/p90/"
+local path = ")weapons/darsu_eft/p90/"
 
 SWEP.ShootSound = { path .. "fire/p90_1.ogg", path .. "fire/p90_2.ogg" }
-SWEP.ShootSoundIndoor = { path .. "fire/p90_indoor1.ogg", path .. "fire/p90_indoor2.ogg" }
+SWEP.ShootSoundIndoor = { path .. "fire/p90_indoor1.wav", path .. "fire/p90_indoor2.wav" }
 SWEP.DistantShootSound = { path .. "fire/p90_distant1.ogg", path .. "fire/p90_distant2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire/p90_indoor_distant1.ogg", path .. "fire/p90_indoor_distant2.ogg" }
+SWEP.DistantShootSoundIndoor = { path .. "fire/p90_indoor_distant1.wav", path .. "fire/p90_indoor_distant2.wav" }
 
 SWEP.ShootSoundSilenced = { path .. "fire/p90_silenced1.ogg", path .. "fire/p90_silenced2.ogg" }
-SWEP.ShootSoundSilencedIndoor = { path .. "fire/p90_indoor_silenced1.ogg", path .. "fire/p90_indoor_silenced2.ogg" }
+SWEP.ShootSoundSilencedIndoor = { path .. "fire/p90_indoor_silenced1.wav", path .. "fire/p90_indoor_silenced2.wav" }
 SWEP.DistantShootSoundSilenced = { path .. "fire/p90_distant_silenced1.ogg", path .. "fire/p90_distant_silenced2.ogg" }
-SWEP.DistantShootSoundSilencedIndoor = { path .. "fire/p90_indoor_distant_silenced1.ogg", path .. "fire/p90_indoor_distant_silenced2.ogg" }
+SWEP.DistantShootSoundSilencedIndoor = { path .. "fire/p90_indoor_distant_silenced1.wav", path .. "fire/p90_indoor_distant_silenced2.wav" }
 
-SWEP.DryFireSound = path .. "p90_trigger_empty.ogg"
+SWEP.DryFireSound = path .. "p90_trigger_empty.wav"
 
 SWEP.EnterSightsSound = ARC9EFT.ADSSMG
 SWEP.ExitSightsSound = ARC9EFT.ADSSMG
@@ -348,7 +348,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = path .. "p90_trigger_hammer.ogg", t = 0 },
+            { s = path .. "p90_trigger_hammer.wav", t = 0 },
         }
     },
 
@@ -595,7 +595,7 @@ SWEP.Animations = {
         Source = "firemode_1",
         EventTable = {
             { s = randspin, t = 0 },
-            { s = path .. "p90_trigger_empty.ogg", t = 10/24 },
+            { s = path .. "p90_trigger_empty.wav", t = 10/24 },
             { s = randspin, t = 20/24 },
         }
     },

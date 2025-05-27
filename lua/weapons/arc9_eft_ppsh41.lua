@@ -183,16 +183,16 @@ end
 
 ------------------------- |||           Sounds            ||| -------------------------
 
-local path = "weapons/darsu_eft/ppsh41/"
+local path = ")weapons/darsu_eft/ppsh41/"
 
-SWEP.ShootSound = { path .. "fire/ppsh_outdoor_close_loop1.ogg", path .. "fire/ppsh_outdoor_close_loop2.ogg", path .. "fire/ppsh_outdoor_close_loop3.ogg", path .. "fire/ppsh_outdoor_close_loop4.ogg" }
-SWEP.LayerSound = path .. "fire/ppsh_outdoor_close_loopt.ogg"
+SWEP.ShootSound = { path .. "fire/ppsh_outdoor_close_loop1.wav", path .. "fire/ppsh_outdoor_close_loop2.wav", path .. "fire/ppsh_outdoor_close_loop3.wav", path .. "fire/ppsh_outdoor_close_loop4.wav" }
+SWEP.LayerSound = path .. "fire/ppsh_outdoor_close_loopt.wav"
 
-SWEP.ShootSoundIndoor = { path .. "fire/ppsh_indoor_close_loop1.ogg", path .. "fire/ppsh_indoor_close_loop2.ogg", path .. "fire/ppsh_indoor_close_loop3.ogg", path .. "fire/ppsh_indoor_close_loop4.ogg" }
-SWEP.LayerSoundIndoor = path .. "fire/ppsh_indoor_close_loopt.ogg"
+SWEP.ShootSoundIndoor = { path .. "fire/ppsh_indoor_close_loop1.wav", path .. "fire/ppsh_indoor_close_loop2.wav", path .. "fire/ppsh_indoor_close_loop3.wav", path .. "fire/ppsh_indoor_close_loop4.wav" }
+SWEP.LayerSoundIndoor = path .. "fire/ppsh_indoor_close_loopt.wav"
 
-SWEP.DistantShootSound = { path .. "fire/ppsh_outdoor_distant_loop1.ogg", path .. "fire/ppsh_outdoor_distant_loop2.ogg" }
-SWEP.DistantShootSoundIndoor = { path .. "fire/ppsh_indoor_distant_loop1.ogg", path .. "fire/ppsh_indoor_distant_loop2.ogg" }
+SWEP.DistantShootSound = { path .. "fire/ppsh_outdoor_distant_loop1.wav", path .. "fire/ppsh_outdoor_distant_loop2.wav" }
+SWEP.DistantShootSoundIndoor = { path .. "fire/ppsh_indoor_distant_loop1.wav", path .. "fire/ppsh_indoor_distant_loop2.wav" }
 
 SWEP.EnterSightsSound = ARC9EFT.ADSSMG
 SWEP.ExitSightsSound = ARC9EFT.ADSSMG
