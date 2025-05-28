@@ -329,6 +329,8 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             ending = rand
             if rand == 0 and boltthing then ending = ending .. "_bolt" end
         end
+        
+        return anim .. ending
     elseif anim == "fix" then
         rand = math.Truncate(util.SharedRandom("hi", 1, 4.99))
 
