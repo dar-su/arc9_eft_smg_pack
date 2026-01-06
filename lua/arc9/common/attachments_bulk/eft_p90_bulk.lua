@@ -259,6 +259,8 @@ ATT.DropMagazineAmount = 1
 ATT.SuppressEmptySuffix = false 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/p90mag_tr.mdl"
 ATT.TranslucentPass = true
+ATT.TranslucentPassExtraMat = Material( "models/weapons/arc9/darsu_eft/p90/mag_p90_fn_p90_std_57x28_50_LOD0_Glass_Solid" )
+ATT.TranslucentPassBlend = 0.75
 
 ATT.Category = {"eft_p90_mag"}
 ATT.ActivateElements = {"p90_50rnd"}

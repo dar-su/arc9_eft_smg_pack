@@ -1344,6 +1344,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mpx_30_tr.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mpx_30.mdl"
 ATT.TranslucentPass = true 
+ATT.TranslucentPassExtraMat = Material( "models/weapons/arc9/darsu_eft/mpx2/mag_mpx_sig_mpx_std_9x19_30_LOD0_glass_solid" )
+ATT.TranslucentPassBlend = 0.75
 
 ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1

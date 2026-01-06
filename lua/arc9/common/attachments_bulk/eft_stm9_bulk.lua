@@ -20,11 +20,13 @@ ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.03
 ATT.Spread = 3.78 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_260mm"}
+ATT.ActivateElements = {"barrel_10i"}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stm9_barrel"}
+ATT.ExcludeElements = {"eft_hg_ar15_stm12", "eft_hg_ar15_stm15"}
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
@@ -57,7 +59,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.012
 ATT.HeatCapacityMult = 1.04
 ATT.Spread = 2.58 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_370mm"}
+ATT.ActivateElements = {"barrel_137i"}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -94,7 +96,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.032
 ATT.HeatCapacityMult = 1.04
 ATT.Spread = 1.89 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_370mm"}
+ATT.ActivateElements = {"barrel_145i"}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -131,7 +133,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.045
 ATT.HeatCapacityMult = 1.08
 ATT.Spread = 1.55 * ARC9.MOAToAcc
 
-ATT.ActivateElements = {"barrel_406mm"}
+ATT.ActivateElements = {"barrel_16i"}
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -291,7 +293,7 @@ ATT.HeatCapacityMult = 0.982
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Soyuz-TM"
 
-ATT.ExcludeElements = {"barrel_260mm","barrel_105i", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -365,7 +367,7 @@ ATT.HeatCapacityMult = 0.986
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Soyuz-TM"
 
-ATT.ExcludeElements = {"barrel_260mm","barrel_370mm","barrel_105i","barrel_12i", "eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"barrel_10i", "barrel_145i", "gasblock_big"}
 
 ATT.Attachments = {
     {
@@ -437,7 +439,7 @@ ATT.Folder = "Soyuz-TM"
 ATT.EFTErgoAdd = 6
 ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.978
-ATT.ExcludeElements = {"eft_gas_ar15_rg", "eft_gas_ar15_jp", "eft_gas_ar15_m4fs"}
+ATT.ExcludeElements = {"gasblock_big"}
 
 ATT.Attachments = {
     {
