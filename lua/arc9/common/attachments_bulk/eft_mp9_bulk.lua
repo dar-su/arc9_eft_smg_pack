@@ -34,6 +34,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de8f237bbaf010b10528a70
 ARC9.LoadAttachment(ATT, "eft_mp9_silmount")
 
 
@@ -64,6 +65,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_mp9_silen"}
 
+-- EFT ID: 5de8f237bbaf010b10528a70
 ARC9.LoadAttachment(ATT, "eft_mp9_silencer")
 
 ///////////////////////////////////////      eft_mp9_stockk
@@ -99,6 +101,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 5de910da8b6c4240ba2651b5
 ARC9.LoadAttachment(ATT, "eft_mp9_stockk")
 
 
@@ -126,6 +129,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de8fc0b205ddc616a6bc51b
 ARC9.LoadAttachment(ATT, "eft_mp9_siderail")
 
 ///////////////////////////////////////      eft_mp9_bottomrail
@@ -162,6 +166,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de8fbf2b74cd90030650c79
 ARC9.LoadAttachment(ATT, "eft_mp9_bottomrail")
 
 ///////////////////////////////////////      eft_mp9_fg
@@ -184,6 +189,7 @@ ATT.Category = {"eft_mp9_bottom_n"}
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_mp9_lhik.mdl"
 ATT.LHIK = true 
 
+-- EFT ID: 5de8fbad2fbe23140d3ee9c4
 ARC9.LoadAttachment(ATT, "eft_mp9_fg")
 
 ///////////////////////////////////////      eft_mp9_rec_std
@@ -226,6 +232,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5e0090f7e9dc277128008b93
 ARC9.LoadAttachment(ATT, "eft_mp9_rec_std")
 
 ///////////////////////////////////////      eft_mp9_rec_n
@@ -268,6 +275,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5de8e67c4a9f347bc92edbd7
 ARC9.LoadAttachment(ATT, "eft_mp9_rec_n")
 
 ///////////////////////////////////////      eft_mp9_charge
@@ -286,6 +294,7 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mp9_handle"}
 
+-- EFT ID: 5de922d4b11454561e39239f
 ARC9.LoadAttachment(ATT, "eft_mp9_charge")
 
 ///////////////////////////////////////      eft_mp9_rs
@@ -302,6 +311,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp9_rearsight"}
 
+-- EFT ID: 5de8fb539f98ac2bc659513a
 ARC9.LoadAttachment(ATT, "eft_mp9_rs")
 
 ///////////////////////////////////////      eft_mp9_mag_15
@@ -329,6 +339,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.Category = {"eft_mag_mp9"}
 
+-- EFT ID: 5de8e8dafd6b4e6e2276dc32
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_15")
 
 
@@ -357,6 +368,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_mp9"}
 
+-- EFT ID: 5de8ea8ffd6b4e6e2276dc35
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_20")
 
 ///////////////////////////////////////      eft_mp9_mag_25
@@ -384,6 +396,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mp9"}
 
+-- EFT ID: 5de8eaadbbaf010b10528a6d
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_25")
 ///////////////////////////////////////      eft_mp9_mag_30
 
@@ -410,4 +423,5 @@ ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Category = {"eft_mag_mp9"}
 
+-- EFT ID: 5de8eac42a78646d96665d91
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_30")

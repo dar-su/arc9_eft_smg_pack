@@ -34,6 +34,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fc3e4a27283c4046c5814ab
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_std")
 
 ///////////////////////////////////////      eft_barrel_ump_thr
@@ -69,6 +70,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6130c3dffaa1272e43151c7d
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_thr")
 
 ///////////////////////////////////////      eft_muzzle_omegaadapter
@@ -100,6 +102,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fc4b992187fea44d52edaa9
 ARC9.LoadAttachment(ATT, "eft_muzzle_omegaadapter")
 
 ///////////////////////////////////////      eft_muzzle_vector_fh
@@ -124,28 +127,8 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_flash_hider.
 
 ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
 
+-- EFT ID: 5fb65424956329274326f316
 ARC9.LoadAttachment(ATT, "eft_muzzle_vector_fh")
-
-///////////////////////////////////////      eft_muzzle_vector_cap
-
-ATT = {}
-
-ATT.PrintName = "KRISS Vector .45 ACP thread protection cap"
-ATT.CompactName = "Vector cap"
-ATT.Icon = Material("entities/eft_ump_attachments/vectorthr.png", "mips smooth")
-ATT.Description = [[A thread protector cap for the KRISS Vector .45 ACP barrel.]]
-
-ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
-
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_thread_protector.mdl"
-
-ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
-
-ARC9.LoadAttachment(ATT, "eft_muzzle_vector_cap")
 
 ///////////////////////////////////////      eft_ump_mag_25
 
@@ -166,12 +149,12 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 25
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.MalfunctionMeanShotsToFailMult = 0.985
 
 ATT.Category = {"eft_mag_ump"}
 
+-- EFT ID: 5fc3e466187fea44d52eda90
 ARC9.LoadAttachment(ATT, "eft_ump_mag_25")
 
 ///////////////////////////////////////      eft_stock_ump_std
@@ -207,6 +190,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 5fc3e4ee7283c4046c5814af
 ARC9.LoadAttachment(ATT, "eft_stock_ump_std")
 
 ///////////////////////////////////////      eft_muzzle_ump_oem
@@ -237,6 +221,7 @@ ATT.Silencer = true
 
 ATT.Category = {"eft_ump_oem"}
 
+-- EFT ID: 6130c4d51cb55961fa0fd49f
 ARC9.LoadAttachment(ATT, "eft_muzzle_ump_oem")
 
 
@@ -264,6 +249,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fc53954f8b6a877a729eaeb
 ARC9.LoadAttachment(ATT, "eft_mount_ump_bottom")
 
 ///////////////////////////////////////      eft_mount_ump_side
@@ -291,4 +277,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5fc5396e900b1d5091531e72
 ARC9.LoadAttachment(ATT, "eft_mount_ump_side")

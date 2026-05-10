@@ -37,6 +37,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 603372b4da11d6478d5a07ff
 ARC9.LoadAttachment(ATT, "eft_stm9_barrel_105")
 
 ///////////////////////////////////////      eft_stm9_barrel_12
@@ -74,6 +75,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 603372d154072b51b239f9e1
 ARC9.LoadAttachment(ATT, "eft_stm9_barrel_12")
 
 ///////////////////////////////////////      eft_stm9_barrel_14
@@ -111,6 +113,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 603372f153a60014f970616d
 ARC9.LoadAttachment(ATT, "eft_stm9_barrel_14")
 
 ///////////////////////////////////////      eft_stm9_barrel_16
@@ -148,6 +151,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 603373004e02ce1eaa358814
 ARC9.LoadAttachment(ATT, "eft_stm9_barrel_16")
 
 ///////////////////////////////////////      eft_stm9_magwel
@@ -167,6 +171,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stm9_magwell"}
 
+-- EFT ID: 602f85fd9b513876d4338d9c
 ARC9.LoadAttachment(ATT, "eft_stm9_magwel")
 
 ///////////////////////////////////////      eft_stm9_magwelg
@@ -186,6 +191,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_stm9_magwell"}
 
+-- EFT ID: 60338ff388382f4fab3fd2c8
 ARC9.LoadAttachment(ATT, "eft_stm9_magwelg")
 
 
@@ -237,6 +243,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 602e63fb6335467b0c5ac94d
 ARC9.LoadAttachment(ATT, "eft_rec_ar15_stm9")
 
 
@@ -265,6 +272,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.006
 
 ATT.Category = {"eft_stm9_muzzle"}
 
+-- EFT ID: 60337f5dce399e10262255d1
 ARC9.LoadAttachment(ATT, "eft_muzzle_stm9_std")
 
 
@@ -342,6 +350,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6034e3e20ddce744014cb878
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_stm12")
 
 ///////////////////////////////////////      eft_hg_ar15_stm15
@@ -416,6 +425,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6034e3d953a60014f970617b
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_stm15")
 
 ///////////////////////////////////////      eft_hg_ar15_stm9
@@ -488,4 +498,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6034e3cb0ddce744014cb870
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_stm9")

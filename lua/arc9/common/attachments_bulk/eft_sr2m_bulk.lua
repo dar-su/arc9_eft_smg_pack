@@ -17,6 +17,7 @@ ATT.Category = {"eft_sr2m_muzzle"}
 ATT.EFTErgoAdd = 3
 ATT.CustomPros = { Ergonomics = "+3" }
 
+-- EFT ID: 62e2a754b6c0ee2f230cee0f
 ARC9.LoadAttachment(ATT, "eft_sr2m_handstop")
 
 
@@ -49,6 +50,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_sr2m_muzzle"}
 
+-- EFT ID: 62e2a7138e1ac9380579c122
 ARC9.LoadAttachment(ATT, "eft_sr2m_silencer")
 
 
@@ -87,6 +89,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62e15547db1a5c41971c1b5e
 ARC9.LoadAttachment(ATT, "eft_sr2m_hg_std")
 
 ///////////////////////////////////////      eft_sr2m_pg_std
@@ -107,6 +110,7 @@ ATT.HasGrip = true
 ATT.EFTErgoAdd = 6
 ATT.CustomPros = { Ergonomics = "+6" }
 
+-- EFT ID: 637b9c37b7e3bc41b21ce71a
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_std")
 
 ///////////////////////////////////////      eft_sr2m_hg_blk
@@ -146,6 +150,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 637ba19df7ca6372bf2613d7
 ARC9.LoadAttachment(ATT, "eft_sr2m_hg_blk")
 
 ///////////////////////////////////////      eft_sr2m_pg_blk
@@ -168,6 +173,7 @@ ATT.HasGrip = true
 ATT.EFTErgoAdd = 6
 ATT.CustomPros = { Ergonomics = "+6" }
 
+-- EFT ID: 637ba29bf7ca6372bf2613db
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_blk")
 
 
@@ -198,6 +204,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62ed1921b3608410ef5a2c04
 ARC9.LoadAttachment(ATT, "eft_sr2m_rail_big")
 
 ///////////////////////////////////////      eft_sr2m_rail_short
@@ -227,6 +234,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62ed189fb3608410ef5a2bfc
 ARC9.LoadAttachment(ATT, "eft_sr2m_rail_short")
 
 ///////////////////////////////////////      eft_sr2m_rec_std
@@ -255,6 +263,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62e27a7865f0b1592a49e17b
 ARC9.LoadAttachment(ATT, "eft_sr2m_rec_std")
 
 ///////////////////////////////////////      eft_sr2m_b17
@@ -283,6 +292,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62e281349ecd3f493f6df954
 ARC9.LoadAttachment(ATT, "eft_sr2m_b17")
 
 ///////////////////////////////////////      eft_sr2m_optic
@@ -302,7 +312,6 @@ ATT.Category = {"eft_sr2m_mount"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 
 ATT.FoldSights = true
 
@@ -332,6 +341,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 62ff9920fe938a24c90c10d2
 ARC9.LoadAttachment(ATT, "eft_sr2m_optic")
 
 ///////////////////////////////////////      eft_sr2m_optic_shade
@@ -352,6 +362,7 @@ ATT.Category = {"eft_sr2m_optic_aux"}
 ATT.EFTErgoAdd = 2
 ATT.CustomPros = { Ergonomics = "+2" }
 
+-- EFT ID: 62ff9faffe938a24c90c10df
 ARC9.LoadAttachment(ATT, "eft_sr2m_optic_shade")
 
 ///////////////////////////////////////      eft_sr2m_stock_std
@@ -387,6 +398,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 62e292e7b6c0ee2f230cee00
 ARC9.LoadAttachment(ATT, "eft_sr2m_stock_std")
 
 ///////////////////////////////////////      eft_sr2m_stock_mp
@@ -422,6 +434,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 62e2969582ebf260c20539c2
 ARC9.LoadAttachment(ATT, "eft_sr2m_stock_mp")
 
 
@@ -448,6 +461,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.965
 
 ATT.Category = {"eft_mag_sr2m"}
 
+-- EFT ID: 633a98eab8b0506e48497c1a
 ARC9.LoadAttachment(ATT, "eft_sr2m_mag_20")
 
 
@@ -476,4 +490,5 @@ ATT.MalfunctionMeanShotsToFailMult = 0.965
 
 ATT.Category = {"eft_mag_sr2m"}
 
+-- EFT ID: 62e153bcdb1a5c41971c1b5b
 ARC9.LoadAttachment(ATT, "eft_sr2m_mag_30")

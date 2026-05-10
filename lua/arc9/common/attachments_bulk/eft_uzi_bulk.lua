@@ -10,7 +10,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_238mm_threaded_3lug_barrel
 ATT.Description = "A threaded 238mm barrel for the UZI submachine gun, equipped with a 3-lug type adapter for installing muzzle devices."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.02
@@ -44,6 +43,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6698c89bfbc8142e60024b0e
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_238")
 
 ///////////////////////////////////////      eft_uzi_barrel_259
@@ -56,7 +56,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_259mm_barrel.png", "m
 ATT.Description = "A 259mm barrel for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
@@ -81,6 +80,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 6698c8ab29e062525d0ad8ab
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_259")
 
 ///////////////////////////////////////      eft_uzi_barrel_409
@@ -120,6 +120,7 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 6698c8b7710a4525fe0e9e55
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_409")
 
 ///////////////////////////////////////      eft_uzipro_barrel_114pike
@@ -165,6 +166,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 668031705014e211b4078046
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_114pike")
 
 ///////////////////////////////////////      eft_uzipro_barrel_114
@@ -200,6 +202,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66866fe776d1a87cd80fd388
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_114")
 
 ///////////////////////////////////////      eft_uzipro_barrel_170
@@ -239,6 +242,7 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 6686700a2b934a68630a7fe6
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_170")
 
 ///////////////////////////////////////      eft_uzipro_barrel_210
@@ -277,6 +281,7 @@ ATT.Attachments = {
 }
 
 ATT.MuzzleEffectQCA = 6
+-- EFT ID: 66867023c3d473265104f384
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_210")
 
 ///////////////////////////////////////      eft_uzipro_barrel_240
@@ -289,7 +294,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_240mm_barrel.png"
 ATT.Description = "A 240mm barrel for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.988
@@ -316,6 +320,7 @@ ATT.Attachments = {
 }
 
 ATT.MuzzleEffectQCA = 6
+-- EFT ID: 668670432b934a68630a7fe8
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_240")
 
 ///////////////////////////////////////      eft_uzi_muzzle_3thr
@@ -337,6 +342,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_uzi"}
 
+-- EFT ID: 6698c9c636ba38d291017711
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_3thr")
 
 ///////////////////////////////////////      eft_uzi_muzzle_shroud
@@ -362,6 +368,7 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzi"}
 
+-- EFT ID: 6699370c57df3e2b4e0a0dab
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_shroud")
 
 ///////////////////////////////////////      eft_uzi_muzzle_3nut
@@ -384,6 +391,7 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzi", "eft_nut_uzi_3lug"}
 
+-- EFT ID: 6698c9ba29e062525d0ad8b1
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_3nut")
 
 ///////////////////////////////////////      eft_uzi_muzzle_nut
@@ -406,6 +414,7 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzi"}
 
+-- EFT ID: 6698c9aa36ba38d29101770f
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_nut")
 
 ///////////////////////////////////////      eft_uzi_muzzle_sup
@@ -439,6 +448,7 @@ ATT.Category = {"eft_sup_uzi"}
 
 ATT.MuzzleEffectQCA = 5
 
+-- EFT ID: 66993733f74fef4dfd0b04ff
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_sup")
 
 ///////////////////////////////////////      eft_uzipro_muzzle_nut
@@ -461,6 +471,7 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzipro"}
 
+-- EFT ID: 668670e3fb75ee4a5e02eb16
 ARC9.LoadAttachment(ATT, "eft_uzipro_muzzle_nut")
 
 ///////////////////////////////////////      eft_uzipro_muzzle_masada
@@ -482,6 +493,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_muzzle_uzipro"}
 
+-- EFT ID: 668670f52a2296a8d909963c
 ARC9.LoadAttachment(ATT, "eft_uzipro_muzzle_masada")
 
 ///////////////////////////////////////      eft_uzi_stock_t3
@@ -505,6 +517,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+-- EFT ID: 6698c9ed36ba38d291017713
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t3")
 
 ///////////////////////////////////////      eft_uzi_stock_t5
@@ -546,6 +559,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+-- EFT ID: 6699249f3c4fda6471005cba
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t5")
 
 ///////////////////////////////////////      eft_uzi_stock_t6
@@ -586,6 +600,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+-- EFT ID: 669924a69950f5f4cd060295
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t6")
 
 ///////////////////////////////////////      eft_uzi_stock_t7
@@ -610,6 +625,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+-- EFT ID: 6698c9e07356874dfe0a0b88
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t7")
 
 ///////////////////////////////////////      eft_uzi_stock_wekz
@@ -640,6 +656,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66992f4db9f31ddda10dd1c8
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_wekz")
 
 ///////////////////////////////////////      eft_uzipro_stock_csm
@@ -670,6 +687,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 669cf78806768ff39504fc1c
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_csm")
 
 ///////////////////////////////////////      eft_uzipro_stock_a3
@@ -697,6 +715,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 668672b8c99550c6fd0f0b29
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_a3")
 
 ///////////////////////////////////////      eft_uzipro_stock_brace
@@ -737,6 +756,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
 
+-- EFT ID: 668032ba74b8f2050c0b917d
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_brace")
 
 ///////////////////////////////////////      eft_uzipro_stock_sbr
@@ -777,6 +797,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
 
+-- EFT ID: 66867310f3734a938b077f79
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_sbr")
 
 ///////////////////////////////////////      eft_uzipro_stock_a3brace
@@ -820,6 +841,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mcx_stock"} -- wow
 
+-- EFT ID: 6686717ffb75ee4a5e02eb19
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_a3brace")
 
 ///////////////////////////////////////      eft_uzipro_stock_backplate
@@ -840,6 +862,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
 
+-- EFT ID: 66881008f23233ee9a0742e7
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_backplate")
 
 
@@ -863,6 +886,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_hg"}
 
+-- EFT ID: 6698c8c736ba38d29101770b
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_std")
 
 ///////////////////////////////////////      eft_uzi_hg_fg
@@ -910,6 +934,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 66993149558c59581e03c028
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_fg")
 
 ///////////////////////////////////////      eft_uzi_hg_k
@@ -940,6 +965,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 6699313af74fef4dfd0b04f6
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_k")
 
 ///////////////////////////////////////      eft_uzipro_hg_mlok
@@ -985,6 +1011,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 668031bde3e7eb26e8004cd7
 ARC9.LoadAttachment(ATT, "eft_uzipro_hg_mlok")
 
 ///////////////////////////////////////      eft_uzi_hg2_werkz
@@ -1012,6 +1039,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 66992f7d9950f5f4cd0602a8
 ARC9.LoadAttachment(ATT, "eft_uzi_hg2_werkz")
 
 ///////////////////////////////////////      eft_uzi_rail_hg
@@ -1043,6 +1071,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6698c8f4710a4525fe0e9e57
 ARC9.LoadAttachment(ATT, "eft_uzi_rail_hg")
 
 ///////////////////////////////////////      eft_uzi_rail_optic
@@ -1068,6 +1097,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6698c90829e062525d0ad8ad
 ARC9.LoadAttachment(ATT, "eft_uzi_rail_optic")
 
 ///////////////////////////////////////      eft_uzipro_dust
@@ -1099,6 +1129,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 6680326874b8f2050c0b9178
 ARC9.LoadAttachment(ATT, "eft_uzipro_dust")
 
 ///////////////////////////////////////      eft_uzipro_hgrail
@@ -1137,6 +1168,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 668ea3f68117e4968b0cff4a
 ARC9.LoadAttachment(ATT, "eft_uzipro_hgrail")
 
 ///////////////////////////////////////      eft_uzi_grip_std
@@ -1158,6 +1190,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_grip"}
 
+-- EFT ID: 669946c157df3e2b4e0a0dc5
 ARC9.LoadAttachment(ATT, "eft_uzi_grip_std")
 
 ///////////////////////////////////////      eft_uzi_mag_20
@@ -1187,6 +1220,7 @@ ATT.HasMag = true
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 66992713ae08c5c29e0c4f97
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_20")
 
 ///////////////////////////////////////      eft_uzi_mag_25
@@ -1216,6 +1250,7 @@ ATT.HasMag = true
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 6699271b9950f5f4cd060299
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_25")
 
 ///////////////////////////////////////      eft_uzi_mag_32
@@ -1242,6 +1277,7 @@ ATT.HasMag = true
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 669927203c4fda6471005cbe
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_32")
 
 ///////////////////////////////////////      eft_uzi_mag_40
@@ -1271,6 +1307,7 @@ ATT.HasMag = true
 ATT.ClipSize = 40
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 66992725ae08c5c29e0c4f9a
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_40")
 
 ///////////////////////////////////////      eft_uzi_mag_50
@@ -1300,6 +1337,7 @@ ATT.HasMag = true
 ATT.ClipSize = 50
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 6699272a3c4fda6471005cc1
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_50")
 
 ///////////////////////////////////////      eft_uzi_mag_20pro
@@ -1329,6 +1367,7 @@ ATT.HasMag = true
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 668031ffe3e7eb26e8004cdd
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_20pro")
 
 ///////////////////////////////////////      eft_uzi_mag_25pro
@@ -1358,6 +1397,7 @@ ATT.HasMag = true
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 66866f4ec3d473265104f381
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_25pro")
 
 ///////////////////////////////////////      eft_uzi_mag_32pro
@@ -1384,6 +1424,7 @@ ATT.HasMag = true
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 66866f622a2296a8d9099639
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_32pro")
 
 
@@ -1419,6 +1460,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 668e71a8dadf42204c032ce1
 ARC9.LoadAttachment(ATT, "eft_uzipro_smg")
 
 
@@ -1539,4 +1581,5 @@ ATT.DrawFunc = function(wep, model, wm)
     end
 end
 
+-- EFT ID: 676176a162e0497044079f46
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_100")

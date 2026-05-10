@@ -55,6 +55,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5926c0df86f77462f647f764
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_std")
 
 ///////////////////////////////////////      eft_mp5_rec_sd
@@ -111,6 +112,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5926f2e086f7745aae644231
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_sd")
 
 ///////////////////////////////////////      eft_mp5_rec_k
@@ -161,6 +163,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d2f261548f03576f500e7b7
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_k")
 
 ///////////////////////////////////////      eft_mp5_charge_std
@@ -179,6 +182,7 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mp5_charge"}
 
+-- EFT ID: 5926c32286f774616e42de99
 ARC9.LoadAttachment(ATT, "eft_mp5_charge_std")
 
 ///////////////////////////////////////      eft_mp5_charge_k
@@ -197,6 +201,7 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mp5k_charge"}
 
+-- EFT ID: 5d2f2d5748f03572ec0c0139
 ARC9.LoadAttachment(ATT, "eft_mp5_charge_k")
 
 ///////////////////////////////////////      eft_mp5_rs_std
@@ -215,6 +220,7 @@ ATT.Category = {"eft_mp5_rs"}
 
 ATT.ExcludeElements = { "eft_mp5_mount_top_tri" }
 
+-- EFT ID: 5926d2be86f774134d668e4e
 ARC9.LoadAttachment(ATT, "eft_mp5_rs_std")
 
 ///////////////////////////////////////      eft_mp5_hg_std
@@ -237,6 +243,7 @@ ATT.HeatCapacityMult = 1.03
 
 ATT.Category = {"eft_mp5_hg"}
 
+-- EFT ID: 5926c36d86f77467a92a8629
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_std")
 
 
@@ -290,6 +297,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a9548c9159bd400133e97b3
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_tl99")
 
 ///////////////////////////////////////      eft_mp5_hg_ptr
@@ -343,6 +351,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d19cd96d7ad1a4a992c9f52
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_ptr")
 
 ///////////////////////////////////////      eft_mp5_hg_caa
@@ -410,6 +419,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5d010d1cd7ad1a59283b1ce7
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_caa")
 
 ///////////////////////////////////////      eft_mp5_hg_sd
@@ -437,6 +447,7 @@ ATT.ModelOffset = Vector(0, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 5926f34786f77469195bfe92
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_sd")
 
 ///////////////////////////////////////      eft_mp5_hg_k
@@ -466,6 +477,7 @@ ATT.ModelOffset = Vector(0, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+-- EFT ID: 5d2f259b48f0355a844acd74
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_k")
 
 ///////////////////////////////////////      eft_mp5_stock_a2
@@ -490,6 +502,7 @@ ATT.HasStock = true
 
 ATT.Category = {"eft_mp5_stock"}
 
+-- EFT ID: 5926d3c686f77410de68ebc8
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_a2")
 
 ///////////////////////////////////////      eft_mp5_stock_a3
@@ -527,6 +540,7 @@ ATT.ToggleStats = {
     },
 }
 
+-- EFT ID: 5926d40686f7740f152b6b7e
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_a3")
 
 ///////////////////////////////////////      eft_mp5_stock_cap
@@ -551,6 +565,7 @@ ATT.Category = {"eft_mp5_stock"}
 ATT.CustomizePos = Vector(17, 40, 5)
 ATT.CustomizeRotateAnchor = Vector(17, -4.5, -5.23)
 
+-- EFT ID: 5c07c9660db834001a66b588
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_cap")
 
 ///////////////////////////////////////      eft_mp5_stock_capk
@@ -575,6 +590,7 @@ ATT.Category = {"eft_mp5k_stock"}
 ATT.CustomizePos = Vector(15, 30, 4.5)
 ATT.CustomizeRotateAnchor = Vector(15, -4.5, -5.23)
 
+-- EFT ID: 5d2f25bc48f03502573e5d85
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_capk")
 
 ///////////////////////////////////////      eft_mp5_muzzle_3lug
@@ -603,6 +619,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5926e16e86f7742f5a0f7ecb
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_3lug")
 
 ///////////////////////////////////////      eft_mp5_muzzle_navy
@@ -631,6 +648,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5c0000c00db834001a6697fc
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_navy")
 
 ///////////////////////////////////////      eft_mp5_muzzle_qd
@@ -658,6 +676,7 @@ ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_mp5_muzzle_second"}
 
+-- EFT ID: 615d8df08004cc50514c3236
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_qd")
 
 ///////////////////////////////////////      eft_mp5_muzzle_noveske
@@ -678,13 +697,13 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 ATT.HeatCapacityMult = 0.991
 
 ATT.Category = {"eft_mp5_muzzle_second"}
 
+-- EFT ID: 5c07c5ed0db834001b73571c
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_noveske")
 
 ///////////////////////////////////////      eft_mp5_muzzle_sd
@@ -731,6 +750,7 @@ ATT.ShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_close_silenced_loop1.
 ATT.LayerSoundSilenced = path .. "fire_new/mp5sd_outdoor_close_silenced_loop_tail.wav"
 ATT.DistantShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_distant_silenced_loop1.wav", path .. "fire_new//mp5sd_outdoor_distant_silenced_loop2.wav" }
 
+-- EFT ID: 5926d33d86f77410de68ebc0
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_sd")
 
 
@@ -759,6 +779,7 @@ ATT.ClipSize = 30
 
 ATT.Category = {"eft_mag_mp5"}
 
+-- EFT ID: 5926c3b286f774640d189b6b
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_30")
 
 ///////////////////////////////////////      eft_mp5_mag_20
@@ -786,6 +807,7 @@ ATT.ClipSize = 20
 
 ATT.Category = {"eft_mag_mp5"}
 
+-- EFT ID: 5d2f213448f0355009199284
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_20")
 
 ///////////////////////////////////////      eft_mp5_mag_50
@@ -814,6 +836,7 @@ ATT.ClipSize = 50
 
 ATT.Category = {"eft_mag_mp5"}
 
+-- EFT ID: 5a351711c4a282000b1521a4
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_50")
 
 ///////////////////////////////////////      eft_mp5_mount_top
@@ -841,6 +864,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5926dad986f7741f82604363
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_top")
 
 ///////////////////////////////////////      eft_mp5_mount_top_tri
@@ -870,6 +894,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 5a966ec8a2750c00171b3f36
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_top_tri")
 
 ///////////////////////////////////////      eft_mp5_mount_sil
@@ -914,4 +939,5 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 59c63b4486f7747afb151c1c
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_sil")

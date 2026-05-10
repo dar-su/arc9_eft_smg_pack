@@ -32,6 +32,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59ccd11386f77428f24a488f
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_std")
 
 
@@ -64,6 +65,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 10
 
 
+-- EFT ID: 5998529a86f774647f44f421
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sb7")
 
 
@@ -96,6 +98,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 
+-- EFT ID: 5c0673fb0db8340023300271
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sg919_20")
 
 
@@ -128,6 +131,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 5c0672ed0db834001b7353f3
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_sg919_30")
 
 
@@ -157,6 +161,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+-- EFT ID: 599860ac86f77436b225ed1a
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_std")
 
 
@@ -183,6 +188,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.Category = {"eft_pp1901_muzzle"}
 
 
+-- EFT ID: 5998598e86f7740b3f498a86
 ARC9.LoadAttachment(ATT, "eft_vityaz_muzzle_saiga9")
 
 
@@ -209,6 +215,7 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_pp-19-01_izhmash_vityaz_s
 ATT.Category = {"eft_pp1901_muzzle"}
 
 
+-- EFT ID: 5998597786f77414ea6da093
 ARC9.LoadAttachment(ATT, "eft_vityaz_muzzle_std")
 
 
@@ -241,6 +248,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 59985a6c86f77414ec448d17
 ARC9.LoadAttachment(ATT, "eft_vityaz_rec_sn")
 
 
@@ -262,6 +270,7 @@ ATT.CustomPros = { Ergonomics = "+3" }
 ATT.Category = {"eft_vityaz_dustcover"}
 
 
+-- EFT ID: 59985a8086f77414ec448d1a
 ARC9.LoadAttachment(ATT, "eft_vityaz_rec_std")
 
 
@@ -280,6 +289,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vityaz_rearsight"}
 
 
+-- EFT ID: 599860e986f7743bb57573a6
 ARC9.LoadAttachment(ATT, "eft_vityaz_rs_std")
 
 
@@ -314,6 +324,7 @@ ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 
 
+-- EFT ID: 59bfc5c886f7743bf6794e62
 ARC9.LoadAttachment(ATT, "eft_vityaz_silencer_std")
 
 
@@ -351,6 +362,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 599851db86f77467372f0a18
 ARC9.LoadAttachment(ATT, "eft_vityaz_stock_std")
 
 
@@ -415,6 +427,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 676177df1f08ed5e8800b7ae
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_sagmk1")
 
 ///////////////////////////////////////      eft_vityaz_gas_vrlps
@@ -471,6 +484,7 @@ ATT.Attachments = {
 }
 
 
+-- EFT ID: 65ae4f57e343f0acc00824da
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_vrlps")
 
 ///////////////////////////////////////      eft_vityaz_mag_50
@@ -499,6 +513,7 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
 
+-- EFT ID: 6749c40822a2740bb408d066
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_50")
 
 ///////////////////////////////////////      eft_grip_ak_pp19
@@ -522,4 +537,5 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_vityaz.mdl"
 ATT.Category = {"eft_ak_grip"}
 
 
+-- EFT ID: 5998517986f7746017232f7e
 ARC9.LoadAttachment(ATT, "eft_grip_ak_pp19")

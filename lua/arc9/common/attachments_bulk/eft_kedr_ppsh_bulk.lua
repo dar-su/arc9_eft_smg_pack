@@ -27,6 +27,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 57f3c7e024597738ea4ba286
 ARC9.LoadAttachment(ATT, "eft_kedr_silmount")
 
 
@@ -57,6 +58,7 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_kedr_silen"}
 
+-- EFT ID: 57f3c8cc2459773ec4480328
 ARC9.LoadAttachment(ATT, "eft_kedr_silencer")
 
 ///////////////////////////////////////      eft_kedr_stockk
@@ -84,6 +86,7 @@ ATT.ExcludeElements = {"eft_mount_kedr_ris"}
 
 ATT.HasStock = false 
 
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_kedr_stockk")
 
 
@@ -105,6 +108,7 @@ ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_kedr_pgrip"}
 
+-- EFT ID: 57d152ec245977144076ccdf
 ARC9.LoadAttachment(ATT, "eft_kedr_pg")
 
 ///////////////////////////////////////      eft_mount_kedr_ris
@@ -142,6 +146,7 @@ ATT.Attachments = {
     },
 }
 
+-- EFT ID: 57ee59b42459771c7b045da5
 ARC9.LoadAttachment(ATT, "eft_mount_kedr_ris")
 
 
@@ -170,6 +175,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_kedr"}
 
+-- EFT ID: 57d14e1724597714010c3f4b
 ARC9.LoadAttachment(ATT, "eft_kedr_mag_20")
 
 ///////////////////////////////////////      eft_kedr_mag_30
@@ -197,6 +203,7 @@ ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Category = {"eft_mag_kedr"}
 
+-- EFT ID: 57d1519e24597714373db79d
 ARC9.LoadAttachment(ATT, "eft_kedr_mag_30")
 
 
@@ -212,6 +219,8 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_kedr_conv"}
+
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_kedr_conv_b")
 
 ///////////////////////////////////////      eft_kedr_conv_klin
@@ -230,6 +239,8 @@ ATT.Category = {"eft_kedr_conv"}
 ATT.RPM = 1000
 ATT.ActivateElements = {"pmmallowed"}
 
+
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_kedr_conv_klin")
 
 
@@ -264,6 +275,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ppsh41_barrel"}
 
+-- EFT ID: 5ea02bb600685063ec28bfa1
 ARC9.LoadAttachment(ATT, "eft_ppsh41_barrel_269")
 
 ///////////////////////////////////////      eft_ppsh41_dust
@@ -278,7 +290,6 @@ ATT.Description = [[A standard-issue dust cover for PPSh-41.]]
 ATT.HasReciever = true 
 
 ATT.EFTErgoAdd = -3
-ATT.CustomCons = { Ergonomics = "-3" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 
@@ -287,6 +298,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ppsh41_dc"}
 
+-- EFT ID: 5ea03e5009aa976f2e7a514b
 ARC9.LoadAttachment(ATT, "eft_ppsh41_dust")
 
 ///////////////////////////////////////      eft_ppsh41_stock
@@ -310,6 +322,7 @@ ATT.VisualRecoilMult = 0.8
 
 ATT.Category = {"eft_stock_ppsh41"}
 
+-- EFT ID: 5ea03e9400685063ec28bfa4
 ARC9.LoadAttachment(ATT, "eft_ppsh41_stock")
 
 ///////////////////////////////////////      eft_ppsh41_mag_35
@@ -338,6 +351,7 @@ ATT.HasMag = true
 ATT.ClipSize = 35
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 5ea034eb5aad6446a939737b
 ARC9.LoadAttachment(ATT, "eft_ppsh41_mag_35")
 
 ///////////////////////////////////////      eft_ppsh41_mag_71
@@ -366,4 +380,5 @@ ATT.HasMag = true
 ATT.ClipSize = 71
 -- ATT.ChamberSize = 1
 
+-- EFT ID: 5ea034f65aad6446a939737e
 ARC9.LoadAttachment(ATT, "eft_ppsh41_mag_71")
