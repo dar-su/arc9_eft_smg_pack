@@ -93,7 +93,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_409mm_barrel.png", "m
 ATT.Description = "A 409mm barrel for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 0.92
@@ -133,7 +132,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_pike_arms_114mm_t
 ATT.Description = "A threaded 114mm barrel for the UZI PRO. Manufactured by Pike Arms."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.058
 ATT.PhysBulletMuzzleVelocityMult = 0.9675
 
@@ -179,7 +177,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_114mm_barrel.png"
 ATT.Description = "A 114mm barrel for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.065
 ATT.PhysBulletMuzzleVelocityMult = 0.969
 
@@ -215,7 +212,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_170mm_barrel.png"
 ATT.Description = "A 170mm barrel for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.042
@@ -255,7 +251,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_210mm_barrel.png"
 ATT.Description = "A 210mm barrel for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -2.5
-ATT.CustomCons = { Ergonomics = "-2.5" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.026
@@ -333,7 +328,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_3lug_barrel_thread_pr
 ATT.Description = "A thread protector for UZI submachine gun 3-lug barrels. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -355,7 +349,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_vented_barrel_shroud.png",
 ATT.Description = "A vented barrel shroud for the UZI submachine gun, which allows to reduce barrel heat when firing in bursts. Manufactured by Israel Weapon Industries."      
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.948
@@ -381,7 +374,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_3lug_barrel_retaining
 ATT.Description = "A special 3-lug nut required to install 9x19 barrels on the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -404,7 +396,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_barrel_retaining_nut.
 ATT.Description = "A special nut required to install 9x19 barrels on the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -427,7 +418,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_sound_suppressor.png"
 ATT.Description = "A standard-issue sound suppressor for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.HeatCapacityMult = 1.125
@@ -461,7 +451,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_barrel_retaining_
 ATT.Description = "A special nut required to install 9x19 barrels on UZI PRO. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -484,7 +473,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_masada_thread_pro
 ATT.Description = "The Masada thread protector for UZI PRO submachine gun barrels. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -506,7 +494,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_type_3_buttstock.png", "mi
 ATT.Description = "A wooden buttstock for the UZI submachine gun. A relic from the 60s, still smells like preservation grease. Manufactured by Israel Weapon Industries."       
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -531,12 +518,10 @@ ATT.Description = [[A foldable buttstock for the UZI submachine gun. The most fa
 Slap it HARDER, I know you want it!]]
 
 ATT.EFTErgoAdd = 5
--- ATT.CustomPros = { Ergonomics = "+5" }
 -- ATT.RecoilMult = 0.79
 -- ATT.VisualRecoilMult = 0.79
 
 
-ATT.CustomPros = { Ergonomics = "+5", ["Recoil while extended"] = "-21%" }
 
 ATT.ToggleStats = {
     {
@@ -572,12 +557,10 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_type_6_buttstock.png", "mi
 ATT.Description = "A wire buttstock for the UZI submachine gun. Thats right, its just like those gangsters from the 80s. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 7
--- ATT.CustomPros = { Ergonomics = "+7" }
 -- ATT.RecoilMult = 0.8
 -- ATT.VisualRecoilMult = 0.8
 
 
-ATT.CustomPros = { Ergonomics = "+7", ["Recoil while extended"] = "-20%" }
 
 ATT.ToggleStats = {
     {
@@ -613,7 +596,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_type_7_buttstock.png", "mi
 ATT.Description = "A polymer buttstock for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.RecoilMult = 0.77
 ATT.VisualRecoilMult = 0.77
 
@@ -638,7 +620,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_stormwerkz_stock_adapter.p
 ATT.Description = "A Picatinny adapter designed for installation of various buttstocks on the UZI submachine gun. Manufactured by StormWerkz."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 
 ATT.SortOrder = -1
@@ -669,7 +650,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_csm_stock_adapter.png"
 ATT.Description = "A Picatinny adapter designed for installation of various buttstocks on the UZI PRO submachine gun. Manufactured by Custom Smith Manufacturing."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 
 ATT.SortOrder = -1
@@ -728,12 +708,10 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_stabilizing_brace.png"
 ATT.Description = "A foldable pistol brace for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 6
--- ATT.CustomPros = { Ergonomics = "+6" }
 -- ATT.RecoilMult = 0.87
 -- ATT.VisualRecoilMult = 0.87
 
 
-ATT.CustomPros = { Ergonomics = "+6", ["Recoil while extended"] = "-13%" }
 
 ATT.ToggleStats = {
     {
@@ -769,12 +747,10 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_sbr_buttstock.png", "m
 ATT.Description = "A foldable buttstock for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 8
--- ATT.CustomPros = { Ergonomics = "+8" }
 -- ATT.RecoilMult = 0.85
 -- ATT.VisualRecoilMult = 0.85
 
 
-ATT.CustomPros = { Ergonomics = "+8", ["Recoil while extended"] = "-15%" }
 
 ATT.ToggleStats = {
     {
@@ -810,7 +786,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_a3_tactical_modular_fo
 ATT.Description = "A foldable pistol brace for the UZI PRO submachine gun. Manufactured by A3 Tactical."
 
 ATT.EFTErgoAdd = 14
--- ATT.CustomPros = { Ergonomics = "+14" }
 -- ATT.RecoilMult = 0.88
 -- ATT.VisualRecoilMult = 0.88
 
@@ -833,7 +808,6 @@ ATT.DrawFunc = function(swep, model)
     model:SetBodygroup(0, swep:GetValue("EFTFoldStock") and 1 or 0)
 end
 
-ATT.CustomPros = { Ergonomics = "+14", ["Recoil while extended"] = "-12%" }
 
 
 ATT.SortOrder = -1
@@ -854,7 +828,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_backplate.png", "mips 
 ATT.Description = "A standard-issue receiver cover plate for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 
 ATT.SortOrder = -1
@@ -876,7 +849,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_polymer_handguard.png", "m
 ATT.Description = "A standard-issue polymer handguard for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 ATT.HeatCapacityMult = 1.044
 
 ATT.HasHG = true
@@ -899,7 +871,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_handguard_with_foregrip.pn
 ATT.Description = "A handguard with a vertical foregrip and side rail slots for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.016
@@ -947,7 +918,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_kgrip_handguard.png", "mip
 ATT.Description = "A handguard with a foregrip for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.031
@@ -978,7 +948,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_a3_tactical_mlok_handg
 ATT.Description = "A handguard for the IWI UZI PRO Pistol, which functions as a foregrip and trigger guard. Equipped with M-LOK interface for attaching additional equipment. Manufactured by A3 Tactical."
 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.983
@@ -1052,7 +1021,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_handguard_rail.png", "mips
 ATT.Description = "A handguard rail for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -1110,7 +1078,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_dust_cover.png", "mips
 ATT.Description = "A standard dust cover with a top rail for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.HeatCapacityMult = 1.042
 
 ATT.SortOrder = -1
@@ -1142,7 +1109,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_smg_rail_adapter.png",
 ATT.Description = "A rail adapter for the UZI PRO SMG submachine gun, allows installation of tactical equipment on the sides of the weapon. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.032
 
 ATT.SortOrder = -1
@@ -1181,7 +1147,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pistol_grip_cover.png", "m
 ATT.Description = "A standard cover panel for the UZI submachine gun pistol grip. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.HasGrip = true
 
@@ -1203,7 +1168,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_20round_magazine.png"
 ATT.Description = "A 20-round magazine for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_20.mdl"
@@ -1233,7 +1197,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_25round_magazine.png"
 ATT.Description = "A 25-round magazine for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_25.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_25.mdl"
@@ -1290,7 +1253,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_40round_magazine.png"
 ATT.Description = "A 40-round magazine for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_40.mdl"
@@ -1320,7 +1282,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_9x19_50round_magazine.png"
 ATT.Description = "A 50-round magazine for the UZI submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_50.mdl"
@@ -1350,7 +1311,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_20round_magazine.
 ATT.Description = "A 20-round magazine for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_pro20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_pro20.mdl"
@@ -1380,7 +1340,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/uzi_pro_9x19_25round_magazine.
 ATT.Description = "A 25-round magazine for the UZI PRO submachine gun. Manufactured by Israel Weapon Industries."
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_pro25.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_pro25.mdl"
@@ -1444,7 +1403,6 @@ ATT.SortOrder = -2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 
@@ -1474,7 +1432,6 @@ ATT.Icon = Material("entities/eft_uzi_attachments/balls.png", "mips smooth")
 ATT.Description = "A 100-round double drum magazine for the UZI submachine gun. The magazine modification is equipped with a transparent plastic cover that allows to check the ammo count. Manufactured by Beta Company."
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_uzi_balls.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_uzi_balls_drop.mdl"

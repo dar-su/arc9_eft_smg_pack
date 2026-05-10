@@ -49,7 +49,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
@@ -82,7 +81,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
@@ -115,7 +113,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
@@ -180,7 +177,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_saiga_9_izhmash_saiga_9_std_9x19.mdl"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -205,7 +201,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -235,7 +230,6 @@ ATT.Category = {"eft_vityaz_dustcover"}
 ATT.ActivateElements = {"railedcover"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
@@ -265,7 +259,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.Category = {"eft_vityaz_dustcover"}
 
@@ -316,7 +309,6 @@ ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.SpreadMult = 1.01
@@ -347,7 +339,6 @@ ATT.HasStock = true
 ATT.Category = {"eft_vityaz_stock"}
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.66
 ATT.VisualRecoilMult = 0.66
 
@@ -380,7 +371,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HeatCapacityMult = 0.985
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 
@@ -444,7 +434,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HeatCapacityMult = 0.985
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.975
 ATT.VisualRecoilMult = 0.975
 
@@ -529,7 +518,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_vityaz.mdl"

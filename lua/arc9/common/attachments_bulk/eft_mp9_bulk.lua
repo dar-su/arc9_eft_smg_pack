@@ -16,7 +16,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp9_muzzle"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -51,7 +50,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.87
@@ -81,7 +79,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-13%" }
 
 ATT.Category = {"eft_mp9_stock"}
 
@@ -182,7 +179,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 ATT.Category = {"eft_mp9_bottom_n"}
 
@@ -207,7 +203,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_mp9_rec"}
 
@@ -250,7 +245,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasReceiver = true 
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Category = {"eft_mp9_rec"}
 
@@ -334,7 +328,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 15
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.Category = {"eft_mag_mp9"}
@@ -363,7 +356,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_mp9"}
@@ -391,7 +383,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 25
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mp9"}
@@ -418,7 +409,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Category = {"eft_mag_mp9"}

@@ -15,7 +15,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 -- ATT.EFTErgoAdd = -5
--- ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.Spread = 5.43 * ARC9.MOAToAcc
@@ -52,7 +51,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 -- ATT.Spread = 5.43 * ARC9.MOAToAcc
@@ -89,7 +87,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 -- ATT.EFTErgoAdd = -5
--- ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 -- ATT.Spread = 5.43 * ARC9.MOAToAcc
@@ -126,7 +123,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.VisualRecoilMult = 0.96
 ATT.RecoilMult = 0.96
 -- ATT.Spread = 5.43 * ARC9.MOAToAcc
@@ -168,7 +164,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 13
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.MalfunctionMeanShotsToFailMult = 0.985
 
@@ -196,7 +191,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.MalfunctionMeanShotsToFailMult = 0.975
 
@@ -218,7 +212,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7", ["Recoil while unfolded"] = "-22%" }
 -- ATT.VisualRecoilMult = 0.66
 -- ATT.RecoilMult = 0.66
 
@@ -256,7 +249,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 -- ATT.VisualRecoilMult = 0.66
 -- ATT.RecoilMult = 0.66
 
@@ -289,7 +281,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 -- ATT.VisualRecoilMult = 0.66
 -- ATT.RecoilMult = 0.66
 
@@ -410,7 +401,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/vectorfh.png", "mips smooth")
 ATT.Description = [[A standard-issue flash hider for the KRISS Vector .45 ACP SMG.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 -- ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -435,7 +425,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/vectorthr.png", "mips smooth")
 ATT.Description = [[A thread protector cap for the KRISS Vector 9x19 barrel.]]
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -460,7 +449,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/vectorfh.png", "mips smooth")
 ATT.Description = [[A standard-issue flash hider for the KRISS Vector .45 ACP SMG.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.VisualRecoilMult = 0.93
 ATT.RecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -485,7 +473,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/vectorthr.png", "mips smooth")
 ATT.Description = [[A thread protector cap for the KRISS Vector .45 ACP barrel.]]
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

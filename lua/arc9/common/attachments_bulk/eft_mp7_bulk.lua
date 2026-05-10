@@ -16,7 +16,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp7_muzzle"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.SpreadMult = 0.97
@@ -49,7 +48,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -20
-ATT.CustomCons = { Ergonomics = "-20" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -83,7 +81,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBufferTube = true
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-17%" }
 
 ATT.Category = {"eft_mp7_stock"}
 
@@ -123,7 +120,6 @@ ATT.HasBufferTube = true
 ATT.Category = {"eft_mp7_stock"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3", ["Recoil while extended"] = "-17%" }
 
 ATT.ToggleStats = {
     {
@@ -165,7 +161,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_mp7"}
@@ -194,7 +189,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mp7"}
@@ -222,7 +216,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 40
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.Category = {"eft_mag_mp7"}

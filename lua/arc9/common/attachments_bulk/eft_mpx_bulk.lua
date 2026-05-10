@@ -30,7 +30,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Category = {"eft_mpx_charge"}
 
@@ -50,7 +49,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.Category = {"eft_mpx_charge"}
 
@@ -70,7 +68,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
 ATT.EFTErgoAdd = 1.5
-ATT.CustomPros = { Ergonomics = "+1.5" }
 
 ATT.Category = {"eft_mpx_charge"}
 
@@ -93,7 +90,6 @@ ATT.HasReceiver = true
 ATT.Category = {"eft_mpx_upper"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 -- ATT.RecoilMult = 0.99
 -- ATT.VisualRecoilMult = 0.99
 -- ATT.HeatCapacityMult = 0.989
@@ -161,7 +157,6 @@ ATT.MuzzleEffectQCA = 7
 ATT.Category = {"eft_mpx_barrel"}
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.03
@@ -203,7 +198,6 @@ ATT.MuzzleEffectQCA = 8
 ATT.Category = {"eft_mpx_barrel"}
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.HeatCapacityMult = 1.06
@@ -245,7 +239,6 @@ ATT.MuzzleEffectQCA = 6
 ATT.Category = {"eft_mpx_barrel"}
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.03
@@ -286,7 +279,6 @@ ATT.BarrelLengthAdd = 1
 ATT.Category = {"eft_mpx_barrel"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 -- ATT.RecoilMult = 0.97
 -- ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.06
@@ -401,7 +393,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
@@ -444,7 +435,6 @@ ATT.BarrelLengthAdd = 2
 ATT.Category = {"eft_mpx_barrel"}
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 -- ATT.RecoilMult = 0.98
 -- ATT.VisualRecoilMult = 0.98
 -- ATT.HeatCapacityMult = 1.04
@@ -551,7 +541,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -7
-ATT.CustomCons = { Ergonomics = "-7" }
 ATT.RecoilMult = 0.87
 ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
@@ -592,7 +581,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 -- ATT.RecoilMult = 0.99
 -- ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.976
@@ -652,7 +640,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_105_inch_m
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.964
@@ -736,7 +723,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_14_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.952
@@ -842,7 +828,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_45_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 15
-ATT.CustomPros = { Ergonomics = "+15" }
 -- ATT.RecoilMult = 0.96
 -- ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.009
@@ -902,7 +887,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_65_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 -- ATT.RecoilMult = 0.96
 -- ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.02
@@ -963,7 +947,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_lancer_oem_14_inch.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.025
@@ -1043,7 +1026,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1_4_inch.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 9
-ATT.CustomPros = { Ergonomics = "+9" }
 -- ATT.RecoilMult = 0.99
 -- ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.976
@@ -1100,7 +1082,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1_8_inc
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 0.976
@@ -1161,7 +1142,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_4_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.RecoilMult = 0.995
 ATT.VisualRecoilMult = 0.995
 ATT.Category = {"eft_mpx_hguard"}
@@ -1218,7 +1198,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_6_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.RecoilMult = 0.985
 ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 1.02
@@ -1279,7 +1258,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_8_inc
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.98
 ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.02
@@ -1346,7 +1324,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mpx"}
@@ -1505,7 +1482,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 41
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.958
 
 ATT.Category = {"eft_mag_mpx"}
@@ -1534,7 +1510,6 @@ ATT.ClipSize = 50
 ATT.DropMagazineTime = 0.67
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.MalfunctionMeanShotsToFailMult = 0.832
 
 ATT.Category = {"eft_mag_mpx"}
@@ -1560,7 +1535,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.93
 ATT.VisualRecoilMult = 0.93
 ATT.SpreadMult = 0.97
@@ -1588,7 +1562,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 1.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.88
 ATT.VisualRecoilMult = 0.88
 ATT.SpreadMult = 0.98
@@ -1675,7 +1648,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_mpx.mdl"
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_pgrip", "eft_mpx_pgrip"}
@@ -1724,7 +1696,6 @@ ATT.DrawFunc = function(swep, model)
 end
 
 ATT.EFTErgoAdd = 17
-ATT.CustomPros = { Ergonomics = "+17", ["Recoil while extended"] = "-26%" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
@@ -1770,7 +1741,6 @@ ATT.DrawFunc = function(swep, model)
 end
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12", ["Recoil while extended"] = "-16%" }
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"

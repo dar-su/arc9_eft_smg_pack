@@ -15,7 +15,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -6
-ATT.CustomCons = { Ergonomics = "-6" }
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 ATT.Spread = 5.5 * ARC9.MOAToAcc
@@ -51,7 +50,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 ATT.Spread = 5.43 * ARC9.MOAToAcc
@@ -83,7 +81,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/omegamount.png", "mips smooth"
 ATT.Description = [[The Direct Thread Mount adapter for installation of SilencerCo Omega 45k sound suppressor directly onto the barrel threading.]]
 
 -- ATT.EFTErgoAdd = 1
--- ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -115,7 +112,6 @@ ATT.Icon = Material("entities/eft_ump_attachments/vectorfh.png", "mips smooth")
 ATT.Description = [[A standard-issue flash hider for the KRISS Vector .45 ACP SMG.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.VisualRecoilMult = 0.93
 ATT.RecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.005
@@ -170,7 +166,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2", ["Recoil while unfolded"] = "-34%" }
 -- ATT.VisualRecoilMult = 0.66
 -- ATT.RecoilMult = 0.66
 
@@ -205,7 +200,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -16
-ATT.CustomCons = { Ergonomics = "-16" }
 ATT.RecoilMult = 0.89
 ATT.VisualRecoilMult = 0.89
 ATT.SpreadMult = 0.98

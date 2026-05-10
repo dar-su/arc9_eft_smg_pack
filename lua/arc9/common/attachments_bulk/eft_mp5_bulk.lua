@@ -14,7 +14,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 0.969
 
 ATT.HasBarrel = true 
@@ -71,7 +70,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 0.67
 
@@ -128,7 +126,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 1.0176
 
 ATT.HasBarrel = true 
@@ -238,7 +235,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 10
-ATT.CustomPros = { Ergonomics = "+10" }
 ATT.HeatCapacityMult = 1.03
 
 ATT.Category = {"eft_mp5_hg"}
@@ -262,7 +258,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 1.02
 
 ATT.Category = {"eft_mp5_hg"}
@@ -315,7 +310,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 11
-ATT.CustomPros = { Ergonomics = "+11" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.975
@@ -369,7 +363,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 13
-ATT.CustomPros = { Ergonomics = "+13" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
@@ -437,7 +430,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8" }
 ATT.HeatCapacityMult = 1.038
 
 ATT.Category = {"eft_mp5sd_hg"}
@@ -465,7 +457,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasHG = true 
 
 ATT.EFTErgoAdd = 12
-ATT.CustomPros = { Ergonomics = "+12" }
 ATT.RecoilMult = 0.97
 ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.042
@@ -493,7 +484,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.RecoilMult = 0.76
 ATT.VisualRecoilMult = 0.76
 
@@ -522,7 +512,6 @@ ATT.HasBufferTube = true
 ATT.Category = {"eft_mp5_stock"}
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7", ["Recoil while extended"] = "-23%" }
 
 ATT.ToggleStats = {
     {
@@ -556,7 +545,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasBufferTube = true 
 
@@ -581,7 +569,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 ATT.HasBufferTube = true 
 
@@ -606,7 +593,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.Category = {"eft_mp5_muzzle"}
 
@@ -635,7 +621,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_mp5_muzzle"}
 
@@ -669,7 +654,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.HeatCapacityMult = 0.99
@@ -721,7 +705,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 1.13
@@ -767,7 +750,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -4
-ATT.CustomCons = { Ergonomics = "-4" }
 ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_std_curved_9x19_30.mdl"
@@ -795,7 +777,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_kurtz_std_9x19_20.mdl"
@@ -823,7 +804,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 
 ATT.MalfunctionMeanShotsToFailMult = 0.88
 
@@ -878,7 +858,6 @@ ATT.Icon = Material("entities/eft_mp5_attachments/hk_mp5_b&t_trirail_receiver_mo
 ATT.Description = "A rail mount designed by Brügger & Thomet for the HK MP5 submachine gun. It is mounted on the weapons receiver and allows additional installation of scopes and reflex sights."
 
 ATT.EFTErgoAdd = -1.5
-ATT.CustomCons = { Ergonomics = "-1.5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -908,7 +887,6 @@ ATT.Icon = Material("entities/eft_mp5_attachments/hk_mp5sd_b&t_trirail_ring_moun
 ATT.Description = "The Tri-Rail Ring mount by B&T is installed on the MP5SD silencer and adds 3 Picatinny rails, designed for installation of additional equipment."
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"

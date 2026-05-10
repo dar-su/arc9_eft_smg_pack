@@ -15,7 +15,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sr2m_muzzle"}
 
 ATT.EFTErgoAdd = 3
-ATT.CustomPros = { Ergonomics = "+3" }
 
 -- EFT ID: 62e2a754b6c0ee2f230cee0f
 ARC9.LoadAttachment(ATT, "eft_sr2m_handstop")
@@ -34,7 +33,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -14
-ATT.CustomCons = { Ergonomics = "-14" }
 ATT.RecoilMult = 0.91
 ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.01
@@ -70,7 +68,6 @@ ATT.Category = {"eft_sr2m_hg"}
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
@@ -108,7 +105,6 @@ ATT.Category = {"eft_sr2m_pg"}
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 -- EFT ID: 637b9c37b7e3bc41b21ce71a
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_std")
@@ -131,7 +127,6 @@ ATT.Category = {"eft_sr2m_hg"}
 ATT.HasHG = true
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
@@ -171,7 +166,6 @@ ATT.Category = {"eft_sr2m_pg"}
 ATT.HasGrip = true
 
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 
 -- EFT ID: 637ba29bf7ca6372bf2613db
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_blk")
@@ -251,7 +245,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sr2m_rec"}
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.Attachments = {
     {
@@ -280,7 +273,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_sr2m_mount"}
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Attachments = {
     {
@@ -360,7 +352,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_sr2_killflash.mdl"
 ATT.Category = {"eft_sr2m_optic_aux"}
 
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 -- EFT ID: 62ff9faffe938a24c90c10df
 ARC9.LoadAttachment(ATT, "eft_sr2m_optic_shade")
@@ -378,7 +369,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 7
-ATT.CustomPros = { Ergonomics = "+7", ["Recoil while extended"] = "-27%" }
 
 ATT.Category = {"eft_sr2m_stock"}
 
@@ -414,7 +404,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = 8
-ATT.CustomPros = { Ergonomics = "+8", ["Recoil while extended"] = "-27%" }
 
 ATT.Category = {"eft_sr2m_stock"}
 
@@ -485,7 +474,6 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.MalfunctionMeanShotsToFailMult = 0.965
 
 ATT.Category = {"eft_mag_sr2m"}

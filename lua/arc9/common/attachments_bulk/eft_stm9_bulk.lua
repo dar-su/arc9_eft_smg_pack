@@ -13,7 +13,6 @@ ATT.Description = [[A 10.5 inches (266mm) long barrel for the STM-9 carbine, cha
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -10
-ATT.CustomCons = { Ergonomics = "-10" }
 ATT.RecoilMult = 0.96
 ATT.VisualRecoilMult = 0.96
 -- ATT.PhysBulletMuzzleVelocityMult = 0.94
@@ -53,7 +52,6 @@ ATT.Description = [[A 12 inches (304mm) long barrel for the STM-9 carbine, chamb
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -12
-ATT.CustomCons = { Ergonomics = "-12" }
 ATT.RecoilMult = 0.95
 ATT.VisualRecoilMult = 0.95
 ATT.PhysBulletMuzzleVelocityMult = 1.012
@@ -91,7 +89,6 @@ ATT.Description = [[A 14 inches (355mm) long barrel for the STM-9 carbine, chamb
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -15
-ATT.CustomCons = { Ergonomics = "-15" }
 ATT.RecoilMult = 0.92
 ATT.VisualRecoilMult = 0.92
 ATT.PhysBulletMuzzleVelocityMult = 1.032
@@ -129,7 +126,6 @@ ATT.Description = [[A 16 inches (406mm) long barrel for the STM-9 carbine, chamb
 ATT.HasBarrel = true 
 
 ATT.EFTErgoAdd = -19
-ATT.CustomCons = { Ergonomics = "-19" }
 ATT.RecoilMult = 0.9
 ATT.VisualRecoilMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.045
@@ -164,7 +160,6 @@ ATT.Icon = Material("entities/eft_stm9_attachments/w.png", "mips smooth")
 ATT.Description = [[A regular magazine well for the Soyuz-TM STM-9 carbine.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -184,7 +179,6 @@ ATT.Icon = Material("entities/eft_stm9_attachments/wg.png", "mips smooth")
 ATT.Description = [[A regular magazine well for the Soyuz-TM STM-9 carbine. Grey version.]]
 
 ATT.EFTErgoAdd = 5
-ATT.CustomPros = { Ergonomics = "+5" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -211,7 +205,6 @@ ATT.HasReceiver = true
 ATT.Category = {"eft_stm9_upper"}
 
 ATT.EFTErgoAdd = 4
-ATT.CustomPros = { Ergonomics = "+4" }
 
 ATT.Attachments = {
     {
@@ -264,7 +257,6 @@ ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
 ATT.EFTErgoAdd = -2
-ATT.CustomCons = { Ergonomics = "-2" }
 ATT.RecoilMult = 0.94
 ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.99
@@ -296,7 +288,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_stmarms_12_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 6.5
-ATT.CustomPros = { Ergonomics = "+6.5" }
 ATT.HeatCapacityMult = 0.982
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Soyuz-TM"
@@ -369,7 +360,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_ar15_stmarms_15_inch_m_lok.mdl"
 ATT.LHIK = true 
 ATT.EFTErgoAdd = 5.5
-ATT.CustomPros = { Ergonomics = "+5.5" }
 ATT.RecoilMult = 0.99
 ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.986
@@ -447,7 +437,6 @@ ATT.LHIK = true
 ATT.Category = {"eft_ar15_hguard"}
 ATT.Folder = "Soyuz-TM"
 ATT.EFTErgoAdd = 6
-ATT.CustomPros = { Ergonomics = "+6" }
 ATT.HeatCapacityMult = 0.978
 ATT.ExcludeElements = {"gasblock_big"}
 

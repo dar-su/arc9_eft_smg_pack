@@ -43,7 +43,6 @@ ATT.HasBarrel = true
 ATT.VisualRecoilMult = 0.87
 ATT.RecoilMult = 0.87
 ATT.EFTErgoAdd = -13
-ATT.CustomCons = { Ergonomics = "-13" }
 ATT.HeatCapacityMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 1.022
 
@@ -73,7 +72,6 @@ ATT.Description = [[An ergonomic butt-pad for the FN P90 SMG, also serves as the
 ATT.VisualRecoilMult = 0.95
 ATT.RecoilMult = 0.95
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -98,7 +96,6 @@ ATT.Description = [[A standard-issue butt-pad for the P90 SMG, produced by Fabri
 ATT.VisualRecoilMult = 0.97
 ATT.RecoilMult = 0.97
 ATT.EFTErgoAdd = 2
-ATT.CustomPros = { Ergonomics = "+2" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -123,7 +120,6 @@ ATT.Description = [[An ergomomic folding charging handle for FN P90, manufacture
 ATT.HasHandle = true 
 
 ATT.EFTErgoAdd = 1
-ATT.CustomPros = { Ergonomics = "+1" }
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -168,7 +164,6 @@ ATT.Icon = Material("entities/eft_p90_attachments/top_effen.png", "mips smooth")
 ATT.Description = [[EFFEN 90 is a low-profile upper receiver for the P90 submachine gun, manufactured by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.04
 ATT.HeatDissipationMult = 1.048
 
@@ -258,7 +253,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
@@ -404,7 +398,6 @@ ATT.SortOrder = 2
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
@@ -432,7 +425,6 @@ ATT.Description = [[A regular flash hider for the P90 SMG. Manufactured by Fabri
 ATT.VisualRecoilMult = 0.93
 ATT.RecoilMult = 0.93
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 ATT.HeatCapacityMult = 1.01
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
@@ -489,7 +481,6 @@ ATT.Icon = Material("entities/eft_p90_attachments/top.png", "mips smooth")
 ATT.Description = [[A regular upper receiver for the P90 submachine gun, manufactured by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.HeatCapacityMult = 1.05
 ATT.HeatDissipationMult = 1.052
 
@@ -543,7 +534,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_p90_rec_mount"}
 
@@ -611,7 +601,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.EFTErgoAdd = -1
-ATT.CustomCons = { Ergonomics = "-1" }
 
 ATT.Category = {"eft_p90_rec_mount"}
 
@@ -664,7 +653,6 @@ ATT.RecoilMult = 0.91
 ATT.HeatCapacityMult = 0.87
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.EFTErgoAdd = -17
-ATT.CustomCons = { Ergonomics = "-17" }
 
 ATT.Silencer = true 
 -- ATT.CustomizePos = Vector(14.5, 30, 4)
@@ -694,7 +682,6 @@ ATT.Description = [[A standard-issue polymer stock for the P90 SMG, manufactured
 ATT.VisualRecoilMult = 0.91
 ATT.RecoilMult = 0.91
 ATT.EFTErgoAdd = 26
-ATT.CustomPros = { Ergonomics = "+26" }
 
 ATT.HasStock = true 
 ATT.SortOrder = 0
@@ -721,7 +708,6 @@ ATT.Description = [[A polymer stock for the civilian PS90 SMG variant. Manufactu
 ATT.VisualRecoilMult = 0.91
 ATT.RecoilMult = 0.91
 ATT.EFTErgoAdd = 26
-ATT.CustomPros = { Ergonomics = "+26" }
 
 ATT.HasStock = true 
 ATT.SortOrder = 0
@@ -747,7 +733,6 @@ ATT.Icon = Material("entities/eft_p90_attachments/top_ps.png", "mips smooth")
 ATT.Description = [[A regular upper receiver for the PS90, produced by Fabrique Nationale Herstal.]]
 
 ATT.EFTErgoAdd = -5
-ATT.CustomCons = { Ergonomics = "-5" }
 ATT.HeatCapacityMult = 1.05
 ATT.HeatDissipationMult = 1.052
 
