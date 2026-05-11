@@ -166,7 +166,7 @@ SWEP.DamageLookupTable = {
 ------------------------- |||           Malfunctions            ||| -------------------------
 
 SWEP.MalfunctionNeverLastShoot = true  
-SWEP.MalfunctionMeanShotsToFail = 700
+SWEP.MalfunctionMeanShotsToFail = 700 * 1.5
 SWEP.MalfunctionMeanShotsToFailMultHot = -0.2
 SWEP.HeatCapacity = 160
 SWEP.HeatDissipation = 2.5
