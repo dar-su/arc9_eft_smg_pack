@@ -14,7 +14,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sr2m_muzzle"}
 
-ATT.EFTErgoAdd = 3
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.087,
+}))
+
 
 -- EFT ID: 62e2a754b6c0ee2f230cee0f
 ARC9.LoadAttachment(ATT, "eft_sr2m_handstop")
@@ -32,12 +37,8 @@ ATT.Description = [[A silencer for the SR-2M "Veresk" 9x21 submachine gun, manuf
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.01
 ATT.HeatCapacityMult = 0.82
-ATT.SpreadMult = 0.99
 
 ATT.Silencer = true 
 ATT.BarrelLengthAdd = 5
@@ -47,6 +48,14 @@ ATT.MuzzleEffectQCA = 5
 ATT.NoFlash = true
 
 ATT.Category = {"eft_sr2m_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -6,
+    weight = 0.575,
+    velocity = 0.9,
+}))
+
 
 -- EFT ID: 62e2a7138e1ac9380579c122
 ARC9.LoadAttachment(ATT, "eft_sr2m_silencer")
@@ -67,7 +76,6 @@ ATT.Category = {"eft_sr2m_hg"}
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.Attachments = {
     {
@@ -85,6 +93,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 62e15547db1a5c41971c1b5e
 ARC9.LoadAttachment(ATT, "eft_sr2m_hg_std")
@@ -104,7 +118,12 @@ ATT.Category = {"eft_sr2m_pg"}
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 6
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 637b9c37b7e3bc41b21ce71a
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_std")
@@ -126,7 +145,6 @@ ATT.Category = {"eft_sr2m_hg"}
 
 ATT.HasHG = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.Attachments = {
     {
@@ -144,6 +162,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.12,
+}))
+
 
 -- EFT ID: 637ba19df7ca6372bf2613d7
 ARC9.LoadAttachment(ATT, "eft_sr2m_hg_blk")
@@ -165,7 +189,12 @@ ATT.Category = {"eft_sr2m_pg"}
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 6
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 637ba29bf7ca6372bf2613db
 ARC9.LoadAttachment(ATT, "eft_sr2m_pg_blk")
@@ -198,6 +227,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.06,
+}))
+
+
 -- EFT ID: 62ed1921b3608410ef5a2c04
 ARC9.LoadAttachment(ATT, "eft_sr2m_rail_big")
 
@@ -228,6 +262,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 62ed189fb3608410ef5a2bfc
 ARC9.LoadAttachment(ATT, "eft_sr2m_rail_short")
 
@@ -244,7 +283,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sr2m_rec"}
 
-ATT.EFTErgoAdd = 5
 
 ATT.Attachments = {
     {
@@ -255,6 +293,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.168,
+}))
+
 
 -- EFT ID: 62e27a7865f0b1592a49e17b
 ARC9.LoadAttachment(ATT, "eft_sr2m_rec_std")
@@ -272,7 +316,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_sr2m_mount"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -283,6 +326,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 62e281349ecd3f493f6df954
 ARC9.LoadAttachment(ATT, "eft_sr2m_b17")
@@ -303,7 +352,6 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_sr2m_tochmash_kp.mdl"
 ATT.Category = {"eft_sr2m_mount"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
 
 ATT.FoldSights = true
 
@@ -333,6 +381,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 62ff9920fe938a24c90c10d2
 ARC9.LoadAttachment(ATT, "eft_sr2m_optic")
 
@@ -351,7 +405,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/tactical_sr2_killflash.mdl"
 
 ATT.Category = {"eft_sr2m_optic_aux"}
 
-ATT.EFTErgoAdd = 2
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.005,
+}))
+
 
 -- EFT ID: 62ff9faffe938a24c90c10df
 ARC9.LoadAttachment(ATT, "eft_sr2m_optic_shade")
@@ -368,15 +427,14 @@ ATT.Description = [[A folding stock for SR-2M submachine gun, manufactured by Ts
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 7
 
 ATT.Category = {"eft_sr2m_stock"}
 
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.73,
-        VisualRecoilMult = 0.73,
+        RecoilMult = 0.81,
+        VisualRecoilMult = 0.81,
         ActivateElements = {"eft_sr2m_stock_std_unfolded"},
         HasStock = true
     },
@@ -387,6 +445,12 @@ ATT.ToggleStats = {
         ActivateElements = {"eft_sr2m_stock_std_folded"}
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.21,
+}))
+
 
 -- EFT ID: 62e292e7b6c0ee2f230cee00
 ARC9.LoadAttachment(ATT, "eft_sr2m_stock_std")
@@ -403,15 +467,14 @@ ATT.Description = [[A folding stock for SR-2MP submachine gun, manufactured by T
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 8
 
 ATT.Category = {"eft_sr2m_stock"}
 
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.73,
-        VisualRecoilMult = 0.73,
+        RecoilMult = 0.81,
+        VisualRecoilMult = 0.81,
         ActivateElements = {"eft_sr2m_stock_mp_unfolded"},
         HasStock = true
     },
@@ -422,6 +485,12 @@ ATT.ToggleStats = {
         ActivateElements = {"eft_sr2m_stock_mp_folded"}
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.204,
+}))
+
 
 -- EFT ID: 62e2969582ebf260c20539c2
 ARC9.LoadAttachment(ATT, "eft_sr2m_stock_mp")
@@ -446,9 +515,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
-ATT.MalfunctionMeanShotsToFailMult = 0.965
 
 ATT.Category = {"eft_mag_sr2m"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.13,
+    malfunctionChance = 0.035,
+}))
+
 
 -- EFT ID: 633a98eab8b0506e48497c1a
 ARC9.LoadAttachment(ATT, "eft_sr2m_mag_20")
@@ -473,10 +548,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
-ATT.EFTErgoAdd = -1
-ATT.MalfunctionMeanShotsToFailMult = 0.965
 
 ATT.Category = {"eft_mag_sr2m"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.035,
+}))
+
 
 -- EFT ID: 62e153bcdb1a5c41971c1b5b
 ARC9.LoadAttachment(ATT, "eft_sr2m_mag_30")

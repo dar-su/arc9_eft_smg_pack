@@ -62,6 +62,7 @@ SWEP.HoldTypeSprintHook = function(self, old) if !self:GetValue("HasStock") then
 SWEP.Spread = 6.88 * ARC9.MOAToAcc
 SWEP.RPM = 600
 SWEP.EFTErgo = 62
+SWEP.EFTWeight = 1.22
 SWEP.BarrelLength = 26
 SWEP.Ammo = "pistol"
 SWEP.Firemodes = {

@@ -13,7 +13,6 @@ ATT.Description = "A standard upper receiver for MP5 SMGs, manufactured by Heckl
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
 ATT.HeatCapacityMult = 0.969
 
 ATT.HasBarrel = true 
@@ -54,6 +53,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.544,
+}))
+
+
 -- EFT ID: 5926c0df86f77462f647f764
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_std")
 
@@ -69,7 +74,6 @@ ATT.Description = "An upper receiver for the MP5SD SMG, manufactured by Heckler 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
 ATT.HeatCapacityMult = 0.987
 ATT.PhysBulletMuzzleVelocityMult = 0.67
 
@@ -110,6 +114,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.73,
+    velocity = -33,
+}))
+
+
 -- EFT ID: 5926f2e086f7745aae644231
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_sd")
 
@@ -125,7 +136,6 @@ ATT.Description = "A regular upper receiver for the MP5K SMGs, manufactured by H
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 1.0176
 
 ATT.HasBarrel = true 
@@ -160,6 +170,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.45,
+}))
+
+
 -- EFT ID: 5d2f261548f03576f500e7b7
 ARC9.LoadAttachment(ATT, "eft_mp5_rec_k")
 
@@ -178,6 +194,11 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true 
 
 ATT.Category = {"eft_mp5_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.126,
+}))
+
 
 -- EFT ID: 5926c32286f774616e42de99
 ARC9.LoadAttachment(ATT, "eft_mp5_charge_std")
@@ -198,6 +219,11 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mp5k_charge"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.11,
+}))
+
+
 -- EFT ID: 5d2f2d5748f03572ec0c0139
 ARC9.LoadAttachment(ATT, "eft_mp5_charge_k")
 
@@ -217,6 +243,11 @@ ATT.Category = {"eft_mp5_rs"}
 
 ATT.ExcludeElements = { "eft_mp5_mount_top_tri" }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 5926d2be86f774134d668e4e
 ARC9.LoadAttachment(ATT, "eft_mp5_rs_std")
 
@@ -234,10 +265,15 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 10
 ATT.HeatCapacityMult = 1.03
 
 ATT.Category = {"eft_mp5_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 5926c36d86f77467a92a8629
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_std")
@@ -257,7 +293,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 6
 ATT.HeatCapacityMult = 1.02
 
 ATT.Category = {"eft_mp5_hg"}
@@ -292,6 +327,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.278,
+}))
+
+
 -- EFT ID: 5a9548c9159bd400133e97b3
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_tl99")
 
@@ -309,9 +350,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 11
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 0.975
 
 ATT.Category = {"eft_mp5_hg"}
@@ -345,6 +383,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.308,
+}))
+
+
 -- EFT ID: 5d19cd96d7ad1a4a992c9f52
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_ptr")
 
@@ -362,9 +406,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 13
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 0.98
 
 ATT.Category = {"eft_mp5_hg"}
@@ -412,6 +453,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.308,
+}))
+
+
 -- EFT ID: 5d010d1cd7ad1a59283b1ce7
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_caa")
 
@@ -429,7 +476,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 8
 ATT.HeatCapacityMult = 1.038
 
 ATT.Category = {"eft_mp5sd_hg"}
@@ -438,6 +484,12 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mp5_sd_lhik.mdl"
 ATT.ModelOffset = Vector(0, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11,
+    weight = 0.13,
+}))
+
 
 -- EFT ID: 5926f34786f77469195bfe92
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_sd")
@@ -456,9 +508,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasHG = true 
 
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.042
 
 ATT.Category = {"eft_mp5k_hg"}
@@ -467,6 +516,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mp5_k_lhik.mdl"
 ATT.ModelOffset = Vector(0, 2.0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -3,
+    weight = 0.17,
+}))
+
 
 -- EFT ID: 5d2f259b48f0355a844acd74
 ARC9.LoadAttachment(ATT, "eft_mp5_hg_k")
@@ -483,14 +539,18 @@ ATT.Description = "A standard fixed stock for the MP5A2 submachine gun manufactu
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.76
-ATT.VisualRecoilMult = 0.76
 
 ATT.HasBufferTube = true 
 ATT.HasStock = true 
 
 ATT.Category = {"eft_mp5_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -24,
+    weight = 0.37,
+}))
+
 
 -- EFT ID: 5926d3c686f77410de68ebc8
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_a2")
@@ -511,7 +571,6 @@ ATT.HasBufferTube = true
 
 ATT.Category = {"eft_mp5_stock"}
 
-ATT.EFTErgoAdd = 7
 
 ATT.ToggleStats = {
     {
@@ -529,6 +588,12 @@ ATT.ToggleStats = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.67,
+}))
+
+
 -- EFT ID: 5926d40686f7740f152b6b7e
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_a3")
 
@@ -544,7 +609,6 @@ ATT.Description = "A buttstock with a sling swivel for MP5 SMGs. Manufactured by
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
 
 ATT.HasBufferTube = true 
 
@@ -552,6 +616,12 @@ ATT.Category = {"eft_mp5_stock"}
 
 ATT.CustomizePos = Vector(17, 40, 5)
 ATT.CustomizeRotateAnchor = Vector(17, -4.5, -5.23)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.06,
+}))
+
 
 -- EFT ID: 5c07c9660db834001a66b588
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_cap")
@@ -568,7 +638,6 @@ ATT.Description = "A buttstock with a sling swivel for MP5K SMGs. Manufactured b
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
 
 ATT.HasBufferTube = true 
 
@@ -576,6 +645,12 @@ ATT.Category = {"eft_mp5k_stock"}
 
 ATT.CustomizePos = Vector(15, 30, 4.5)
 ATT.CustomizeRotateAnchor = Vector(15, -4.5, -5.23)
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 5d2f25bc48f03502573e5d85
 ARC9.LoadAttachment(ATT, "eft_mp5_stock_capk")
@@ -592,7 +667,6 @@ ATT.Description = "A thread protector for MP5 barrels with three lugs for instal
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 1
 
 ATT.Category = {"eft_mp5_muzzle"}
 
@@ -604,6 +678,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5926e16e86f7742f5a0f7ecb
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_3lug")
@@ -620,7 +700,6 @@ ATT.Description = "A 3-lug threaded adapter for installing various sound suppres
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
 
 ATT.Category = {"eft_mp5_muzzle"}
 
@@ -632,6 +711,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.091,
+}))
+
 
 -- EFT ID: 5c0000c00db834001a6697fc
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_navy")
@@ -653,12 +738,16 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.92
-ATT.VisualRecoilMult = 0.92
 ATT.HeatCapacityMult = 0.99
 
 ATT.Category = {"eft_mp5_muzzle_second"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -8,
+    weight = 0.128,
+}))
+
 
 -- EFT ID: 615d8df08004cc50514c3236
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_qd")
@@ -680,12 +769,16 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
 ATT.HeatCapacityMult = 0.991
 
 ATT.Category = {"eft_mp5_muzzle_second"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -10,
+    weight = 0.38,
+}))
+
 
 -- EFT ID: 5c07c5ed0db834001b73571c
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_noveske")
@@ -704,9 +797,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasBarrel = true 
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
 ATT.HeatCapacityMult = 1.13
 ATT.PhysBulletMuzzleVelocityMult = 1.012
 
@@ -733,6 +823,14 @@ ATT.ShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_close_silenced_loop1.
 ATT.LayerSoundSilenced = path .. "fire_new/mp5sd_outdoor_close_silenced_loop_tail.wav"
 ATT.DistantShootSoundSilenced = { path .. "fire_new/mp5sd_outdoor_distant_silenced_loop1.wav", path .. "fire_new//mp5sd_outdoor_distant_silenced_loop2.wav" }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -8,
+    weight = 0.496,
+    velocity = 1.2,
+}))
+
+
 -- EFT ID: 5926d33d86f77410de68ebc0
 ARC9.LoadAttachment(ATT, "eft_mp5_muzzle_sd")
 
@@ -749,8 +847,6 @@ ATT.Description = "A standard 30-round 9x19 magazine for the MP5 SMG, manufactur
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -4
-ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_std_curved_9x19_30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_std_curved_9x19_30.mdl"
@@ -760,6 +856,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 ATT.Category = {"eft_mag_mp5"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 5926c3b286f774640d189b6b
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_30")
@@ -776,8 +879,6 @@ ATT.Description = "A standard 20-round 9x19 magazine for the MP5 SMG, manufactur
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
-ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_kurtz_std_9x19_20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_kurtz_std_9x19_20.mdl"
@@ -787,6 +888,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
 ATT.Category = {"eft_mag_mp5"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.12,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5d2f213448f0355009199284
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_20")
@@ -803,9 +911,7 @@ ATT.Description = "A 50-round 9x19 drum magazine for the MP5 submachine gun. Man
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -15
 
-ATT.MalfunctionMeanShotsToFailMult = 0.88
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_mp5_x_products_x_5_9x19_50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_x_products_x_5_9x19_50.mdl"
@@ -815,6 +921,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
 ATT.Category = {"eft_mag_mp5"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.64,
+    malfunctionChance = 0.15,
+}))
+
 
 -- EFT ID: 5a351711c4a282000b1521a4
 ARC9.LoadAttachment(ATT, "eft_mp5_mag_50")
@@ -844,6 +957,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.071,
+}))
+
+
 -- EFT ID: 5926dad986f7741f82604363
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_top")
 
@@ -857,7 +975,6 @@ ATT.CompactName = "B&T tri-rail"
 ATT.Icon = Material("entities/eft_mp5_attachments/hk_mp5_b&t_trirail_receiver_mount.png", "mips smooth")
 ATT.Description = "A rail mount designed by Brügger & Thomet for the HK MP5 submachine gun. It is mounted on the weapons receiver and allows additional installation of scopes and reflex sights."
 
-ATT.EFTErgoAdd = -1.5
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -873,6 +990,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.223,
+}))
+
+
 -- EFT ID: 5a966ec8a2750c00171b3f36
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_top_tri")
 
@@ -886,7 +1009,6 @@ ATT.CompactName = "B&T ring"
 ATT.Icon = Material("entities/eft_mp5_attachments/hk_mp5sd_b&t_trirail_ring_mount.png", "mips smooth")
 ATT.Description = "The Tri-Rail Ring mount by B&T is installed on the MP5SD silencer and adds 3 Picatinny rails, designed for installation of additional equipment."
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -916,6 +1038,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.082,
+}))
+
 
 -- EFT ID: 59c63b4486f7747afb151c1c
 ARC9.LoadAttachment(ATT, "eft_mp5_mount_sil")

@@ -15,7 +15,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp9_muzzle"}
 
-ATT.EFTErgoAdd = -1
 
 ATT.Attachments = {
     {
@@ -33,6 +32,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    weight = 0.14,
+}))
+
+
 -- EFT ID: 5de8f237bbaf010b10528a70
 ARC9.LoadAttachment(ATT, "eft_mp9_silmount")
 
@@ -49,9 +54,6 @@ ATT.Description = [[A sound suppressor for the MP9 9x19 SMG, manufactured by Br√
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 ATT.HeatCapacityMult = 0.87
 
 ATT.Silencer = true 
@@ -63,7 +65,15 @@ ATT.NoFlash = true
 
 ATT.Category = {"eft_mp9_silen"}
 
--- EFT ID: 5de8f237bbaf010b10528a70
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16,
+    recoilModifier = -6,
+    weight = 0.29,
+    velocity = 0.8,
+}))
+
+
+-- EFT ID: 5de8f2d5b74cd90030650c72
 ARC9.LoadAttachment(ATT, "eft_mp9_silencer")
 
 ///////////////////////////////////////      eft_mp9_stockk
@@ -78,7 +88,6 @@ ATT.Description = [[A standard-issue foldable stock for the MP9 SMG. Manufacture
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
 
 ATT.Category = {"eft_mp9_stock"}
 
@@ -97,6 +106,12 @@ ATT.ToggleStats = {
         ActivateElements = {"eft_mp9_stock_folded"}
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 5de910da8b6c4240ba2651b5
 ARC9.LoadAttachment(ATT, "eft_mp9_stockk")
@@ -125,6 +140,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 5de8fc0b205ddc616a6bc51b
 ARC9.LoadAttachment(ATT, "eft_mp9_siderail")
@@ -163,6 +184,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.09,
+}))
+
+
 -- EFT ID: 5de8fbf2b74cd90030650c79
 ARC9.LoadAttachment(ATT, "eft_mp9_bottomrail")
 
@@ -178,12 +205,18 @@ ATT.Description = [[A standard-issue detachable vertical foregrip for the MP9-N 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 6
 
 ATT.Category = {"eft_mp9_bottom_n"}
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/foregrip_mp9_lhik.mdl"
 ATT.LHIK = true 
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    recoilModifier = -1,
+    weight = 0.08,
+}))
+
 
 -- EFT ID: 5de8fbad2fbe23140d3ee9c4
 ARC9.LoadAttachment(ATT, "eft_mp9_fg")
@@ -202,7 +235,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasReceiver = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.Category = {"eft_mp9_rec"}
 
@@ -226,6 +258,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.19,
+}))
+
 
 -- EFT ID: 5e0090f7e9dc277128008b93
 ARC9.LoadAttachment(ATT, "eft_mp9_rec_std")
@@ -244,7 +282,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasReceiver = true 
 
-ATT.EFTErgoAdd = 5
 
 ATT.Category = {"eft_mp9_rec"}
 
@@ -268,6 +305,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.27,
+}))
+
 
 -- EFT ID: 5de8e67c4a9f347bc92edbd7
 ARC9.LoadAttachment(ATT, "eft_mp9_rec_n")
@@ -288,6 +331,11 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mp9_handle"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.02,
+}))
+
+
 -- EFT ID: 5de922d4b11454561e39239f
 ARC9.LoadAttachment(ATT, "eft_mp9_charge")
 
@@ -304,6 +352,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp9_rearsight"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 5de8fb539f98ac2bc659513a
 ARC9.LoadAttachment(ATT, "eft_mp9_rs")
@@ -327,10 +380,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 15
 
-ATT.EFTErgoAdd = 4
-ATT.MalfunctionMeanShotsToFailMult = 0.99
 
 ATT.Category = {"eft_mag_mp9"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.06,
+    malfunctionChance = 0.01,
+}))
+
 
 -- EFT ID: 5de8e8dafd6b4e6e2276dc32
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_15")
@@ -355,10 +413,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
-ATT.EFTErgoAdd = 2
-ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_mp9"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.067,
+    malfunctionChance = 0.02,
+}))
+
 
 -- EFT ID: 5de8ea8ffd6b4e6e2276dc35
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_20")
@@ -382,10 +445,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 25
 
-ATT.EFTErgoAdd = 1
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mp9"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.072,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 5de8eaadbbaf010b10528a6d
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_25")
@@ -408,10 +476,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
-ATT.EFTErgoAdd = -1
-ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Category = {"eft_mag_mp9"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.08,
+    malfunctionChance = 0.035,
+}))
+
 
 -- EFT ID: 5de8eac42a78646d96665d91
 ARC9.LoadAttachment(ATT, "eft_mp9_mag_30")

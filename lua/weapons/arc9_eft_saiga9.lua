@@ -24,6 +24,7 @@ SWEP.BarrelLength = 32
 SWEP.MuzzleEffectQCA = 5
 
 SWEP.EFTErgo = 53
+SWEP.EFTWeight = 1.962
 
 SWEP.Spread = 2.406 * ARC9.MOAToAcc
 

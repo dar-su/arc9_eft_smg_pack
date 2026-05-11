@@ -14,6 +14,11 @@ ATT.HasBolt = true
 
 ATT.Category = {"eft_mpx_charge"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.032,
+}))
+
+
 -- EFT ID: 58949fac86f77409483e16aa
 ARC9.LoadAttachment(ATT, "eft_mpx_ch_1x")
 
@@ -29,11 +34,16 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
-ATT.EFTErgoAdd = 1
 
 ATT.Category = {"eft_mpx_charge"}
 
--- EFT ID: 58949fac86f77409483e16aa
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.033,
+}))
+
+
+-- EFT ID: 58949edd86f77409483e16a9
 ARC9.LoadAttachment(ATT, "eft_mpx_ch_2x")
 
 ///////////////////////////////////////      eft_mpx_ch_sch
@@ -48,9 +58,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
-ATT.EFTErgoAdd = 2
 
 ATT.Category = {"eft_mpx_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 5c5db6b32e221600102611a0
 ARC9.LoadAttachment(ATT, "eft_mpx_ch_sch")
@@ -67,9 +82,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBolt = true
 
-ATT.EFTErgoAdd = 1.5
 
 ATT.Category = {"eft_mpx_charge"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.029,
+}))
+
 
 -- EFT ID: 6761492dc53ebe8c0f0a5efe
 ARC9.LoadAttachment(ATT, "eft_mpx_ch_2x2")
@@ -89,10 +109,7 @@ ATT.HasReceiver = true
 
 ATT.Category = {"eft_mpx_upper"}
 
-ATT.EFTErgoAdd = 5
--- ATT.RecoilMult = 0.99
--- ATT.VisualRecoilMult = 0.99
--- ATT.HeatCapacityMult = 0.989
+-- -- -- ATT.HeatCapacityMult = 0.989
 
 ATT.Attachments = {
     {
@@ -133,6 +150,12 @@ ATT.Attachments = {
     -- add mrp45 and tac thing
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.488,
+}))
+
+
 -- EFT ID: 5894a5b586f77426d2590767
 ARC9.LoadAttachment(ATT, "eft_mpx_rec")
 
@@ -156,9 +179,6 @@ ATT.MuzzleEffectQCA = 7
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -7
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 1.03
 -- ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 4.3 * ARC9.MOAToAcc
@@ -173,6 +193,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -9,
+    recoilModifier = -6.6,
+    weight = 0.28,
+    velocity = 7,
+}))
+
 
 -- EFT ID: 5c5db5b82e2216003a0fe71d
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel105")
@@ -197,9 +225,6 @@ ATT.MuzzleEffectQCA = 8
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -14
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 ATT.HeatCapacityMult = 1.06
 ATT.PhysBulletMuzzleVelocityMult = 1.04
 ATT.Spread = 1.38 * ARC9.MOAToAcc
@@ -214,6 +239,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -8.9,
+    weight = 0.35,
+    velocity = 10,
+}))
+
 
 -- EFT ID: 5c5db5c62e22160012542255
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel355")
@@ -238,9 +271,6 @@ ATT.MuzzleEffectQCA = 6
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -6
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.03
 ATT.PhysBulletMuzzleVelocityMult = 0.877
 ATT.Spread = 5.16 * ARC9.MOAToAcc
@@ -255,6 +285,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -5.1,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 5894a2c386f77427140b8342
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel203")
@@ -278,10 +315,7 @@ ATT.BarrelLengthAdd = 1
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -2
--- ATT.RecoilMult = 0.97
--- ATT.VisualRecoilMult = 0.97
-ATT.HeatCapacityMult = 1.06
+-- -- ATT.HeatCapacityMult = 1.06
 ATT.PhysBulletMuzzleVelocityMult = 0.84
 ATT.Spread = 8.59 * ARC9.MOAToAcc
 
@@ -295,6 +329,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2.9,
+    weight = 0.16,
+    velocity = -5,
+}))
+
 
 -- EFT ID: 5c5db5852e2216003a0fe71a
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel114")
@@ -319,9 +361,6 @@ ATT.MuzzleEffectQCA = 5
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.99
-ATT.VisualRecoilMult = 0.99
 ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.Spread = 6.88 * ARC9.MOAToAcc
@@ -336,6 +375,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -4.1,
+    weight = 0.19,
+    velocity = -4,
+}))
+
 
 -- EFT ID: 5c5db5962e2216000e5e46eb
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel165")
@@ -360,9 +407,6 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.838
 ATT.Spread = 6.19 * ARC9.MOAToAcc
@@ -378,6 +422,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -4.1,
+    weight = 0.18,
+    velocity = -4,
+}))
+
+
 -- EFT ID: 58aeaaa886f7744fc1560f81
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel165sd")
 
@@ -392,9 +444,6 @@ ATT.Description = [[An integrated sound suppressor manufactured by SIG Sauer for
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -5
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 ATT.HeatCapacityMult = 0.87
 
@@ -410,6 +459,14 @@ ATT.NoFlash = true
 -- ATT.MuzzleDevice_Priority = 4
 
 ATT.Category = {"eft_mpxsd_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -5,
+    weight = 0.6,
+    velocity = 0.7,
+}))
+
 
 -- EFT ID: 58aeac1b86f77457c419f475
 ARC9.LoadAttachment(ATT, "eft_mpx_sd_silencer")
@@ -434,10 +491,7 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -2
--- ATT.RecoilMult = 0.98
--- ATT.VisualRecoilMult = 0.98
--- ATT.HeatCapacityMult = 1.04
+-- -- -- ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.838
 ATT.Spread = 8.35 * ARC9.MOAToAcc
 
@@ -451,6 +505,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -3,
+    weight = 0.18,
+    velocity = -4,
+}))
+
 
 -- EFT ID: 67614994e889e1972605d6bb
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel121ronin")
@@ -466,9 +528,6 @@ ATT.Description = [[An 8 inch suppressor from the MPX-SD conversion kit designed
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 ATT.HeatCapacityMult = 0.87
 
@@ -484,6 +543,14 @@ ATT.NoFlash = true
 -- ATT.MuzzleDevice_Priority = 4
 
 ATT.Category = {"eft_mpxsd_ronin8_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -7,
+    weight = 0.377,
+    velocity = 0.6,
+}))
+
 
 -- EFT ID: 676149c5062e6212f5058c36
 ARC9.LoadAttachment(ATT, "eft_mpx_sd_silencer_ronin8")
@@ -508,9 +575,6 @@ ATT.BarrelLengthAdd = 2
 
 ATT.Category = {"eft_mpx_barrel"}
 
-ATT.EFTErgoAdd = -3
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 -- ATT.HeatCapacityMult = 1.04
 ATT.PhysBulletMuzzleVelocityMult = 0.838
 ATT.Spread = 6.6 * ARC9.MOAToAcc
@@ -526,6 +590,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -4.3,
+    weight = 0.18,
+    velocity = 1,
+}))
+
+
 -- EFT ID: 676149a3e2cf1419500357eb
 ARC9.LoadAttachment(ATT, "eft_mpx_barrel171ronin")
 
@@ -540,9 +612,6 @@ ATT.Description = [[An 12 inch suppressor from the MPX-SD conversion kit designe
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -7
-ATT.RecoilMult = 0.87
-ATT.VisualRecoilMult = 0.91
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
 ATT.HeatCapacityMult = 0.87
 
@@ -558,6 +627,14 @@ ATT.NoFlash = true
 -- ATT.MuzzleDevice_Priority = 4
 
 ATT.Category = {"eft_mpxsd_ronin12_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -6,
+    recoilModifier = -10,
+    weight = 0.427,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 676149d8e889e1972605d6be
 ARC9.LoadAttachment(ATT, "eft_mpx_sd_silencer_ronin12")
@@ -580,10 +657,7 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 7
--- ATT.RecoilMult = 0.99
--- ATT.VisualRecoilMult = 0.99
-ATT.HeatCapacityMult = 0.976
+-- -- ATT.HeatCapacityMult = 0.976
 ATT.Category = {"eft_mpx_hguard"}
 
 ATT.ExcludeElements = {
@@ -621,6 +695,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    weight = 0.302,
+}))
+
+
 -- EFT ID: 5894a42086f77426d2590762
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen1")
 
@@ -639,9 +719,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_105_inch_m_lok.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 0.964
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -705,6 +782,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 16,
+    weight = 0.226,
+}))
+
+
 -- EFT ID: 5c5db6302e2216000e5e47f0
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_105")
 
@@ -722,9 +805,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_14_inch_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 7
-ATT.RecoilMult = 0.96
-ATT.VisualRecoilMult = 0.96
 ATT.HeatCapacityMult = 0.952
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -810,6 +890,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 18,
+    weight = 0.269,
+}))
+
+
 -- EFT ID: 5c5db63a2e2216000f1b284a
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_14")
 
@@ -827,10 +913,7 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_45_inch_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 15
--- ATT.RecoilMult = 0.96
--- ATT.VisualRecoilMult = 0.96
-ATT.HeatCapacityMult = 1.009
+-- -- ATT.HeatCapacityMult = 1.009
 ATT.Category = {"eft_mpx_hguard"}
 
 -- ATT.ExcludeElements = {"barrel_260mm", "eft_silencer_r43_556","eft_gas_ar15_rg", "eft_gas_ar15_m4fs"}
@@ -869,6 +952,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 5c5db5f22e2216000e5e47e8
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_45")
 
@@ -886,10 +975,7 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_midwest_65_inch_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
--- ATT.RecoilMult = 0.96
--- ATT.VisualRecoilMult = 0.96
-ATT.HeatCapacityMult = 1.02
+-- -- ATT.HeatCapacityMult = 1.02
 ATT.Category = {"eft_mpx_hguard"}
 
 ATT.ExcludeElements = {
@@ -929,6 +1015,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.14,
+}))
+
+
 -- EFT ID: 5c5db5fc2e2216000f1b2842
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_65")
 
@@ -946,9 +1038,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_lancer_oem_14_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 ATT.HeatCapacityMult = 1.025
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -1007,6 +1096,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 19,
+    weight = 0.144,
+}))
+
+
 -- EFT ID: 5c59529a2e221602b177d160
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_14oem")
 
@@ -1025,10 +1120,7 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1_4_inch.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 9
--- ATT.RecoilMult = 0.99
--- ATT.VisualRecoilMult = 0.99
-ATT.HeatCapacityMult = 0.976
+-- -- ATT.HeatCapacityMult = 0.976
 ATT.Category = {"eft_mpx_hguard"}
 
 
@@ -1063,6 +1155,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 11.5,
+    weight = 0.278,
+}))
+
+
 -- EFT ID: 676149fbe2cf1419500357ee
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen1_4")
 
@@ -1081,9 +1179,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen1_8_inch.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
-ATT.EFTErgoAdd = 5
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 0.976
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -1123,6 +1218,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    weight = 0.323,
+}))
+
+
 -- EFT ID: 67614a0be889e1972605d6c0
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen1_8")
 
@@ -1141,9 +1242,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_4_inch_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.995
-ATT.VisualRecoilMult = 0.995
 ATT.Category = {"eft_mpx_hguard"}
 
 
@@ -1180,6 +1278,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 12,
+    weight = 0.269,
+}))
+
+
 -- EFT ID: 67614a225152c0eaed08ec86
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen2_4")
 
@@ -1197,9 +1301,6 @@ ATT.HasHG = true
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_6_inch_m_lok.mdl"
 ATT.LHIK = true 
-ATT.EFTErgoAdd = 8
-ATT.RecoilMult = 0.985
-ATT.VisualRecoilMult = 0.985
 ATT.HeatCapacityMult = 1.02
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -1239,6 +1340,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.305,
+}))
+
+
 -- EFT ID: 67614a3ce2cf1419500357f4
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen2_6")
 
@@ -1257,9 +1364,6 @@ ATT.HasHG = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_mpx_sig_mpx_gen2_8_inch_m_lok.mdl"
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 -- ATT.LHIK = true 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.98
-ATT.VisualRecoilMult = 0.98
 ATT.HeatCapacityMult = 1.02
 ATT.Category = {"eft_mpx_hguard"}
 
@@ -1301,6 +1405,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15.5,
+    weight = 0.317,
+}))
+
+
 -- EFT ID: 67614a31062e6212f5058c38
 ARC9.LoadAttachment(ATT, "eft_mpx_hg_gen2_8")
 
@@ -1323,10 +1433,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
-ATT.EFTErgoAdd = 4
-ATT.MalfunctionMeanShotsToFailMult = 0.97
 
 ATT.Category = {"eft_mag_mpx"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.14,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 5c5db6552e2216001026119d
 ARC9.LoadAttachment(ATT, "eft_mpx_mag_20")
@@ -1352,9 +1467,7 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.Category = {"eft_mag_mpx"}
 
@@ -1431,6 +1544,13 @@ ATT.BulletBones = {
     
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5894a05586f774094708ef75
 ARC9.LoadAttachment(ATT, "eft_mpx_mag_30")
 
@@ -1454,11 +1574,16 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.95
 
 ATT.Category = {"eft_mag_mpx"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.05,
+}))
+
 
 -- EFT ID: 5894a05586f774094708ef75
 ARC9.LoadAttachment(ATT, "eft_mpx_mag_30_orig")
@@ -1481,10 +1606,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 41
 
-ATT.EFTErgoAdd = -4
-ATT.MalfunctionMeanShotsToFailMult = 0.958
 
 ATT.Category = {"eft_mag_mpx"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.3,
+    malfunctionChance = 0.042,
+}))
+
 
 -- EFT ID: 5c5db6652e221600113fba51
 ARC9.LoadAttachment(ATT, "eft_mpx_mag_41")
@@ -1509,10 +1639,15 @@ ATT.ClipSize = 50
 
 ATT.DropMagazineTime = 0.67
 
-ATT.EFTErgoAdd = -15
-ATT.MalfunctionMeanShotsToFailMult = 0.832
 
 ATT.Category = {"eft_mag_mpx"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.65,
+    malfunctionChance = 0.168,
+}))
+
 
 -- EFT ID: 5c5db6742e2216000f1b2852
 ARC9.LoadAttachment(ATT, "eft_mpx_mag_50")
@@ -1534,13 +1669,17 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 0.5
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
-ATT.SpreadMult = 0.97
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_mpx_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    recoilModifier = -5,
+    accuracyModifier = 3,
+    weight = 0.063,
+}))
+
 
 -- EFT ID: 58949dea86f77409483e16a8
 ARC9.LoadAttachment(ATT, "eft_mpx_muzzle_a2")
@@ -1561,14 +1700,18 @@ ATT.MuzzleDevice = true
 ATT.MuzzleDevice_Priority = 4
 ATT.BarrelLengthAdd = 1.5
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.88
-ATT.VisualRecoilMult = 0.88
-ATT.SpreadMult = 0.98
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 ATT.HeatCapacityMult = 1.013
 
 ATT.Category = {"eft_taccom"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -8,
+    accuracyModifier = 2,
+    weight = 0.079,
+}))
+
 
 -- EFT ID: 5cf6935bd7f00c06585fb791
 ARC9.LoadAttachment(ATT, "eft_muzzle_taccom")
@@ -1598,6 +1741,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 58a56f8d86f774651579314c
 ARC9.LoadAttachment(ATT, "eft_mount_mpx_2")
@@ -1630,6 +1779,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.15,
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 58a5c12e86f7745d585a2b9e
 ARC9.LoadAttachment(ATT, "eft_mount_mpx_4")
 
@@ -1647,11 +1802,16 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/pistolgrip_mpx.mdl"
 
 ATT.HasGrip = true
 
-ATT.EFTErgoAdd = 5
 
 ATT.SortOrder = 0
 ATT.Category = {"eft_ar15_pgrip", "eft_mpx_pgrip"}
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5894a51286f77426d13baf02
@@ -1676,8 +1836,8 @@ ATT.ModelOffset = Vector(0.1, 0, 0.42)
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.74,
-        VisualRecoilMult = 0.74,
+        RecoilMult = 0.82,
+        VisualRecoilMult = 0.82,
         HasStock = true
     },
     {
@@ -1695,11 +1855,16 @@ ATT.DrawFunc = function(swep, model)
     end
 end
 
-ATT.EFTErgoAdd = 17
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 23,
+    weight = 0.396,
+}))
+
 
 -- EFT ID: 5894a13e86f7742405482982
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_colap")
@@ -1740,11 +1905,16 @@ ATT.DrawFunc = function(swep, model)
     end
 end
 
-ATT.EFTErgoAdd = 12
 
 ATT.SortOrder = 0
 ATT.Category = "eft_mcx_stock"
 ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.392,
+}))
+
 
 -- EFT ID: 6761496fe2cf1419500357e9
 ARC9.LoadAttachment(ATT, "eft_mcx_stock_brace")

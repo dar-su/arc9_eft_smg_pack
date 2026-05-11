@@ -32,6 +32,11 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.11,
+}))
+
+
 -- EFT ID: 59ccd11386f77428f24a488f
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_std")
 
@@ -48,7 +53,6 @@ ATT.Description = [[The Izh.9x19 Sb.7 magazine for Saiga-9 carbines with a 10-ro
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_sb7.mdl"
@@ -62,6 +66,13 @@ ATT.ActivateElements = {"9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 10
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.02,
+}))
 
 
 -- EFT ID: 5998529a86f774647f44f421
@@ -80,7 +91,6 @@ ATT.Description = [[The PUFGUN SG-919 20 magazine for PP-19-01 Vityaz 9x19 with 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 5
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p20.mdl"
@@ -94,6 +104,13 @@ ATT.ActivateElements = {"9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.085,
+    malfunctionChance = 0.08,
+}))
 
 
 -- EFT ID: 5c0673fb0db8340023300271
@@ -112,7 +129,6 @@ ATT.Description = [[The PUFGUN SG-919 30 magazine for PP-19-01 Vityaz 9x19 with 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -2
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_vityaz_p30.mdl"
@@ -126,6 +142,13 @@ ATT.ActivateElements = {"9mmmag"}
 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 0.5,
+    weight = 0.109,
+    malfunctionChance = 0.09,
+}))
 
 
 -- EFT ID: 5c0672ed0db834001b7353f3
@@ -158,6 +181,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 599860ac86f77436b225ed1a
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_std")
 
@@ -176,12 +206,16 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_saiga_9_izhmash_saiga_9_std_9x19.mdl"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Category = {"eft_pp1901_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5998598e86f7740b3f498a86
@@ -200,14 +234,18 @@ ATT.Description = [[A standard muzzle brake/compensator made by Izhmash for PP-1
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -1
-ATT.RecoilMult = 0.94
-ATT.VisualRecoilMult = 0.94
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_pp-19-01_izhmash_vityaz_std_9x19.mdl"
 
 ATT.Category = {"eft_pp1901_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5998597786f77414ea6da093
@@ -229,7 +267,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_vityaz_dustcover"}
 ATT.ActivateElements = {"railedcover"}
 
-ATT.EFTErgoAdd = 5
 
 ATT.Attachments = {
     {
@@ -240,6 +277,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(-1, 0, 0.5),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1.5,
+    weight = 0.136,
+}))
 
 
 -- EFT ID: 59985a6c86f77414ec448d17
@@ -258,9 +301,14 @@ ATT.Description = [[A standard-issue dust cover for PP-19-01 Vityaz SMGs, manufa
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 3
 
 ATT.Category = {"eft_vityaz_dustcover"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.136,
+}))
 
 
 -- EFT ID: 59985a8086f77414ec448d1a
@@ -280,6 +328,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_vityaz_rearsight"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
 
 
 -- EFT ID: 599860e986f7743bb57573a6
@@ -308,12 +361,17 @@ ATT.MuzzleDevice_Priority = 5
 ATT.MuzzleParticle = "muzzleflash_suppressed"
 ATT.NoFlash = true
 
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
-ATT.SpreadMult = 1.01
 ATT.HeatCapacityMult = 1.14
 ATT.PhysBulletMuzzleVelocityMult = 1.0075
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -3,
+    accuracyModifier = -3,
+    weight = 0.53,
+    velocity = 0.4,
+}))
 
 
 -- EFT ID: 59bfc5c886f7743bf6794e62
@@ -338,9 +396,6 @@ ATT.HasStock = true
 
 ATT.Category = {"eft_vityaz_stock"}
 
-ATT.EFTErgoAdd = 6
-ATT.RecoilMult = 0.66
-ATT.VisualRecoilMult = 0.66
 
 ATT.Attachments = {
     {
@@ -351,6 +406,13 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, -9.7, -1),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    recoilModifier = -24,
+    weight = 0.218,
+}))
 
 
 -- EFT ID: 599851db86f77467372f0a18
@@ -370,9 +432,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HeatCapacityMult = 0.985
-ATT.EFTErgoAdd = 10
-ATT.RecoilMult = 0.97
-ATT.VisualRecoilMult = 0.97
 
 ATT.HasGas = true
 ATT.HasHG = true
@@ -417,6 +476,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 13,
+    recoilModifier = -1,
+    weight = 0.295,
+}))
+
+
 -- EFT ID: 676177df1f08ed5e8800b7ae
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_sagmk1")
 
@@ -433,9 +499,6 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HeatCapacityMult = 0.985
-ATT.EFTErgoAdd = 12
-ATT.RecoilMult = 0.975
-ATT.VisualRecoilMult = 0.975
 
 ATT.HasGas = true
 ATT.HasHG = true
@@ -473,6 +536,13 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 15,
+    recoilModifier = -1,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 65ae4f57e343f0acc00824da
 ARC9.LoadAttachment(ATT, "eft_vityaz_gas_vrlps")
 
@@ -502,6 +572,13 @@ ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -7,
+    weight = 0.68,
+    malfunctionChance = 0.168,
+}))
+
+
 -- EFT ID: 6749c40822a2740bb408d066
 ARC9.LoadAttachment(ATT, "eft_vityaz_mag_50")
 
@@ -517,12 +594,17 @@ ATT.Description = [[An Izhmash-manufactured pistol grip for PP-19-01 Vityaz SMGs
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 7
 
 ATT.HasGrip = true
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/ak_pgrip_vityaz.mdl"
 
 ATT.Category = {"eft_ak_grip"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5998517986f7746017232f7e

@@ -34,6 +34,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -1.6,
+    weight = 0.17,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5fb65363d1409e5ca04b54f5
 ARC9.LoadAttachment(ATT, "eft_barrel_vector45_5")
 
@@ -68,6 +76,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2,
+    weight = 0.21,
+}))
+
 
 -- EFT ID: 5fb653962b1b027b1f50bd03
 ARC9.LoadAttachment(ATT, "eft_barrel_vector45_6")
@@ -106,6 +121,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -1,
+    weight = 0.16,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5fbbc366ca32ed67276c1557
 ARC9.LoadAttachment(ATT, "eft_barrel_vector9_5")
 
@@ -141,6 +163,13 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -2,
+    weight = 0.2,
+}))
+
+
 -- EFT ID: 5fbbc383d5cb881a7363194a
 ARC9.LoadAttachment(ATT, "eft_barrel_vector9_6")
 
@@ -169,6 +198,13 @@ ATT.MalfunctionMeanShotsToFailMult = 0.985
 
 ATT.Category = {"eft_mag_vector45"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.096,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5fb651b52b1b027b1f50bcff
 ARC9.LoadAttachment(ATT, "eft_vector_mag_13")
 
@@ -195,6 +231,13 @@ ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
 ATT.MalfunctionMeanShotsToFailMult = 0.975
 
 ATT.Category = {"eft_mag_vector45"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.18,
+    malfunctionChance = 0.169,
+}))
+
 
 -- EFT ID: 5fb651dc85f90547f674b6f4
 ARC9.LoadAttachment(ATT, "eft_vector_mag_30")
@@ -233,6 +276,12 @@ ATT.ToggleStats = {
 }
 
 -- ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.3,
+}))
+
+
 -- EFT ID: 5fb6558ad6f0b2136f2d7eb7
 ARC9.LoadAttachment(ATT, "eft_stock_vector_std")
 
@@ -265,6 +314,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.28,
+}))
+
+
 -- EFT ID: 5fb655b748c711690e3a8d5a
 ARC9.LoadAttachment(ATT, "eft_stock_vector_adap")
 
@@ -285,6 +340,12 @@ ATT.EFTErgoAdd = 2
 -- ATT.RecoilMult = 0.66
 
 ATT.Category = {"eft_vector_stockcaap"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 5fb655a72b1b027b1f50bd06
 ARC9.LoadAttachment(ATT, "eft_stock_vector_cap")
@@ -314,6 +375,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 5fbb976df9986c4cff3fe5f2
 ARC9.LoadAttachment(ATT, "eft_mount_vector_bottom")
@@ -358,6 +424,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.147,
+}))
+
+
 -- EFT ID: 5fbb978207e8a97d1f0902d3
 ARC9.LoadAttachment(ATT, "eft_mount_vector_modular")
 
@@ -387,6 +459,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
+
 -- EFT ID: 5fce0f9b55375d18a253eff2
 ARC9.LoadAttachment(ATT, "eft_mount_vector_side")
 
@@ -412,6 +489,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_flash_hider_
 
 ATT.Category = {"eft_vector9_muzzle"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.064,
+}))
+
+
 -- EFT ID: 5fbbc3324e8a554c40648348
 ARC9.LoadAttachment(ATT, "eft_muzzle_vector9_fh")
 
@@ -433,12 +517,17 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_thread_prote
 
 ATT.Category = {"eft_vector9_muzzle"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.01,
+}))
+
+
 -- EFT ID: 5fbbc34106bde7524f03cbe9
 ARC9.LoadAttachment(ATT, "eft_muzzle_vector9_cap")
 
 
 
--- theyre already registered in ump pack bleh
 ///////////////////////////////////////      eft_muzzle_vector_fh
 
 ATT = {}
@@ -460,6 +549,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_flash_hider.
 
 ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -5,
+    weight = 0.064,
+}))
+
+
 -- EFT ID: 5fb65424956329274326f316
 ARC9.LoadAttachment(ATT, "eft_muzzle_vector_fh")
 
@@ -480,6 +576,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_thread_protector.mdl"
 
 ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.01,
+}))
+
 
 -- EFT ID: 5fb6548dd1409e5ca04b54f9
 ARC9.LoadAttachment(ATT, "eft_muzzle_vector_cap")

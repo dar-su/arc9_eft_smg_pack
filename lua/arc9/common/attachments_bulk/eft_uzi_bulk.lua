@@ -43,6 +43,14 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -6,
+    weight = 0.128,
+    velocity = -1,
+}))
+
+
 -- EFT ID: 6698c89bfbc8142e60024b0e
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_238")
 
@@ -78,6 +86,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -6.5,
+    weight = 0.288,
+    velocity = 1,
+}))
 
 
 -- EFT ID: 6698c8ab29e062525d0ad8ab
@@ -118,6 +134,14 @@ ATT.Attachments = {
 }
 
 ATT.MuzzleEffectQCA = 5
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -10.2,
+    weight = 0.288,
+    velocity = 6,
+}))
+
 
 -- EFT ID: 6698c8b7710a4525fe0e9e55
 ARC9.LoadAttachment(ATT, "eft_uzi_barrel_409")
@@ -164,6 +188,14 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -2.9,
+    weight = 0.128,
+    velocity = -3,
+}))
+
+
 -- EFT ID: 668031705014e211b4078046
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_114pike")
 
@@ -198,6 +230,14 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -2.9,
+    weight = 0.131,
+    velocity = -3,
+}))
+
 
 -- EFT ID: 66866fe776d1a87cd80fd388
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_114")
@@ -238,6 +278,14 @@ ATT.Attachments = {
 
 ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -4.3,
+    weight = 0.19,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 6686700a2b934a68630a7fe6
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_170")
 
@@ -276,6 +324,14 @@ ATT.Attachments = {
 }
 
 ATT.MuzzleEffectQCA = 6
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    recoilModifier = -5.3,
+    weight = 0.241,
+    velocity = -1,
+}))
+
+
 -- EFT ID: 66867023c3d473265104f384
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_210")
 
@@ -315,6 +371,14 @@ ATT.Attachments = {
 }
 
 ATT.MuzzleEffectQCA = 6
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -6,
+    weight = 0.288,
+    velocity = -1,
+}))
+
+
 -- EFT ID: 668670432b934a68630a7fe8
 ARC9.LoadAttachment(ATT, "eft_uzipro_barrel_240")
 
@@ -335,6 +399,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_uzi"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.085,
+}))
+
 
 -- EFT ID: 6698c9c636ba38d291017711
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_3thr")
@@ -361,6 +431,12 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzi"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -2,
+    weight = 0.12,
+}))
+
+
 -- EFT ID: 6699370c57df3e2b4e0a0dab
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_shroud")
 
@@ -383,6 +459,12 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzi", "eft_nut_uzi_3lug"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.085,
+}))
+
+
 -- EFT ID: 6698c9ba29e062525d0ad8b1
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_3nut")
 
@@ -404,6 +486,12 @@ ATT.HasGas = true
 -- ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_nut_uzi"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.085,
+}))
+
 
 -- EFT ID: 6698c9aa36ba38d29101770f
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_nut")
@@ -438,6 +526,14 @@ ATT.Category = {"eft_sup_uzi"}
 
 ATT.MuzzleEffectQCA = 5
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -5,
+    weight = 0.68,
+    velocity = 0.8,
+}))
+
+
 -- EFT ID: 66993733f74fef4dfd0b04ff
 ARC9.LoadAttachment(ATT, "eft_uzi_muzzle_sup")
 
@@ -460,6 +556,12 @@ ATT.HasGas = true
 
 ATT.Category = {"eft_nut_uzipro"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.085,
+}))
+
+
 -- EFT ID: 668670e3fb75ee4a5e02eb16
 ARC9.LoadAttachment(ATT, "eft_uzipro_muzzle_nut")
 
@@ -480,6 +582,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 -- ATT.BarrelLengthAdd = 1.5
 
 ATT.Category = {"eft_muzzle_uzipro"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.085,
+}))
+
 
 -- EFT ID: 668670f52a2296a8d909963c
 ARC9.LoadAttachment(ATT, "eft_uzipro_muzzle_masada")
@@ -503,6 +611,13 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    recoilModifier = -23,
+    weight = 0.45,
+}))
+
 
 -- EFT ID: 6698c9ed36ba38d291017713
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t3")
@@ -544,6 +659,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.65,
+}))
+
+
 -- EFT ID: 6699249f3c4fda6471005cba
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t5")
 
@@ -583,6 +704,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.29,
+}))
+
+
 -- EFT ID: 669924a69950f5f4cd060295
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t6")
 
@@ -606,6 +733,13 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -23,
+    weight = 0.41,
+}))
+
 
 -- EFT ID: 6698c9e07356874dfe0a0b88
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_t7")
@@ -637,6 +771,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.062,
+}))
+
+
 -- EFT ID: 66992f4db9f31ddda10dd1c8
 ARC9.LoadAttachment(ATT, "eft_uzi_stock_wekz")
 
@@ -667,6 +807,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 669cf78806768ff39504fc1c
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_csm")
 
@@ -694,6 +840,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.03,
+}))
+
 
 -- EFT ID: 668672b8c99550c6fd0f0b29
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_a3")
@@ -734,6 +885,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 6,
+    weight = 0.381,
+}))
+
+
 -- EFT ID: 668032ba74b8f2050c0b917d
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_brace")
 
@@ -772,6 +929,12 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    weight = 0.454,
+}))
+
 
 -- EFT ID: 66867310f3734a938b077f79
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_sbr")
@@ -815,6 +978,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mcx_stock"} -- wow
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    weight = 0.102,
+}))
+
+
 -- EFT ID: 6686717ffb75ee4a5e02eb19
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_a3brace")
 
@@ -834,6 +1003,12 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzipro_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.041,
+}))
+
 
 -- EFT ID: 66881008f23233ee9a0742e7
 ARC9.LoadAttachment(ATT, "eft_uzipro_stock_backplate")
@@ -857,6 +1032,12 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_hg"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    weight = 0.15,
+}))
+
 
 -- EFT ID: 6698c8c736ba38d29101770b
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_std")
@@ -905,6 +1086,13 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 7,
+    recoilModifier = -1,
+    weight = 0.18,
+}))
+
+
 -- EFT ID: 66993149558c59581e03c028
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_fg")
 
@@ -934,6 +1122,13 @@ ATT.Model = "models/weapons/arc9/darsu_eft/mods/handguard_uzi_kgrip_lhik.mdl"
 ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    recoilModifier = -1,
+    weight = 0.18,
+}))
+
 
 -- EFT ID: 6699313af74fef4dfd0b04f6
 ARC9.LoadAttachment(ATT, "eft_uzi_hg_k")
@@ -980,6 +1175,12 @@ ATT.ModelOffset = Vector(0, 0, 0)
 ATT.ModelAngleOffset = Angle(0, 90, 0)
 ATT.LHIK = true 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 9,
+    weight = 0.08,
+}))
+
+
 -- EFT ID: 668031bde3e7eb26e8004cd7
 ARC9.LoadAttachment(ATT, "eft_uzipro_hg_mlok")
 
@@ -1007,6 +1208,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.025,
+}))
+
 
 -- EFT ID: 66992f7d9950f5f4cd0602a8
 ARC9.LoadAttachment(ATT, "eft_uzi_hg2_werkz")
@@ -1039,6 +1245,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 6698c8f4710a4525fe0e9e57
 ARC9.LoadAttachment(ATT, "eft_uzi_rail_hg")
 
@@ -1064,6 +1276,11 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 6698c90829e062525d0ad8ad
 ARC9.LoadAttachment(ATT, "eft_uzi_rail_optic")
@@ -1095,6 +1312,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 4,
+    weight = 0.27,
+}))
+
 
 -- EFT ID: 6680326874b8f2050c0b9178
 ARC9.LoadAttachment(ATT, "eft_uzipro_dust")
@@ -1134,6 +1357,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 668ea3f68117e4968b0cff4a
 ARC9.LoadAttachment(ATT, "eft_uzipro_hgrail")
 
@@ -1154,6 +1383,12 @@ ATT.SortOrder = -1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_uzi_grip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 669946c157df3e2b4e0a0dc5
 ARC9.LoadAttachment(ATT, "eft_uzi_grip_std")
@@ -1184,6 +1419,13 @@ ATT.HasMag = true
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.2,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 66992713ae08c5c29e0c4f97
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_20")
 
@@ -1213,6 +1455,13 @@ ATT.HasMag = true
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.227,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 6699271b9950f5f4cd060299
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_25")
 
@@ -1239,6 +1488,12 @@ ATT.HasMag = true
 
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.25,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 669927203c4fda6471005cbe
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_32")
@@ -1269,6 +1524,13 @@ ATT.HasMag = true
 ATT.ClipSize = 40
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -3,
+    weight = 0.26,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 66992725ae08c5c29e0c4f9a
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_40")
 
@@ -1297,6 +1559,13 @@ ATT.HasMag = true
 
 ATT.ClipSize = 50
 -- ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.3,
+    malfunctionChance = 0.08,
+}))
+
 
 -- EFT ID: 6699272a3c4fda6471005cc1
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_50")
@@ -1327,6 +1596,13 @@ ATT.HasMag = true
 ATT.ClipSize = 20
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.194,
+    malfunctionChance = 0.02,
+}))
+
+
 -- EFT ID: 668031ffe3e7eb26e8004cdd
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_20pro")
 
@@ -1356,6 +1632,13 @@ ATT.HasMag = true
 ATT.ClipSize = 25
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.227,
+    malfunctionChance = 0.08,
+}))
+
+
 -- EFT ID: 66866f4ec3d473265104f381
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_25pro")
 
@@ -1382,6 +1665,12 @@ ATT.HasMag = true
 
 ATT.ClipSize = 32
 -- ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.246,
+    malfunctionChance = 0.12,
+}))
+
 
 -- EFT ID: 66866f622a2296a8d9099639
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_32pro")
@@ -1417,8 +1706,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.15,
+}))
 
--- EFT ID: 668e71a8dadf42204c032ce1
+-- EFT ID: NO
 ARC9.LoadAttachment(ATT, "eft_uzipro_smg")
 
 
@@ -1537,6 +1829,13 @@ ATT.DrawFunc = function(wep, model, wm)
         end
     end
 end
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    weight = 0.997,
+    malfunctionChance = 0.4,
+}))
+
 
 -- EFT ID: 676176a162e0497044079f46
 ARC9.LoadAttachment(ATT, "eft_uzi_mag_100")

@@ -15,9 +15,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_kedr_muzzle"}
 
-ATT.RecoilMult = 0.93
-ATT.VisualRecoilMult = 0.93
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_silencer"),
@@ -26,6 +23,12 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    recoilModifier = -7,
+    weight = 0.07,
+}))
+
 
 -- EFT ID: 57f3c7e024597738ea4ba286
 ARC9.LoadAttachment(ATT, "eft_kedr_silmount")
@@ -42,10 +45,6 @@ ATT.Icon = Material("entities/eft_kedr_attachments/sup.png", "mips smooth")
 ATT.Description = [[A standard-issue detachable PP-91-01 Kedr-B 9x18PM sound suppressor. It can be removed for compact carrying purposes.]]
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.91
-ATT.VisualRecoilMult = 0.91
 ATT.HeatCapacityMult = 0.87
 
 ATT.Silencer = true 
@@ -56,6 +55,14 @@ ATT.MuzzleEffectQCA = 5
 ATT.NoFlash = true
 
 ATT.Category = {"eft_kedr_silen"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16,
+    recoilModifier = -9,
+    weight = 0.13,
+    velocity = 0.5,
+}))
+
 
 -- EFT ID: 57f3c8cc2459773ec4480328
 ARC9.LoadAttachment(ATT, "eft_kedr_silencer")
@@ -101,9 +108,14 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.HasGrip = true
-ATT.EFTErgoAdd = 5
 
 ATT.Category = {"eft_kedr_pgrip"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    weight = 0.071,
+}))
+
 
 -- EFT ID: 57d152ec245977144076ccdf
 ARC9.LoadAttachment(ATT, "eft_kedr_pg")
@@ -117,7 +129,6 @@ ATT.CompactName = "\"Kedr\" RIS"
 ATT.Icon = Material("entities/eft_kedr_attachments/ris.png", "mips smooth")
 ATT.Description = [[A RIS mount for PP-91 Kedr SMG, manufactured by Rotor 43.]]
 
-ATT.EFTErgoAdd = -1
 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
@@ -142,6 +153,12 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.04,
+}))
+
+
 -- EFT ID: 57ee59b42459771c7b045da5
 ARC9.LoadAttachment(ATT, "eft_mount_kedr_ris")
 
@@ -165,10 +182,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
-ATT.EFTErgoAdd = 5
-ATT.MalfunctionMeanShotsToFailMult = 0.98
 
 ATT.Category = {"eft_mag_kedr"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.103,
+    malfunctionChance = 0.03,
+}))
+
 
 -- EFT ID: 57d14e1724597714010c3f4b
 ARC9.LoadAttachment(ATT, "eft_kedr_mag_20")
@@ -192,10 +214,15 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
-ATT.EFTErgoAdd = -2
-ATT.MalfunctionMeanShotsToFailMult = 0.96
 
 ATT.Category = {"eft_mag_kedr"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.128,
+    malfunctionChance = 0.04,
+}))
+
 
 -- EFT ID: 57d1519e24597714373db79d
 ARC9.LoadAttachment(ATT, "eft_kedr_mag_30")
@@ -268,6 +295,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ppsh41_barrel"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -3,
+    weight = 0.51,
+    velocity = -2,
+}))
+
+
 -- EFT ID: 5ea02bb600685063ec28bfa1
 ARC9.LoadAttachment(ATT, "eft_ppsh41_barrel_269")
 
@@ -291,6 +326,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_ppsh41_dc"}
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 3,
+    recoilModifier = -2,
+    weight = 1.1,
+}))
+
+
 -- EFT ID: 5ea03e5009aa976f2e7a514b
 ARC9.LoadAttachment(ATT, "eft_ppsh41_dust")
 
@@ -313,6 +355,13 @@ ATT.RecoilMult = 0.8
 ATT.VisualRecoilMult = 0.8
 
 ATT.Category = {"eft_stock_ppsh41"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 28,
+    recoilModifier = -20,
+    weight = 1.05,
+}))
+
 
 -- EFT ID: 5ea03e9400685063ec28bfa4
 ARC9.LoadAttachment(ATT, "eft_ppsh41_stock")
@@ -342,6 +391,13 @@ ATT.HasMag = true
 ATT.ClipSize = 35
 -- ATT.ChamberSize = 1
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.38,
+    malfunctionChance = 0.045,
+}))
+
+
 -- EFT ID: 5ea034eb5aad6446a939737b
 ARC9.LoadAttachment(ATT, "eft_ppsh41_mag_35")
 
@@ -369,6 +425,13 @@ ATT.HasMag = true
 
 ATT.ClipSize = 71
 -- ATT.ChamberSize = 1
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    weight = 0.9,
+    malfunctionChance = 0.213,
+}))
+
 
 -- EFT ID: 5ea034f65aad6446a939737e
 ARC9.LoadAttachment(ATT, "eft_ppsh41_mag_71")

@@ -32,3 +32,5 @@ SWEP.AttachmentTableOverrides = { -- what a fucking hell
         ModelOffset = Vector(0.2, 9, -0.8),
     },
 }
+
+SWEP.EFTWeight = 1.58

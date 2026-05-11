@@ -24,6 +24,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p90_barrel"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    recoilModifier = -5.3,
+    weight = 0.5,
+}))
+
+
 -- EFT ID: 5cc701aae4a949000e1ea45c
 ARC9.LoadAttachment(ATT, "eft_p90_barrel_264")
 
@@ -55,6 +62,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Category = {"eft_p90_barrel"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -14,
+    recoilModifier = -8.1,
+    weight = 0.8,
+    velocity = 9,
+}))
+
+
 -- EFT ID: 5cc701d7e4a94900100ac4e7
 ARC9.LoadAttachment(ATT, "eft_p90_barrel_407")
 
@@ -77,6 +92,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_butt"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -2,
+    weight = 0.09,
+}))
 
 
 -- EFT ID: 5cc700d4e4a949000f0f0f28
@@ -103,6 +125,13 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p90_butt"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    recoilModifier = -1,
+    weight = 0.06,
+}))
+
+
 -- EFT ID: 5cc700cae4a949035e43ba72
 ARC9.LoadAttachment(ATT, "eft_p90_butt_std")
 
@@ -127,6 +156,12 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p90_charge", "eft_ar57_charge"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 1,
+    weight = 0.019,
+}))
+
+
 -- EFT ID: 5cc6ea85e4a949000e1ea3c3
 ARC9.LoadAttachment(ATT, "eft_p90_charge_km")
 
@@ -147,6 +182,11 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_charge"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.017,
+}))
 
 
 -- EFT ID: 5cc6ea78e4a949000e1ea3c1
@@ -203,6 +243,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.25,
+}))
+
+
 -- EFT ID: 5cc700ede4a949033c734315
 ARC9.LoadAttachment(ATT, "eft_p90_effen_rec")
 
@@ -233,6 +279,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.2),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
 
 
 -- EFT ID: 5cc7012ae4a949001252b43e
@@ -379,6 +430,13 @@ ATT.ReloadHideBoneTables = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.45,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5cc70093e4a949033c734312
 ARC9.LoadAttachment(ATT, "eft_p90_mag_std")
 
@@ -408,6 +466,13 @@ ATT.Category = {"eft_p90_mag"}
 ATT.ActivateElements = {"p90_50rnd"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    weight = 0.45,
+    malfunctionChance = 0.05,
+}))
+
+
 -- EFT ID: 5cc70093e4a949033c734312
 ARC9.LoadAttachment(ATT, "eft_p90_mag_opaque")
 
@@ -432,6 +497,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_muzzle"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.5,
+    recoilModifier = -5,
+    weight = 0.1,
+}))
 
 
 -- EFT ID: 5cc82796e24e8d000f5859a8
@@ -464,6 +536,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.2),
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -0.1,
+    weight = 0.07,
+}))
 
 
 -- EFT ID: 5cc70146e4a949000d73bf6b
@@ -514,6 +592,12 @@ ATT.Attachments = {
         -- ExtraSightDistance = 8
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.31,
+}))
 
 
 -- EFT ID: 5cc70102e4a949035e43ba74
@@ -583,6 +667,12 @@ ATT.Attachments = {
 }
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.27,
+}))
+
+
 -- EFT ID: 5cc7015ae4a949001152b4c6
 ARC9.LoadAttachment(ATT, "eft_p90_rec_toprail")
 
@@ -631,6 +721,12 @@ ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.ModelOffset = Vector(-18.75, 0, -1.38)
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.297,
+}))
+
+
 -- EFT ID: 5cebec38d7f00c00110a652a
 ARC9.LoadAttachment(ATT, "eft_p90_scope")
 
@@ -665,6 +761,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Category = {"eft_p90_silencerr"}
 
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -10,
+    recoilModifier = -2,
+    weight = 0.677,
+    velocity = 0.7,
+}))
+
+
 -- EFT ID: 5cebec00d7f00c065c53522a
 ARC9.LoadAttachment(ATT, "eft_p90_silencer")
 
@@ -688,6 +792,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 26,
+    recoilModifier = -6,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 5cc700b9e4a949000f0f0f25
@@ -714,6 +825,13 @@ ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_stock"}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 26,
+    recoilModifier = -6,
+    weight = 0.4,
+}))
 
 
 -- EFT ID: 5cebec10d7f00c065703d185
@@ -766,6 +884,12 @@ ATT.Attachments = {
         -- ExtraSightDistance = 8
     },
 }
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    weight = 0.31,
+}))
 
 
 -- EFT ID: 5cf7acfcd7f00c1084477cf2

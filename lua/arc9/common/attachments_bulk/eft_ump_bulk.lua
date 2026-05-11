@@ -14,9 +14,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -6
-ATT.VisualRecoilMult = 0.95
-ATT.RecoilMult = 0.95
 ATT.Spread = 5.5 * ARC9.MOAToAcc
 ATT.PhysBulletMuzzleVelocityMult = 0.847
 ATT.HeatCapacityMult = 0.97
@@ -32,6 +29,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -4,
+    recoilModifier = -2.3,
+    weight = 0.409,
+    velocity = -15,
+}))
+
 
 -- EFT ID: 5fc3e4a27283c4046c5814ab
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_std")
@@ -49,9 +54,6 @@ ATT.HasBarrel = true
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -5
-ATT.VisualRecoilMult = 0.95
-ATT.RecoilMult = 0.95
 ATT.Spread = 5.43 * ARC9.MOAToAcc
 ATT.PhysBulletMuzzleVelocityMult = 0.849
 ATT.HeatCapacityMult = 0.97
@@ -68,6 +70,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -5,
+    recoilModifier = -2.3,
+    weight = 0.415,
+    velocity = -15,
+}))
+
+
 -- EFT ID: 6130c3dffaa1272e43151c7d
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_thr")
 
@@ -80,8 +90,7 @@ ATT.CompactName = "DT Omega"
 ATT.Icon = Material("entities/eft_ump_attachments/omegamount.png", "mips smooth")
 ATT.Description = [[The Direct Thread Mount adapter for installation of SilencerCo Omega 45k sound suppressor directly onto the barrel threading.]]
 
--- ATT.EFTErgoAdd = 1
-
+-- 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
@@ -99,32 +108,14 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.135,
+}))
+
+
 -- EFT ID: 5fc4b992187fea44d52edaa9
 ARC9.LoadAttachment(ATT, "eft_muzzle_omegaadapter")
 
-///////////////////////////////////////      eft_muzzle_vector_fh
-
-ATT = {}
-
-ATT.PrintName = "KRISS Vector .45 ACP flash hider"
-ATT.CompactName = "Vector .45"
-ATT.Icon = Material("entities/eft_ump_attachments/vectorfh.png", "mips smooth")
-ATT.Description = [[A standard-issue flash hider for the KRISS Vector .45 ACP SMG.]]
-
-ATT.EFTErgoAdd = -1
-ATT.VisualRecoilMult = 0.93
-ATT.RecoilMult = 0.93
-ATT.PhysBulletMuzzleVelocityMult = 1.005
-
-ATT.SortOrder = 0
-ATT.MenuCategory = "ARC9 - EFT Attachments"
-
-ATT.Model = "models/weapons/arc9/darsu_eft/mods/muzzle_vector_kriss_flash_hider.mdl"
-
-ATT.Category = {"eft_ump_muzzle", "eft_vector45_muzzle"}
-
--- EFT ID: 5fb65424956329274326f316
-ARC9.LoadAttachment(ATT, "eft_muzzle_vector_fh")
 
 ///////////////////////////////////////      eft_ump_mag_25
 
@@ -144,11 +135,16 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 25
 
-ATT.EFTErgoAdd = -3
 ATT.CustomPros = { ["Improved check accuracy"] = "Yes" }
-ATT.MalfunctionMeanShotsToFailMult = 0.985
 
 ATT.Category = {"eft_mag_ump"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.17,
+    malfunctionChance = 0.015,
+}))
+
 
 -- EFT ID: 5fc3e466187fea44d52eda90
 ARC9.LoadAttachment(ATT, "eft_ump_mag_25")
@@ -165,10 +161,7 @@ ATT.Description = [[A polymer stock for the UMP SMG, manufactured by Heckler & K
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = 2
--- ATT.VisualRecoilMult = 0.66
--- ATT.RecoilMult = 0.66
-
+-- -- 
 ATT.Category = {"eft_ump_stock"}
 ATT.HasStock = true
 
@@ -176,14 +169,20 @@ ATT.ActivateElements = {"eft_stock_ump_std_unfolded"}
 ATT.ToggleStats = {
     {
         PrintName = "eft_toggle_unfolded",
-        RecoilMult = 0.66,
-        VisualRecoilMult = 0.66,
+        RecoilMult = 0.76,
+        VisualRecoilMult = 0.76,
     },
     {
         PrintName = "eft_toggle_folded",
         ActivateElements = {"eft_stock_ump_std_folded"}
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.25,
+}))
+
 
 -- EFT ID: 5fc3e4ee7283c4046c5814af
 ARC9.LoadAttachment(ATT, "eft_stock_ump_std")
@@ -199,10 +198,6 @@ ATT.Description = [[A hard to find sound suppressor, designed for the HK UMP 45 
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.EFTErgoAdd = -16
-ATT.RecoilMult = 0.89
-ATT.VisualRecoilMult = 0.89
-ATT.SpreadMult = 0.98
 ATT.HeatCapacityMult = 0.87
 ATT.PhysBulletMuzzleVelocityMult = 1.005
 
@@ -214,6 +209,14 @@ ATT.BarrelLengthAdd = 5
 ATT.Silencer = true
 
 ATT.Category = {"eft_ump_oem"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -16,
+    recoilModifier = -8,
+    weight = 0.453,
+    velocity = 0.8,
+}))
+
 
 -- EFT ID: 6130c4d51cb55961fa0fd49f
 ARC9.LoadAttachment(ATT, "eft_muzzle_ump_oem")
@@ -243,6 +246,11 @@ ATT.Attachments = {
     },
 }
 
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.07,
+}))
+
+
 -- EFT ID: 5fc53954f8b6a877a729eaeb
 ARC9.LoadAttachment(ATT, "eft_mount_ump_bottom")
 
@@ -270,6 +278,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 5fc5396e900b1d5091531e72
 ARC9.LoadAttachment(ATT, "eft_mount_ump_side")
