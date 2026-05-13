@@ -170,6 +170,7 @@ ATT.Attachments = {
         Category = {"eft_foregrip_small"},
         RejectAttachments = { 
             ["eft_foregrip_cobra"] = true,
+            ["eft_foregrip_cobra_fde"] = true,
             ["eft_foregrip_se5"] = true,
             ["eft_foregrip_se5_fde"] = true,
             ["eft_foregrip_afg"] = true,

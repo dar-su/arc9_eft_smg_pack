@@ -868,6 +868,7 @@ SWEP.Attachments = {
             ["eft_foregrip_se5_fde"] = true,
             ["eft_foregrip_td"] = true,
             ["eft_foregrip_cobra"] = true,
+            ["eft_foregrip_cobra_fde"] = true,
             ["eft_foregrip_afg"] = true,
             ["eft_foregrip_afg_fde"] = true,
             ["eft_foregrip_afg_fg"] = true,
