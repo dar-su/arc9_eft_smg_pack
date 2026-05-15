@@ -562,3 +562,45 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 6034e3cb0ddce744014cb870
 ARC9.LoadAttachment(ATT, "eft_hg_ar15_stm9")
+
+
+///////////////////////////////////////      eft_ar_buffertube_stm9
+
+
+ATT = {}
+
+ATT.PrintName = "AR-15 Soyuz-TM buffer tube"
+ATT.CompactName = "STM Tube"
+ATT.Icon = Material("entities/eft_attachments/602e3f1254072b51b239f713.png", "mips smooth")
+ATT.Description = "STM Arms Receiver Extension Buffer Tube, 4-position, Com-Spec diameter will fit any AR-15-based carbine."
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/stock_ar15_stmarms_com_spec_std.mdl"
+
+ATT.HasBufferTube = true
+
+
+-- 
+ATT.SortOrder = 0
+ATT.Category = "eft_ar15_buffertube"
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_ar_stock",
+        Pos = Vector(3, 0, 0.9),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"pgrip_stock"},
+    },
+}
+
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1.5,
+    recoilModifier = -0.5,
+    weight = 0.162,
+}))
+-- EFT ID: 602e3f1254072b51b239f713
+ARC9.LoadAttachment(ATT, "eft_ar_buffertube_stm9")

@@ -1056,7 +1056,7 @@ SWEP.Attachments = {
         Bone = "mod_reciever",
         Pos = Vector(0, -7.7, 0.9),
         Ang = Angle(0, -90, 0),
-        Installed = "eft_ar_buffertube_std",
+        Installed = "eft_ar_buffertube_stm9",
         SubAttachments = {
             {
                 Installed = "eft_ar_stock_glcore"
