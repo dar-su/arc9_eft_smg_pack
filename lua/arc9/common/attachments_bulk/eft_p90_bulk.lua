@@ -243,6 +243,8 @@ ATT.Attachments = {
 }
 
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
     weight = 0.25,
@@ -593,6 +595,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -5,
@@ -666,6 +669,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
@@ -726,6 +730,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.297,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cebec38d7f00c00110a652a
 ARC9.LoadAttachment(ATT, "eft_p90_scope")
@@ -800,6 +805,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.4,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cc700b9e4a949000f0f0f25
 ARC9.LoadAttachment(ATT, "eft_p90_stock_std")
@@ -833,6 +839,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     weight = 0.4,
 }))
 
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cebec10d7f00c065703d185
 ARC9.LoadAttachment(ATT, "eft_ps90_stock")
@@ -885,6 +892,7 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -5,

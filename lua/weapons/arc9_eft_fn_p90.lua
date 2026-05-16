@@ -26,6 +26,7 @@ SWEP.StandardPresets = {
 
 SWEP.ViewModel = "models/weapons/arc9/darsu_eft/c_p90.mdl"
 SWEP.WorldModel = "models/weapons/w_smg_p90.mdl"
+SWEP.DoFDepth = 0.05
 
 ------------------------- |||           Offsets            ||| -------------------------
 
@@ -731,5 +732,31 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         -- CosmeticOnly = true,
+    },
+
+
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo1"),
+        Category = {"universal_camo"},
+        Bone = "weapon",
+        Pos = Vector(0, -1, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo1 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo2"),
+        Category = {"universal_camo"},
+        Bone = "weapon",
+        Pos = Vector(0, -2.5, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo2 = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_camo3"),
+        Category = {"universal_camo"},
+        Bone = "weapon",
+        Pos = Vector(0, -4, -5),
+        CosmeticOnly = true,
+        IsAdvancedCamo3 = true,
     },
 }
