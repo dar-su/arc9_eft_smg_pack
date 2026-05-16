@@ -1417,6 +1417,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 20
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1453,6 +1455,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 25
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1487,6 +1491,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 32
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1522,6 +1528,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 40
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1558,6 +1566,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 50
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1594,6 +1604,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 20
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -1627,6 +1639,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag_pro"}
 
 ATT.HasMag = true 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 25
@@ -1661,6 +1675,8 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_uzi_mag_pro"}
 
 ATT.HasMag = true 
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 32
@@ -1738,6 +1754,8 @@ ATT.HasMag = true
 -- ATT.SuppressEmptySuffix = false 
 
 ATT.ClipSize = 100
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 -- ATT.ChamberSize = 1
 
 local bulletbones = {

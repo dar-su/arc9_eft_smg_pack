@@ -515,6 +515,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 
 ATT.Category = {"eft_mag_sr2m"}
 
@@ -547,6 +549,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_sr2m_30.mdl"
 ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 
 ATT.Category = {"eft_mag_sr2m"}

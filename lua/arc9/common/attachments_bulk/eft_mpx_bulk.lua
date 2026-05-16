@@ -1637,6 +1637,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 ATT.DropMagazineTime = 0.67
 
 

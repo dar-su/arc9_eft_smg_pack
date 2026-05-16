@@ -182,6 +182,8 @@ ATT.SuppressEmptySuffix = false
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 ATT.Category = {"eft_mag_kedr"}
 
@@ -213,6 +215,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_kedr_30.mdl"
 ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 
 ATT.Category = {"eft_mag_kedr"}
@@ -389,6 +393,8 @@ ATT.Category = {"eft_ppsh41_mag"}
 ATT.HasMag = true
 
 ATT.ClipSize = 35
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -424,6 +430,8 @@ ATT.Category = {"eft_ppsh41_mag"}
 ATT.HasMag = true
 
 ATT.ClipSize = 71
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 -- ATT.ChamberSize = 1
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({

@@ -855,6 +855,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_std_curve
 ATT.ChamberSize = 1
 ATT.ClipSize = 30
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
+
 ATT.Category = {"eft_mag_mp5"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
@@ -886,6 +888,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_hk_kurtz_std
 -- ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
 ATT.ClipSize = 20
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropMetal
 
 ATT.Category = {"eft_mag_mp5"}
 
@@ -919,6 +923,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/darsu_eft/mods/mag_mp5_x_products_x
 -- ATT.SuppressEmptySuffix = false 
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
+
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
 
 ATT.Category = {"eft_mag_mp5"}
 

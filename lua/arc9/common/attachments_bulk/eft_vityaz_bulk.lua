@@ -571,6 +571,8 @@ ATT.ActivateElements = {"drum"}
 ATT.ChamberSize = 1
 ATT.ClipSize = 50
 
+ATT.DropMagazineSounds = ARC9EFT.MagDropDrumEmpty
+
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -7,
