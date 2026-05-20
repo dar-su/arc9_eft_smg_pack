@@ -714,8 +714,8 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
--- ATT.HoloSightReticle = Material("entities/eft_p90_attachments/scope_p90_fn_ring_sight_std_LOD0_marks2.png", "mips smooth")
-ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_p90_fn_ring_sight_std_LOD0_marks5.png", "mips smooth")
+-- ATT.HoloSightReticle = Material("entities/eft_p90_attachments/scope_p90_fn_ring_sight_std_LOD0_marks2.png", "smooth")
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_p90_fn_ring_sight_std_LOD0_marks5.png", "smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightReticle:SetVector("$color2", Vector(2, 2, 2)) -- bright color
 ATT.HoloSightSize = 240
