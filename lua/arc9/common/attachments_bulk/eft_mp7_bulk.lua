@@ -326,7 +326,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 0.99,
     failureToFeedChance = 0.089,
     misfireChance = 0.175,
-}), "pistol")
+}, "pistol"))
 
 
 -- EFT ID: 5ba26812d4351e003201fef1
@@ -368,7 +368,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 0.88,
     failureToFeedChance = 0.01,
     misfireChance = 0.14,
-}), "pistol")
+}, "pistol"))
 
 
 -- EFT ID: 5ba26844d4351e00334c9475
@@ -403,7 +403,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 0.99,
     failureToFeedChance = 0.089,
     misfireChance = 0.175,
-}), "pistol")
+}, "pistol"))
 -- EFT ID: 64b6979341772715af0f9c39
 ARC9.LoadAttachment(ATT, "eft_ammo_4630_jsp")
 
@@ -438,7 +438,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1,
     failureToFeedChance = 0.02,
     misfireChance = 0.175,
-}), "pistol")
+}, "pistol"))
 
 
 -- EFT ID: 5ba2678ad4351e44f824b344
@@ -476,7 +476,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     heatFactor = 1.1,
     failureToFeedChance = 0.084,
     misfireChance = 0.21,
-}), "pistol")
+}, "pistol"))
 
 
 -- EFT ID: 5ba26835d4351e0035628ff5
