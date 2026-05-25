@@ -365,7 +365,7 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_sr2m_tochmash_kp_sr2_marks.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_sr2m_tochmash_kp_sr2_marks.png", "smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightReticle:SetVector("$color2", Vector(5, 0.75, 0.75)) -- bright color
 ATT.HoloSightSize = 510
