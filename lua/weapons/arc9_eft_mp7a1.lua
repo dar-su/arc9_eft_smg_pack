@@ -902,14 +902,17 @@ SWEP.EFTRequiredAtts = { "HasBufferTube", "HasAmmoooooooo" }
 
 SWEP.AttachmentElements = {
     ["eft_mp7_fh"] = { Bodygroups = { {2, 1} } },
+    ["eft_mp7_muzzle_sf556"] = { Bodygroups = { {2, 2} } },
     ["eft_mp7_silencer"] = { Bodygroups = { {3, 1} } },
     ["eft_mp7_silencer"] = { Bodygroups = { {3, 1} } },
     ["eft_mp7_stock_a1"] = { Bodygroups = { {5, 1} } },
     ["eft_mp7_stock_a2"] = { Bodygroups = { {5, 2} } },
+    ["eft_mp7_stock_fd_ars"] = { Bodygroups = { {5, 3} } },
     ["eft_mp7_stock_a1unfolded"] = { Bodygroups = { {6, 1} } },
     ["eft_mp7_stock_a2unfolded"] = { Bodygroups = { {6, 3} } },
     ["eft_mp7_stock_a1folded"] = { Bodygroups = { {6, 2} } },
     ["eft_mp7_stock_a2folded"] = { Bodygroups = { {6, 4} } },
+    ["eft_mp7_stock_fd_fx_kpos"] = { Bodygroups = { {6, 5} } },
 
     ["eft_mp7a2_blk"] = { Bodygroups = { {1, 2} } },
     -- ["eft_mp7_a2"] = { Bodygroups = { {1, 1} } },

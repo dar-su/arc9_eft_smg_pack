@@ -15,7 +15,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_mp7_muzzle"}
 
-ATT.PhysBulletMuzzleVelocityMult = 1.005
+--ATT.PhysBulletMuzzleVelocityMult = 1.005
 -- ATT.HeatCapacityMult = 0.989
 
 ATT.Attachments = {
@@ -38,6 +38,43 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5ba26acdd4351e003562908e
 ARC9.LoadAttachment(ATT, "eft_mp7_fh")
 
+
+///////////////////////////////////////      eft_mp7_muzzle_sf556
+
+
+ATT = {}
+
+ATT.PrintName = "HK MP7 SureFire SF3P 4.6x30 flash hider"
+ATT.CompactName = "SF3P"
+ATT.Icon = Material("entities/eft_mp7_attachments/mzsfp.png", "mips smooth")
+ATT.Description = [[A variant of the SureFire SF3P-556 three-prong flash hider designed specifically for HK MP7 series submachine guns. Allows installation of the compatible SureFire sound suppressors.]]
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.Category = {"eft_mp7_muzzle"}
+
+--ATT.PhysBulletMuzzleVelocityMult = 1.005
+ATT.HeatCapacityMult = 0.99
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_silencer"),
+        Category = "eft_ar15_surefire_silencer",
+        Pos = Vector(-0.6, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    recoilModifier = -6,
+    accuracyModifier = 3,
+    weight = 0.072,
+}))
+
+
+-- EFT ID: IDFK
+ARC9.LoadAttachment(ATT, "eft_mp7_muzzle_sf556")
 
 ///////////////////////////////////////      eft_mp7_silencer
 
@@ -158,6 +195,63 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5bd704e7209c4d00d7167c31
 ARC9.LoadAttachment(ATT, "eft_mp7_stock_a2")
+
+///////////////////////////////////////      eft_mp7_stock_fd_ars
+
+
+ATT = {}
+
+ATT.PrintName = "HK MP7 FAB Defense ARS stock adapter"
+ATT.CompactName = "ARS"
+ATT.Icon = Material("entities/eft_mp7_attachments/stfbarsadapt.png", "mips smooth")
+ATT.Description = [[An adapter for HK MP7 submachine guns designed for installation of ARS type buttstocks. Manufactured by FAB Defense.]]
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasBufferTube = true
+ATT.Category = {"eft_mp7_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.27,
+}))
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = "eft_fd_ars_stock",
+        Pos = Vector(1.5, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+-- EFT ID: IDFK
+ARC9.LoadAttachment(ATT, "eft_mp7_stock_fd_ars")
+
+///////////////////////////////////////      eft_mp7_stock_fd_fx_kpos
+
+
+ATT = {}
+
+ATT.PrintName = "FAB Defense FX-KPOS ARS stock"
+ATT.CompactName = "ARS"
+ATT.Icon = Material("entities/eft_mp7_attachments/stfbars.png", "mips smooth")
+ATT.Description = [[A telescoping buttstock designed for use with gas masks or helmet visors and mandibles. Manufactured by FAB Defense.]]
+ATT.SortOrder = 1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+
+ATT.HasBufferTube = true
+ATT.Category = {"eft_fd_ars_stock"}
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 8,
+    recoilModifier = -10,
+    accuracyModifier = 3,
+    weight = 0.25,
+}))
+
+
+-- EFT ID: IDFK
+ARC9.LoadAttachment(ATT, "eft_mp7_stock_fd_fx_kpos")
 
 
 ///////////////////////////////////////      eft_mp7_mag_20
