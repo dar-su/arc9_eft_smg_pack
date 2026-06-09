@@ -54,7 +54,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_mp7_muzzle"}
 
 --ATT.PhysBulletMuzzleVelocityMult = 1.005
-ATT.HeatCapacityMult = 0.99
+ATT.HeatCapacityMult = 1.01
 
 ATT.Attachments = {
     {
