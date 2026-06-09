@@ -239,7 +239,7 @@ ATT.Description = [[A telescoping buttstock designed for use with gas masks or h
 ATT.SortOrder = 1
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 
-ATT.HasBufferTube = true
+ATT.HasStock = true
 ATT.Category = {"eft_fd_ars_stock"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
