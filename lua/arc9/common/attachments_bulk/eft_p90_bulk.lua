@@ -63,8 +63,8 @@ ATT.Category = {"eft_p90_barrel"}
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = -14,
-    recoilModifier = -8.1,
+    ergonomicsModifier = -16.5,
+    recoilModifier = -17.1,
     weight = 0.8,
     velocity = 9,
 }))
@@ -95,8 +95,8 @@ ATT.Category = {"eft_p90_butt"}
 
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 2,
-    recoilModifier = -2,
+    ergonomicsModifier = 1.5,
+    recoilModifier = -3,
     weight = 0.09,
 }))
 
@@ -724,13 +724,13 @@ ATT.HoloSightColorable = false
 ATT.ModelAngleOffset = Angle(0, -90, 0)
 ATT.ModelOffset = Vector(-18.75, 0, -1.38)
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = -1,
     weight = 0.297,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cebec38d7f00c00110a652a
 ARC9.LoadAttachment(ATT, "eft_p90_scope")
@@ -798,14 +798,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 ATT.Category = {"eft_p90_stock"}
 
+ATT.AdvancedCamoSupport = true
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 26,
-    recoilModifier = -6,
+    ergonomicsModifier = 26.5,
+    recoilModifier = -5,
     weight = 0.4,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cc700b9e4a949000f0f0f25
 ARC9.LoadAttachment(ATT, "eft_p90_stock_std")
@@ -833,13 +833,14 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_p90_stock"}
 
 
+ATT.AdvancedCamoSupport = true
+
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = 26,
-    recoilModifier = -6,
+    ergonomicsModifier = 26.5,
+    recoilModifier = -5,
     weight = 0.4,
 }))
 
-ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 5cebec10d7f00c065703d185
 ARC9.LoadAttachment(ATT, "eft_ps90_stock")

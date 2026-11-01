@@ -602,5 +602,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     recoilModifier = -0.5,
     weight = 0.162,
 }))
+
+
 -- EFT ID: 602e3f1254072b51b239f713
 ARC9.LoadAttachment(ATT, "eft_ar_buffertube_stm9")

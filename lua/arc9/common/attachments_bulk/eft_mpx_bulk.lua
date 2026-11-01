@@ -1864,6 +1864,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 23,
+    -- recoilModifier = -18,
     weight = 0.396,
 }))
 
@@ -1914,6 +1915,7 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
+    -- recoilModifier = -16,
     weight = 0.392,
 }))
 

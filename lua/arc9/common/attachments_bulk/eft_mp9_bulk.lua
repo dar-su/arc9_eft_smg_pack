@@ -66,8 +66,8 @@ ATT.NoFlash = true
 ATT.Category = {"eft_mp9_silen"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    ergonomicsModifier = -16,
-    recoilModifier = -6,
+    ergonomicsModifier = -10,
+    recoilModifier = -2,
     weight = 0.29,
     velocity = 0.8,
 }))
@@ -109,6 +109,7 @@ ATT.ToggleStats = {
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
+    -- recoilModifier = -13,
     weight = 0.15,
 }))
 

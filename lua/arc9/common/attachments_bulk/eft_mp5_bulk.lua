@@ -590,6 +590,7 @@ ATT.ToggleStats = {
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 7,
+    -- recoilModifier = -23,
     weight = 0.67,
 }))
 

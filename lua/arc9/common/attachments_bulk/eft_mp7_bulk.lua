@@ -147,6 +147,7 @@ ATT.ToggleStats = {
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
+    -- recoilModifier = -12,
     weight = 0.2,
 }))
 
@@ -189,6 +190,7 @@ ATT.ToggleStats = {
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
+    -- recoilModifier = -12,
     weight = 0.2,
 }))
 
@@ -211,10 +213,6 @@ ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.HasBufferTube = true
 ATT.Category = {"eft_mp7_stock"}
 
-table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
-    weight = 0.27,
-}))
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_stock"),
@@ -223,6 +221,11 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.27,
+}))
+
 
 -- EFT ID: IDFK
 ARC9.LoadAttachment(ATT, "eft_mp7_stock_fd_ars")
@@ -498,6 +501,8 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     failureToFeedChance = 0.089,
     misfireChance = 0.175,
 }, "pistol"))
+
+
 -- EFT ID: 64b6979341772715af0f9c39
 ARC9.LoadAttachment(ATT, "eft_ammo_4630_jsp")
 
