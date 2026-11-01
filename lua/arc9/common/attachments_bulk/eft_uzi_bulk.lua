@@ -662,6 +662,7 @@ ATT.Category = {"eft_uzi_stock"}
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 5,
     weight = 0.65,
+    -- recoilModifier = -21,
 }))
 
 
@@ -707,6 +708,7 @@ ATT.Category = {"eft_uzi_stock"}
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 7,
     weight = 0.29,
+    -- recoilModifier = -20,
 }))
 
 
@@ -736,7 +738,7 @@ ATT.Category = {"eft_uzi_stock"}
 
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 3,
-    recoilModifier = -23,
+    -- recoilModifier = -23,
     weight = 0.41,
 }))
 
@@ -888,6 +890,7 @@ ATT.Category = {"eft_uzipro_stock"}
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 6,
     weight = 0.381,
+    -- recoilModifier = -13,
 }))
 
 
@@ -933,6 +936,7 @@ ATT.Category = {"eft_uzipro_stock"}
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 8,
     weight = 0.454,
+    -- recoilModifier = -15,
 }))
 
 
@@ -981,6 +985,7 @@ ATT.Category = {"eft_mcx_stock"} -- wow
 table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
     ergonomicsModifier = 14,
     weight = 0.102,
+    -- recoilModifier = -12,
 }))
 
 
