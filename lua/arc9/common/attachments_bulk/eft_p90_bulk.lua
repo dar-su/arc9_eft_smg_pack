@@ -947,6 +947,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 -- EFT ID: 6a6877f566f77e6757083db5
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_stock")
 
@@ -1025,6 +1027,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.AdvancedCamoSupport = true
+
 -- EFT ID: 6a687e38e1ad1bac01015418
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_long")
 
@@ -1078,6 +1082,8 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+
+ATT.AdvancedCamoSupport = true
 
 -- EFT ID: 6a688026daa5d47171082d6b
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_short")
