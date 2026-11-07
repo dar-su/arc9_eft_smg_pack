@@ -948,6 +948,12 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 14,
+    recoilModifier = -6.5,
+    weight = 0.762,
+}))
+
 
 -- EFT ID: 6a6877f566f77e6757083db5
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_stock")
@@ -964,6 +970,11 @@ ATT.Description = "A buttstock cheek rest from the SMC-90 chassis for FN P90 sub
 ATT.SortOrder = 0
 ATT.MenuCategory = "ARC9 - EFT Attachments"
 ATT.Category = {"eft_smc90_cheek"}
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 2,
+    weight = 0.062,
+}))
+
 
 -- EFT ID: 6a69d239d038171e800696b0
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_cheek")
@@ -1028,6 +1039,11 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 17,
+    weight = 0.338,
+}))
+
 
 -- EFT ID: 6a687e38e1ad1bac01015418
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_long")
@@ -1084,6 +1100,11 @@ ATT.Attachments = {
 }
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 10,
+    weight = 0.204,
+}))
+
 
 -- EFT ID: 6a688026daa5d47171082d6b
 ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_short")
@@ -1109,6 +1130,11 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -1,
+    weight = 0.05,
+}))
+
 
 -- EFT ID: 6a68a56b0c3b4e47d502bede
 ARC9.LoadAttachment(ATT, "eft_p90_adapter")
@@ -1146,6 +1172,10 @@ ATT.HoloSightSize = 450
 ATT.HoloSightColorable = false
 
 ATT.AdvancedCamoSupport = true
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    weight = 0.04,
+}))
+
 
 -- EFT ID: 6a675e25dfb2de5e320d454e
 ARC9.LoadAttachment(ATT, "eft_optic_seeker")

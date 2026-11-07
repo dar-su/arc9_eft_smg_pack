@@ -327,6 +327,13 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -8,
+    recoilModifier = -3.4,
+    weight = 0.52,
+    velocity = -13.3,
+}))
+
 
 -- EFT ID: 6a146cd20d72113135000a1f
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_115")
@@ -359,6 +366,14 @@ ATT.Attachments = {
         Ang = Angle(0, -90, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -13,
+    recoilModifier = -4.8,
+    accuracyModifier = 5,
+    weight = 0.68,
+    velocity = -7.9,
+}))
+
 
 -- EFT ID: 6a146caa5d89d60a3b0b0ccb
 ARC9.LoadAttachment(ATT, "eft_barrel_ump_165")
@@ -421,6 +436,12 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = 5,
+    weight = 0.209,
+}))
+
+
 -- EFT ID: 6a146c81f77fa1814701c172
 ARC9.LoadAttachment(ATT, "eft_hg_ump_mlok")
 
@@ -449,6 +470,11 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0),
     },
 }
+table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
+    ergonomicsModifier = -2,
+    weight = 0.185,
+}))
+
 
 -- EFT ID: 6a146aad698504bec30e56b5
 ARC9.LoadAttachment(ATT, "eft_stock_ump_buffer")
