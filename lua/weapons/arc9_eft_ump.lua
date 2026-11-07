@@ -36,7 +36,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.IronSights = {
-    Pos = Vector(-4.28, -7.5, 1.46),
+    Pos = Vector(-4.28, -7.5, 1.55),
     Ang = Angle(0, 0.05, 0),
     Midpoint = { Pos = Vector(-1, 0, 8), Ang = Angle(0, 0, -145) },
     Magnification = 1.1,
@@ -735,6 +735,11 @@ SWEP.AttachmentElements = {
     ["eft_ammo_45acp_hydra"]    = { Bodygroups = { {5, 2} } },
     ["eft_ammo_45acp_laser"]    = { Bodygroups = { {5, 3} } },
     ["eft_ammo_45acp_rip"]    = { Bodygroups = { {5, 4} } },
+
+    ["eft_barrel_ump_115"] = { Bodygroups = { {1, 3} } },
+    ["eft_barrel_ump_165"] = { Bodygroups = { {1, 4} } },
+    ["eft_hg_ump_mlok"] = { Bodygroups = { {4, 2} } },
+    ["eft_stock_ump_buffer"] = { Bodygroups = { {3, 3} } },
 }
 
 SWEP.Attachments = {
@@ -788,7 +793,7 @@ SWEP.Attachments = {
         Category = {"eft_ump_bottom"},
         Bone = "weapon",
         Installed = "eft_mount_ump_bottom",
-        Pos = Vector(-0.35, 24, -1.95),
+        Pos = Vector(0, 24, -1.95),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
     },
@@ -800,6 +805,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.94, 26.25, -0.72),
         Ang = Angle(0, -90, 180),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_hg_ump_mlok"},
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
@@ -809,6 +815,7 @@ SWEP.Attachments = {
         Pos = Vector(0.94, 26.25, -0.72),
         Ang = Angle(0, -90, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"eft_hg_ump_mlok"},
     },
     
     {

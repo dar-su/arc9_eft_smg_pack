@@ -331,20 +331,39 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_out.ogg", t = 16/24 },
             { s = path .. "p90_bolt_in.ogg", t = 20/24 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.001, lhik = 0 },
+            { t = 0.57, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
             { s = "arc9_eft_shared/weap_in.ogg", t = 0 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.001, lhik = 0 },
+            { t = 0.3, lhik = 0 },
+            { t = 0.7, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["holster"] = {
         Source = "holster",
         EventTable = {
             { s = "arc9_eft_shared/weap_out.ogg", t = 0 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+        },
     },
 
     ["fire"] = {
@@ -373,7 +392,15 @@ SWEP.Animations = {
             { s = randspin, t = 63/26 },
             { s = path .. "p90_bolt_in.ogg", t = 73/26 },
             { s = randspin, t = 78/26 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.05, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["reload"] = {
@@ -390,6 +417,12 @@ SWEP.Animations = {
             { s = path .. "p90_mag_in_01_slide.ogg", t = 56/28 },
             { s = path .. "p90_mag_in_02_down.ogg", t = 63/28 },
             { s = randspin, t = 75/28 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.83, lhik = 0 },
+            { t = 1, lhik = 1 },
         }
     },
     ["reload_tactical"] = {
@@ -411,6 +444,12 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 1.05- 4/28},
             {hide = 0, t = 1.3- 4/28}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.83, lhik = 0 },
+            { t = 1, lhik = 1 },
         }
     },
     ["reload_empty"] = {
@@ -434,6 +473,13 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 1.05},
             {hide = 0, t = 1.3}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.82, lhik = 0 },
+            { t = 0.94, lhik = 1 },
+            { t = 1, lhik = 1 },
         }
     },
 
@@ -469,7 +515,14 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_out.ogg", t = 14/24 },
             { s = path .. "p90_bolt_in.ogg", t = 19/24 },
             { s = randspin, t = 29/24 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.38, lhik = 0 },
+            { t = 0.52, lhik = 0 },
+            { t = 0.82, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["jam2"] = {
         Source = "jam2", -- jam feed
@@ -491,6 +544,13 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_in.ogg", t = 142/24 },  
             { s = randspin, t = 148/24 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 0.97, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
         EjectAt = 83/24,
     },
     ["jam3"] = {
@@ -508,7 +568,15 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_out.ogg", t = 87/24 },            
             { s = path .. "p90_bolt_in.ogg", t = 96/24 },  
             { s = randspin, t = 104/24 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EjectAt = 87/24,
     },
     ["jam4"] = {
         Source = "jam4", -- jam soft
@@ -521,7 +589,15 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_out.ogg", t = 38/24 },            
             { s = path .. "p90_bolt_in.ogg", t = 46/24 },  
             { s = randspin, t = 51/24 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+        EjectAt = 38/24,
     },
     ["jam1"] = {
         Source = "jam5", -- jam shell
@@ -535,6 +611,14 @@ SWEP.Animations = {
             { s = path .. "p90_bolt_in_slow.ogg", t = 62/24 },  
             { s = randspin, t = 70/24 },
             { s = randspin, t = 81/24 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.16, lhik = 1 },
+            { t = 0.25, lhik = 0 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.75, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
         EjectAt = 58/24,
     },
@@ -550,7 +634,14 @@ SWEP.Animations = {
             { s = randspin, t = 7/24 },
             { s = randspin, t = 35/24 },
             { s = randspin, t = 64/24 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect0"] = {
         Source = "inspect1",
@@ -564,7 +655,14 @@ SWEP.Animations = {
             { s = randspin, t = 60/24 },
             { s = path .. "p90_mag_in_01_slide.ogg", t = 66/24 },
             { s = randspin, t = 82/24 },
-        }
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["inspect0_nomag"] = {
         Source = "inspect1_nomag",
@@ -634,6 +732,13 @@ SWEP.AttachmentElements = {
     ["eft_p90_barrel_264"]    = { Bodygroups = { {3, 1} } },
     ["eft_p90_muzzle_std"]    = { Bodygroups = { {8, 1} } },
     ["eft_p90_silencer"]    = { Bodygroups = { {9, 1} } },
+
+
+    ["eft_p90_smc90_stock"]    = { Bodygroups = { {1, 2} } },
+    ["eft_p90_adapter"]    = { Bodygroups = { {8, 2} } },
+    ["eft_p90_smc90_cheek"]    = { Bodygroups = { {4, 3} } },
+    ["eft_p90_smc90_hg_short"]    = { Bodygroups = { {11, 1} } },
+    ["eft_p90_smc90_hg_long"]    = { Bodygroups = { {11, 2} } },
 }
 
 SWEP.Attachments = {
@@ -676,7 +781,8 @@ SWEP.Attachments = {
         Bone = "weapon",
         Pos = Vector(0, 1, -2),
         Ang = Angle(0, 0, 0),
-        Installed = "eft_p90_butt_std"
+        Installed = "eft_p90_butt_std",
+        ExcludeElements = {"eft_p90_smc90_stock"},
     },
     {
         PrintName = ARC9:GetPhrase("eft_cat_receiver"),

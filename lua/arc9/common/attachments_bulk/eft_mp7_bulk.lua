@@ -73,7 +73,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
--- EFT ID: IDFK
+-- EFT ID: 69985fa69f79621e1d0f58f5
 ARC9.LoadAttachment(ATT, "eft_mp7_muzzle_sf556")
 
 ///////////////////////////////////////      eft_mp7_silencer
@@ -227,7 +227,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
--- EFT ID: IDFK
+-- EFT ID: 69985e9146e48aa39d06a685
 ARC9.LoadAttachment(ATT, "eft_mp7_stock_fd_ars")
 
 ///////////////////////////////////////      eft_mp7_stock_fd_fx_kpos
@@ -253,7 +253,7 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 }))
 
 
--- EFT ID: IDFK
+-- EFT ID: 69985e7819f8713b630de3d6
 ARC9.LoadAttachment(ATT, "eft_mp7_stock_fd_fx_kpos")
 
 

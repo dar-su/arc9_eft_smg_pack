@@ -241,7 +241,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
         Category = {"eft_foregrip_small"},
-        Pos = Vector(0, -0.35, 0),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
@@ -287,3 +287,168 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 
 -- EFT ID: 5fc5396e900b1d5091531e72
 ARC9.LoadAttachment(ATT, "eft_mount_ump_side")
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+///////////////////////////////////////      eft_barrel_ump_115
+
+ATT = {}
+
+ATT.PrintName = "HK UMP .45 ACP 11.5 inch threaded barrel"
+ATT.CompactName = "UMP-45 11.5\""
+ATT.Icon = Material("entities/eft_attachments/6a146cd20d72113135000a1f.png", "mips smooth")
+ATT.Description = "A threaded barrel for the HK UMP submachine gun, chambered in .45 ACP ammo, 11.5 inches (292mm) long."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ump_barrel"}
+
+ATT.HasBarrel = true
+ATT.Spread = 2.75 * ARC9.MOAToAcc
+ATT.PhysBulletMuzzleVelocityMult = 0.847
+ATT.HeatCapacityMult = 0.97
+ATT.HeatDissipationMult = 1.06
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = {"eft_vector45_muzzle"},
+        Pos = Vector(0, 11.3, 0),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+-- EFT ID: 6a146cd20d72113135000a1f
+ARC9.LoadAttachment(ATT, "eft_barrel_ump_115")
+
+
+///////////////////////////////////////      eft_barrel_ump_165
+
+ATT = {}
+
+ATT.PrintName = "HK UMP .45 ACP 16.5 inch threaded barrel"
+ATT.CompactName = "UMP-45 16.5\""
+ATT.Icon = Material("entities/eft_attachments/6a146caa5d89d60a3b0b0ccb.png", "mips smooth")
+ATT.Description = "A threaded barrel for the HK UMP submachine gun, chambered in .45 ACP ammo, 16.5 inches (419mm) long."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ump_barrel"}
+
+ATT.HasBarrel = true
+ATT.Spread = 2.75 * ARC9.MOAToAcc
+ATT.PhysBulletMuzzleVelocityMult = 0.847
+ATT.HeatCapacityMult = 0.97
+ATT.HeatDissipationMult = 1.06
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = {"eft_vector45_muzzle"},
+        Pos = Vector(0, 16.12, 0),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+-- EFT ID: 6a146caa5d89d60a3b0b0ccb
+ARC9.LoadAttachment(ATT, "eft_barrel_ump_165")
+
+
+///////////////////////////////////////      eft_hg_ump_mlok
+
+ATT = {}
+
+ATT.PrintName = "HK UMP Extended M-LOK handguard"
+ATT.CompactName = "UMP MLOK"
+ATT.Icon = Material("entities/eft_attachments/6a146c81f77fa1814701c172.png", "mips smooth")
+ATT.Description = "An extended handguard for UMP-45 equipped with an M-LOK interface for the installation of additional devices and accessories. Manufactured by Heckler & Koch."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ump_bottom"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/ump_hg_lhik.mdl"
+ATT.ModelOffset = Vector(0, 1.5, 0.2)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_b"),
+        Category = {"eft_mount_mlok41", "eft_foregrip_mlok"},
+        Pos = Vector(-1, 0, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_mawlonly"},
+        Pos = Vector(-3.7, 0, -3.55),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },  
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-4.8, 1.15, -1.175),
+        Ang = Angle(180, 180, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-4.8, -1.15, -1.175),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti", "eft_mount_mlokoffset"},
+        Pos = Vector(-4.8, 0, 0),
+        Ang = Angle(0, 0, -90),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+-- EFT ID: 6a146c81f77fa1814701c172
+ARC9.LoadAttachment(ATT, "eft_hg_ump_mlok")
+
+
+
+///////////////////////////////////////      eft_stock_ump_buffer
+
+ATT = {}
+
+ATT.PrintName = "HK UMP Hogue buffer tube adapter"
+ATT.CompactName = "UMP AR"
+ATT.Icon = Material("entities/eft_attachments/6a146aad698504bec30e56b5.png", "mips smooth")
+ATT.Description = "An AR-15 buffer tube adapter for installation on UMP series SMGs. Manufactured by Hogue."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_ump_stock"}
+ATT.HasStock = true
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_buffertube"),
+        Category = {"eft_ar15_buffertube", "eft_hk416_buffertube", "eft_ar15_buffertube_notbuffer"},
+        Pos = Vector(1.48, -0.95, 0.15),
+        Ang = Angle(-2, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a146aad698504bec30e56b5
+ARC9.LoadAttachment(ATT, "eft_stock_ump_buffer")

@@ -904,3 +904,242 @@ table.Merge(ATT, ARC9EFT.GenerateEFTAttachment({
 -- EFT ID: 5cf7acfcd7f00c1084477cf2
 ARC9.LoadAttachment(ATT, "eft_ps90_rec")
 
+
+
+
+
+
+
+
+
+
+
+-- post 1.0
+
+
+///////////////////////////////////////      eft_p90_smc90_stock
+
+ATT = {}
+
+ATT.PrintName = "FN P90 Strike Industries SMC-90 buttstock"
+ATT.CompactName = "SMC-90"
+ATT.Icon = Material("entities/eft_attachments/6a6877f566f77e6757083db5.png", "mips smooth")
+ATT.Description = "An ergonomic buttstock from the Strike Industries SMC-90 chassis kit for the FN P90 submachine gun."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_p90_stock"}
+
+ATT.HasStock = true 
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_stock"),
+        Category = {"eft_smc90_cheek"},
+        Pos = Vector(0, -5, -2),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small", "eft_smc90_hg"},
+        Pos = Vector(0, 12.5, 0.45),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+-- EFT ID: 6a6877f566f77e6757083db5
+ARC9.LoadAttachment(ATT, "eft_p90_smc90_stock")
+
+///////////////////////////////////////      eft_p90_smc90_cheek
+
+ATT = {}
+
+ATT.PrintName = "FN P90 Strike Industries SMC-90 cheek rest"
+ATT.CompactName = "SMC90"
+ATT.Icon = Material("entities/eft_attachments/6a69d239d038171e800696b0.png", "mips smooth")
+ATT.Description = "A buttstock cheek rest from the SMC-90 chassis for FN P90 submachine gun. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_smc90_cheek"}
+
+-- EFT ID: 6a69d239d038171e800696b0
+ARC9.LoadAttachment(ATT, "eft_p90_smc90_cheek")
+
+///////////////////////////////////////      eft_p90_smc90_hg_long
+
+ATT = {}
+
+ATT.PrintName = "FN P90 Strike Industries SMC-90 Long M-LOK handguard"
+ATT.CompactName = "SMC90 long"
+ATT.Icon = Material("entities/eft_attachments/6a687e38e1ad1bac01015418.png", "mips smooth")
+ATT.Description = "The Strike Industries Long handguard for SMC-90 chassis equipped with an M-LOK interface for installation of additional devices and accessories."
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_smc90_hg"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/p90hg_lhik.mdl"
+ATT.ModelOffset = Vector(0, -0.5, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        -- Category = {"eft_foregrip_small"},
+        Category = {"eft_foregrip_small", "eft_foregrip_large"},
+        Pos = Vector(-0.3, 0, 0.75),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_top"},
+        Pos = Vector(-3.0, 0, -3.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-3.5, 1.2, -1.75),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok", "eft_mount_mlokcanti"},
+        Pos = Vector(-3.5, -1.2, -1.75),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_b"),
+        Category = {"eft_tactical", "eft_tactical_top"},
+        ExcludeElements = {"eft_foregrip_cqr"},
+        Pos = Vector(-5.2, 0, 0.75),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
+-- EFT ID: 6a687e38e1ad1bac01015418
+ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_long")
+
+///////////////////////////////////////      eft_p90_smc90_hg_short
+
+ATT = {}
+
+ATT.PrintName = "FN P90 Strike Industries SMC-90 Short M-LOK handguard"
+ATT.CompactName = "SMC90 short"
+ATT.Icon = Material("entities/eft_attachments/6a688026daa5d47171082d6b.png", "mips smooth")
+ATT.Description = "The Strike Industries Short handguard for SMC-90 chassis equipped with an M-LOK interface for installation of additional devices and accessories."
+
+ATT.SortOrder = -1
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_smc90_hg"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/p90hg_lhik.mdl"
+ATT.ModelOffset = Vector(0, -1.5, 0)
+ATT.ModelAngleOffset = Angle(0, 90, 0)
+ATT.LHIK = true 
+ATT.HeatCapacityMult = 0.976
+
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_foregrip"),
+        Category = {"eft_foregrip_small"},
+        Pos = Vector(-0.3, 0, 0.75),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_tactical_u"),
+        Category = {"eft_tactical_pistol"},
+        Pos = Vector(-1.85, 0, -3.25),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_r"),
+        Category = {"eft_mount_mlok_micro"},
+        Pos = Vector(-1.2, 1.2, -1.75),
+        Ang = Angle(0, 0, 180),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_mount_l"),
+        Category = {"eft_mount_mlok_micro"},
+        Pos = Vector(-1.2, -1.2, -1.75),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
+    },
+}
+
+-- EFT ID: 6a688026daa5d47171082d6b
+ARC9.LoadAttachment(ATT, "eft_p90_smc90_hg_short")
+
+///////////////////////////////////////      eft_p90_adapter
+
+ATT = {}
+
+ATT.PrintName = "FN P90 CMMG 5.56x45 muzzle device adapter"
+ATT.CompactName = "P90 5.56"
+ATT.Icon = Material("entities/eft_attachments/6a68a56b0c3b4e47d502bede.png", "mips smooth")
+ATT.Description = "The CMMG adapter allows to install different AR-15 specific muzzle devices on the FN P90 submachine gun."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_p90_muzzle"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("eft_cat_muzzle"),
+        Category = "eft_ar15_muzzle",
+        Pos = Vector(0, 0.65, 0.15),
+        Ang = Angle(0, -90, 0),
+    },
+}
+
+-- EFT ID: 6a68a56b0c3b4e47d502bede
+ARC9.LoadAttachment(ATT, "eft_p90_adapter")
+
+///////////////////////////////////////      eft_optic_seeker
+
+ATT = {}
+
+ATT.PrintName = "Strike Industries Hexion Tech Seeker reflex sight"
+ATT.CompactName = "Seeker"
+ATT.Icon = Material("entities/eft_attachments/6a675e25dfb2de5e320d454e.png", "mips smooth")
+ATT.Description = "A compact reflex sight that can be used as either a primary or backup optic. Requires a compatible mount for installation on Weaver rails. Manufactured by Strike Industries."
+
+ATT.SortOrder = 0
+ATT.MenuCategory = "ARC9 - EFT Attachments"
+ATT.Category = {"eft_rmr"}
+
+ATT.Model = "models/weapons/arc9/darsu_eft/mods/scope_seeker.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -0.62),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 53
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/arc9_eft_shared/reticles/new/scope_base_trijicon_rmr_mark.png", "smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightReticle:SetVector("$color2", Vector(10, 0.8, 0.5)) -- bright color
+ATT.HoloSightSize = 450
+ATT.HoloSightColorable = false
+
+ATT.AdvancedCamoSupport = true
+
+-- EFT ID: 6a675e25dfb2de5e320d454e
+ARC9.LoadAttachment(ATT, "eft_optic_seeker")
